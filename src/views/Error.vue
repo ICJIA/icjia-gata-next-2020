@@ -4,7 +4,7 @@
       <v-container class="text-center" data-aos="fade-right">
         <v-row align="center">
           <v-col>
-            <h1 style="font-size: 48px; color: #067879" class="mt-10">Oops.</h1>
+            <h1 style="font-size: 48px; color: #0D4474" class="mt-10">Oops.</h1>
             <h2
               class="mt-10"
               v-if="
@@ -57,7 +57,7 @@ export default {
       //console.table(this.debug);
       this.$ga.page({
         page: this.$route.path,
-        title: this.title,
+        title: "Error",
         location: window.location.href
       });
 
