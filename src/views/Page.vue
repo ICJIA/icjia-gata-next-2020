@@ -75,6 +75,11 @@ export default {
   async created() {
     this.fetchContent();
   },
+  metaInfo() {
+    return {
+      title: this.pageTitle
+    };
+  },
   data() {
     return {
       hideExpired: true,
@@ -82,7 +87,7 @@ export default {
       loading: true,
       showToc: false,
       page: null,
-      renderKey: 1
+      title: ""
     };
   },
   computed: {
@@ -135,6 +140,11 @@ export default {
       if (this.page.status === 200) {
         this.page = page;
         this.showToc = this.page.content.showToc;
+        this.$ga.page({
+          page: this.$route.path,
+          title: this.title,
+          location: window.location.href
+        });
         this.loading = false;
       }
     }

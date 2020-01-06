@@ -1,7 +1,9 @@
 <template>
   <v-app id="page-top">
     <app-nav />
+    <outdated-browser v-if="$browserDetect.isIE"></outdated-browser>
     <app-drawer />
+
     <v-content
       id="content-top"
       aria-live="polite"
@@ -19,6 +21,7 @@
 import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
 import AppDrawer from "@/components/AppDrawer";
+import OutdatedBrowser from "@/components/OutdatedBrowser";
 export default {
   name: "App",
   metaInfo() {
@@ -49,7 +52,8 @@ export default {
   components: {
     AppNav,
     AppFooter,
-    AppDrawer
+    AppDrawer,
+    OutdatedBrowser
   },
   methods: {},
   watch: {
