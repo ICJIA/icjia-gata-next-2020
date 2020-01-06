@@ -106,11 +106,13 @@ export default {
     }
 
     this.page = page;
-    this.$ga.page({
-      page: this.$route.path,
-      title: "Home",
-      location: window.location.href
-    });
+    if (this.page && this.page.status === 200) {
+      this.$ga.page({
+        page: this.$route.path,
+        title: "Home",
+        location: window.location.href
+      });
+    }
     this.loading = false;
   }
 };

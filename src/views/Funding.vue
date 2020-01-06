@@ -82,17 +82,19 @@ export default {
       page.error = null;
       page.status = 200;
       page.redirect = null;
-      this.$ga.page({
-        page: this.$route.path,
-        title: this.pageTitle,
-        location: window.location.href
-      });
     } catch (error) {
       this.loading = false;
       this.$router.push(`/404`);
     }
 
     this.page = page;
+    if (this.page && this.page.status === 200) {
+      this.$ga.page({
+        page: this.$route.path,
+        title: this.pageTitle,
+        location: window.location.href
+      });
+    }
     this.loading = false;
   }
 };
