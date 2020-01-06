@@ -11,7 +11,7 @@
     </div>
 
     <base-content
-      v-if="page.content && page.status === 200"
+      v-if="page && page.content && page.status === 200"
       :loading="page.loading"
     >
       <template v-slot:content>

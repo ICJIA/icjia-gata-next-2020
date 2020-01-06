@@ -10,6 +10,7 @@ export const handleClicks = {
       const { target } = $event;
       const href = $event.target.href;
       const mailto = /mailto/g;
+      const download = /^.*\.(pdf|doc|docx|xls|xlsx|zip)$/i;
 
       //console.log(target);
       // handle only links that occur inside the component and do not reference external resources
@@ -21,7 +22,8 @@ export const handleClicks = {
         target &&
         target.matches(".dynamic-content a:not([href*='://'])") &&
         target.href &&
-        !href.match(mailto)
+        !href.match(mailto) &&
+        !href.match(download)
       ) {
         // some sanity checks taken from vue-router:
         // https://github.com/vuejs/vue-router/blob/dev/src/components/link.js#L106
@@ -54,21 +56,21 @@ export const handleClicks = {
         }
       }
 
-      if (
-        /^.*\.(pdf|doc|docx)$/i.test(href) &&
-        href.indexOf("icjia-api.cloud") > 1
-      ) {
-        $event.preventDefault();
-        const filename = href.split("/").pop();
-        console.log("register download event: ", filename);
-        this.$ga.event({
-          eventCategory: "File",
-          eventAction: "Download",
-          eventLabel: filename
-        });
-        const win = window.open(href, "_blank");
-        win.focus();
-      }
+      //   if (
+      //     /^.*\.(pdf|doc|docx)$/i.test(href) &&
+      //     href.indexOf('icjia-api.cloud') > 1
+      //   ) {
+      //     $event.preventDefault()
+      //     const filename = href.split('/').pop()
+      //     console.log('register download event: ', filename)
+      //     this.$ga.event({
+      //       eventCategory: 'File',
+      //       eventAction: 'Download',
+      //       eventLabel: filename
+      //     })
+      //     const win = window.open(href, '_blank')
+      //     win.focus()
+      //   }
       // TODO: Add YouTube Event tracking
     }
   }

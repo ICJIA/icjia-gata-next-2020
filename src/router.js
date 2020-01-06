@@ -19,30 +19,37 @@ const router = new Router({
      * Home
      *
      */
+
     {
       path: "/",
       name: "home",
       component: Home,
       meta: {}
     },
+    {
+      path: "/:slug",
+      name: "page",
+      component: () => import(/* webpackChunkName: "Page" */ "./views/Page.vue")
+    }
+
     /**
      *
      * Funding
      *
      */
-    {
-      path: "/funding/:slug",
-      name: "fundingSingle",
-      component: () =>
-        import(/* webpackChunkName: "funding" */ "./views/fundingSingle.vue")
-    },
+    // {
+    //   path: "/funding/:slug",
+    //   name: "fundingSingle",
+    //   component: () =>
+    //     import(/* webpackChunkName: "funding" */ "./views/FundingSingle.vue")
+    // },
 
-    {
-      path: "/funding",
-      name: "funding",
-      component: () =>
-        import(/* webpackChunkName: "funding" */ "./views/funding.vue")
-    }
+    // {
+    //   path: "/funding",
+    //   name: "funding",
+    //   component: () =>
+    //     import(/* webpackChunkName: "funding" */ "./views/Funding.vue")
+    // }
   ]
 });
 
