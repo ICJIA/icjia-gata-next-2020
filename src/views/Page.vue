@@ -142,9 +142,10 @@ export default {
         this.showToc = this.page.content.showToc;
         this.$ga.page({
           page: this.$route.path,
-          title: this.title,
+          title: this.pageTitle,
           location: window.location.href
         });
+        //console.log("title: ", this.pageTitle);
         this.loading = false;
       }
     }
