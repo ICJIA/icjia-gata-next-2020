@@ -5,6 +5,7 @@ import router from "./router";
 import store from "./store";
 import vuetify from "@/plugins/vuetify";
 import "@/filters";
+import "@/css/github-markdown.css";
 import "@/css/app.css";
 
 // import AOS from "aos";
