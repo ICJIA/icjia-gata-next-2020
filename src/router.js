@@ -45,18 +45,52 @@ const router = new Router({
       component: () =>
         import(/* webpackChunkName: "funding" */ "@/views/Funding.vue")
     },
+    /**
+     *
+     * Search
+     *
+     */
+
+    {
+      path: "/search",
+      name: "search",
+      component: () =>
+        import(/* webpackChunkName: 'search' */ "@/views/Search.vue")
+    },
+    /**
+     *
+     * News
+     *
+     */
+    {
+      path: "/news/:slug",
+      name: "newsSingle",
+      component: () =>
+        import(/* webpackChunkName: "news" */ "@/views/NewsSingle.vue")
+    },
+
+    {
+      path: "/news",
+      name: "news",
+      component: () => import(/* webpackChunkName: "news" */ "@/views/News.vue")
+    },
+    /**
+     *
+     * Error
+     *
+     */
 
     {
       path: "/404",
       name: "404",
       component: () => import(/* webpackChunkName: '404' */ "@/views/404.vue")
     },
-    {
-      path: "/sandbox",
-      name: "sandbox",
-      component: () =>
-        import(/* webpackChunkName: '404' */ "@/views/Sandbox.vue")
-    },
+
+    /**
+     *
+     * Default
+     *
+     */
     {
       path: "/:slug",
       name: "page",

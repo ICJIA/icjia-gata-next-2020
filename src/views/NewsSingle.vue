@@ -1,6 +1,6 @@
 <template>
   <div style="margin-top: 100px">
-    <h1>Sandbox</h1>
+    <h1>News item here</h1>
   </div>
 </template>
 

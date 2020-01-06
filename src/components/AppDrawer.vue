@@ -1,12 +1,6 @@
 <template>
   <v-navigation-drawer v-model="drawer" app temporary>
-    <!-- <div
-      style="font-size: 24px; font-weight: bold; background: #0D4474; color: #fff"
-      class="text-center py-4"
-    >
-      ICJIA GATA INFORMATION
-    </div> -->
-    <div class="text-center" style="background: #0D4574">
+    <!-- <div class="text-center" style="background: #0D4574">
       <img
         src="@/assets/icjia-logo-white.png"
         class="logo mt-4 mb-4"
@@ -14,40 +8,45 @@
         alt="Illinois Criminal Justice Information Authority"
         @click="goto('http://www.icjia.state.il.us')"
       />
-    </div>
+    </div> -->
 
-    <v-divider />
-
-    <v-list v-if="pages" dense>
-      <div v-for="item in pages" :key="item.title">
-        <v-list-item link>
-          <v-list-item-content>
-            <h3
-              v-if="item.slug === 'home'"
-              style="font-weight: 700;"
-              @click="$router.push(`/`)"
-            >
-              Home
-            </h3>
-            <h3
-              v-else
-              style="font-weight: 700;"
-              @click="$router.push(`/${item.slug}`)"
-            >
-              <span v-if="item.menuTitle">
-                {{ item.menuTitle }}
-              </span>
-              <span v-else>
-                {{ item.title }}
-              </span>
-            </h3>
-          </v-list-item-content>
-        </v-list-item>
-        <div v-if="item.dividerAfter" class="my-2">
-          <v-divider />
+    <v-row>
+      <v-list v-if="pages" dense>
+        <div v-for="item in pages" :key="item.title">
+          <v-list-item link>
+            <v-list-item-content>
+              <h3
+                v-if="item.slug === 'home'"
+                style="font-weight: 700;"
+                @click="$router.push(`/`)"
+              >
+                Home
+              </h3>
+              <h3
+                v-else
+                style="font-weight: 700;"
+                @click="
+                  $router.push(`/${item.slug}`).catch(err => {
+                    $vuetify.goTo(0);
+                  })
+                "
+              >
+                <span v-if="item.menuTitle">
+                  {{ item.menuTitle }}
+                </span>
+                <span v-else>
+                  {{ item.title }}
+                </span>
+              </h3>
+            </v-list-item-content>
+          </v-list-item>
+          <div v-if="item.dividerAfter" class="my-2">
+            <v-divider />
+          </div>
         </div>
-      </div>
-    </v-list>
+      </v-list>
+      <v-spacer></v-spacer>
+    </v-row>
 
     <!-- <div class="text-center mb-3 pt-3 py-3">
         <img
@@ -76,7 +75,7 @@
       </div> -->
     <!-- </div> -->
 
-    <v-footer class="justify-center text-center py-8" app>
+    <!-- <v-footer class="justify-center text-center py-8" app>
       <h5 style="font-size: 12px">
         <a href="https://github.com/ICJIA/icjia-gata-next">View on Github</a>
       </h5>
@@ -86,7 +85,18 @@
           >Illinois Criminal Justice Information Authority</a
         >
       </h5>
-    </v-footer>
+    </v-footer> -->
+    <!-- <div style="postition: absolute; bottom 0;">
+      <h5 style="font-size: 12px">
+        <a href="https://github.com/ICJIA/icjia-gata-next">View on Github</a>
+      </h5>
+      <h5 style="color: #666; font-size: 12px" class="mt-2">
+        &copy;&nbsp;2019
+        <a href="http://www.icjia.state.il.us"
+          >Illinois Criminal Justice Information Authority</a
+        >
+      </h5>
+    </div> -->
   </v-navigation-drawer>
 </template>
 

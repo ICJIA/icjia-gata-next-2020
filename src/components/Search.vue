@@ -1,26 +1,16 @@
 <template>
-  <v-form 
-    class="pl-2" 
-    style="margin-top: -25px;"
-  >
+  <v-form class="pl-2" style="margin-top: -25px;">
     <v-text-field
       v-model="query"
       label="Search"
       placeholder="Enter search term"
       @keyup="instantSearch"
     />
-    <div 
-      v-for="(result, index) in queryResults" 
-      :key="index" 
-      class="px-4 py-3"
-    >
+    <div v-for="(result, index) in queryResults" :key="index" class="px-4 py-3">
       <div v-if="query.length">
-        <nuxt-link 
-          :to="result.path" 
-          style="text-decoration: none"
-        >
+        <router-link :to="result.path" style="text-decoration: none">
           <h2>{{ result.title }}</h2>
-        </nuxt-link>
+        </router-link>
         <p>{{ result.excerpt }}</p>
       </div>
     </div>
@@ -28,7 +18,7 @@
 </template>
 
 <script>
-import Fuse from 'fuse.js'
+import Fuse from "fuse.js";
 
 export default {
   props: {
@@ -39,9 +29,9 @@ export default {
   },
   data() {
     return {
-      query: '',
+      query: "",
       queryResults: []
-    }
+    };
   },
   computed: {},
   watch: {
@@ -57,23 +47,22 @@ export default {
       maxPatternLength: 32,
       minMatchCharLength: 1,
       keys: [
-        'searchMeta',
-        'title',
-        'excerpt',
-        'section',
-        'posted',
-        'expires',
-        'slug'
+        "searchMeta",
+        "title",
+        "excerpt",
+        "section",
+        "posted",
+        "expires",
+        "slug"
       ]
-    })
+    });
   },
   methods: {
     instantSearch() {
-      this.queryResults = this.fuse.search(this.query)
+      this.queryResults = this.fuse.search(this.query);
     }
   }
-}
+};
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

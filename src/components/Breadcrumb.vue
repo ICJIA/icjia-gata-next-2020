@@ -1,21 +1,20 @@
 <template>
   <div style="height: 30px;">
-    <v-breadcrumbs 
-      v-if="!hide" 
-      :items="items" 
-      
-      :class="{isLeftAligned:isLeftAligned}"
+    <v-breadcrumbs
+      v-if="!hide"
+      :items="items"
+      :class="{ isLeftAligned: isLeftAligned }"
       class="crumbs"
       divider="|"
     >
       <template v-slot:item="props">
-        <nuxt-link 
-          :to="props.item.href" 
-          :class="[props.item.disabled && 'disabled']" 
+        <router-link
+          :to="props.item.href"
+          :class="[props.item.disabled && 'disabled']"
           class="link"
         >
           {{ props.item.text.upperCase() }}
-        </nuxt-link>
+        </router-link>
       </template>
     </v-breadcrumbs>
   </div>
@@ -24,29 +23,29 @@
 <script>
 String.prototype.trunc = function(n, useWordBoundary) {
   if (this.length <= n) {
-    return this
+    return this;
   }
-  var subString = this.substr(0, n - 1)
+  var subString = this.substr(0, n - 1);
   return (
     (useWordBoundary
-      ? subString.substr(0, subString.lastIndexOf(' '))
-      : subString) + '...'
-  )
-}
+      ? subString.substr(0, subString.lastIndexOf(" "))
+      : subString) + "..."
+  );
+};
 export default {
   components: {},
   props: {
     path: {
       type: String,
-      default: ''
+      default: ""
     },
     section: {
       type: String,
-      default: ''
+      default: ""
     },
     title: {
       type: String,
-      default: 'undefined'
+      default: "undefined"
     },
     hide: {
       type: Boolean,
@@ -55,34 +54,34 @@ export default {
   },
   computed: {
     isLeftAligned() {
-      return this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm
+      return this.$vuetify.breakpoint.xs || this.$vuetify.breakpoint.sm;
     },
     items() {
-      const items = this.path.split('/')
-      const crumbs = [{ text: 'home', disabled: false, href: '/' }]
+      const items = this.path.split("/");
+      const crumbs = [{ text: "home", disabled: false, href: "/" }];
       items.forEach((i, index) => {
         if (i.length) {
-          let obj = {}
-          obj.text = i
+          let obj = {};
+          obj.text = i;
           if (index === 0) {
-            obj.href = '/'
+            obj.href = "/";
           }
           if (index === 1) {
-            obj.href = '/' + items[1]
+            obj.href = "/" + items[1];
           }
 
           if (index === 2) {
-            obj.text = this.title.trunc(this.isLeftAligned ? 40 : 30, true)
+            obj.text = this.title.trunc(this.isLeftAligned ? 40 : 30, true);
           }
-          crumbs.push(obj)
+          crumbs.push(obj);
         }
-      })
-      crumbs[crumbs.length - 1].disabled = true
-      crumbs[crumbs.length - 1].href = items[items.length - 1]
-      return crumbs
+      });
+      crumbs[crumbs.length - 1].disabled = true;
+      crumbs[crumbs.length - 1].href = items[items.length - 1];
+      return crumbs;
     }
   }
-}
+};
 </script>
 
 <style>

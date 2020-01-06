@@ -13,7 +13,7 @@ var opts = {
   theme: {
     themes: {
       light: {
-        primary: "#065f60",
+        primary: "#0D4574",
         secondary: "#067879",
         accent: "#3f51b5",
         error: "#e91e63",
