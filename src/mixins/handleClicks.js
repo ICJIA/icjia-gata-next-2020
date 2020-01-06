@@ -62,7 +62,7 @@ export const handleClicks = {
         urlToCheck = "illinois.gov/gata";
       }
 
-      console.log(href, href.indexOf(urlToCheck));
+      //console.log(href, href.indexOf(urlToCheck));
 
       if (
         /^.*\.(pdf|doc|docx|xls|zip|xlsx)$/i.test(href) &&
@@ -80,11 +80,11 @@ export const handleClicks = {
             filename[filename.length - 1]
         );
         //console.log(href);
-        // this.$ga.event({
-        //   eventCategory: "File",
-        //   eventAction: "Download",
-        //   eventLabel: filename
-        // });
+        this.$ga.event({
+          eventCategory: "File",
+          eventAction: "Download",
+          eventLabel: filename
+        });
         const win = window.open(href, "_blank");
         win.focus();
       }
