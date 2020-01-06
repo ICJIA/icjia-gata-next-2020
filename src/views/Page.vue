@@ -115,8 +115,20 @@ export default {
         return this.showToc ? "9" : "12";
       }
     },
-    updateRender() {
-      this.renderKey = this.renderKey + 1;
+    routeToError() {
+      this.page = null;
+      this.loading = false;
+      this.$router
+        .push({
+          name: "error",
+          params: {
+            msg: "Page not found",
+            statusCode: 404,
+            debug: this.$route.params
+          }
+        })
+        // eslint-disable-next-line no-unused-vars
+        .catch(err => {});
     },
     async fetchContent() {
       this.loading = true;
@@ -134,7 +146,7 @@ export default {
         }
       } catch (error) {
         this.loading = false;
-        this.$router.push(`/404`);
+        this.routeToError();
       }
       this.page = page;
       if (this.page.status === 200) {

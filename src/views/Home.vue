@@ -86,6 +86,23 @@ export default {
       toggleState: null
     };
   },
+  methods: {
+    routeToError() {
+      this.page = null;
+      this.loading = false;
+      this.$router
+        .push({
+          name: "error",
+          params: {
+            msg: "Page not found",
+            statusCode: 404,
+            debug: this.$route.params
+          }
+        })
+        // eslint-disable-next-line no-unused-vars
+        .catch(err => {});
+    }
+  },
   async created() {
     EventBus.$on("toggle", state => {
       this.toggleState = state;
@@ -102,7 +119,7 @@ export default {
       page.redirect = null;
     } catch (error) {
       this.loading = false;
-      this.$router.push(`/404`);
+      this.routeToError();
     }
 
     this.page = page;

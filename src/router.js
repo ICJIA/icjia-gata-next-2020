@@ -81,9 +81,9 @@ const router = new Router({
      */
 
     {
-      path: "/404",
-      name: "404",
-      component: () => import(/* webpackChunkName: '404' */ "@/views/404.vue")
+      path: "/error",
+      name: "error",
+      component: () => import(/* webpackChunkName: '404' */ "@/views/Error.vue")
     },
 
     /**

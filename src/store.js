@@ -94,25 +94,6 @@ export default new Vuex.Store({
       commit("SET_APP_READY", true);
     },
     async setApiStatus({ commit }) {
-      // try {
-      //   let status = await fetchData(buildStatusUrl());
-      //   let apiStatus = status.filter(server => {
-      //     if (server.server === "api") {
-      //       return server;
-      //     }
-      //   });
-      //   if (apiStatus.length) {
-      //     console.log("Successfully connected to status server.");
-      //     commit("SET_API_STATUS", apiStatus[0]["status"]);
-      //   } else {
-      //     console.error("Status server error");
-      //     commit("SET_API_STATUS", 500);
-      //   }
-      // } catch (e) {
-      //   console.log("Can't connect to status server.");
-      //   console.log(e);
-      //   commit("SET_API_STATUS", 500);
-      // }
       commit("SET_API_STATUS", 200);
       console.log("status server bypassed");
     },
@@ -130,76 +111,11 @@ export default new Vuex.Store({
     },
     setSelectedCountyData({ commit }, payload) {
       commit("SET_SELECTED_COUNTY_DATA", payload);
-    },
-    // eslint-disable-next-line no-unused-vars
-    async cacheContent({ commit, state, getters }, contentMap) {
-      let start = new Date();
-      let queries = [],
-        res,
-        end,
-        hashes = [];
-
-      // eslint-disable-next-line no-unused-vars
-      for (const [key, value] of contentMap.entries()) {
-        let params;
-        if (!value.hash) {
-          throw "Hash must be specified";
-        }
-        if (!value.query) {
-          throw "Query must be specified";
-        }
-
-        value.params ? (params = value.params) : (params = {});
-        if (!getters.inCache(value.hash, state.cache)) {
-          hashes.push(value.hash);
-          queries.push(value.query.call(this, params));
-        } else {
-          //console.log("already in cache");
-        }
-      }
-
-      if (queries.length) {
-        res = await Promise.all(queries);
-        res.forEach((query, index) => {
-          let cacheObj = {};
-          cacheObj.hash = hashes[index];
-          cacheObj.query = query;
-          commit("SET_CACHE", cacheObj);
-        });
-        end = new Date() - start;
-
-        let metaInfo = {
-          itemsCached: res.length,
-          totalCacheSize: state.cache.size,
-          millisecondsToComplete: end,
-          previouslyCached: false
-        };
-
-        if (state.config.debug) {
-          console.log(metaInfo);
-        }
-
-        return metaInfo;
-      } else {
-        end = new Date() - start;
-        let metaInfo = {
-          itemsCached: queries.length,
-          totalCacheSize: state.cache.size,
-          millisecondsToComplete: end,
-          previouslyCached: true
-        };
-        if (state.config.debug) {
-          console.log(metaInfo);
-        }
-        return metaInfo;
-      }
     }
   },
   getters: {
     // eslint-disable-next-line no-unused-vars
-    inCache: state => hash => {
-      return state.cache.has(hash);
-    },
+
     isApiReady: state => {
       if (state.apiStatus === 200 || state.apiStatus === 204) {
         return true;
@@ -210,22 +126,9 @@ export default new Vuex.Store({
     config: state => {
       return state.config;
     },
-    selectedCountyData: state => {
-      return state.selectedCountyData;
-    },
-    sections: state => {
-      return state.sections;
-    },
+
     debug: state => {
       return state.config.debug;
-    },
-    getContentFromCache: state => (map, key) => {
-      if (map.get(key)) {
-        let content = state.cache.get(map.get(key).hash);
-        return content;
-      } else {
-        return [];
-      }
     }
   }
 });
