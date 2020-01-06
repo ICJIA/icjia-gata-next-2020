@@ -57,6 +57,11 @@ export default {
     BaseContent,
     ListNewsTable
   },
+  metaInfo() {
+    return {
+      title: this.pageTitle
+    };
+  },
   mixins: [handleClicks],
   computed: {
     filteredNews() {
@@ -64,6 +69,13 @@ export default {
         return item.status === "live";
       });
       return filteredNews;
+    },
+    pageTitle() {
+      if (this.page && this.page.status === 200) {
+        return this.page.content.title;
+      } else {
+        return "Error";
+      }
     }
   },
   data() {
@@ -86,6 +98,11 @@ export default {
       page.error = null;
       page.status = 200;
       page.redirect = null;
+      this.$ga.page({
+        page: this.$route.path,
+        title: this.pageTitle,
+        location: window.location.href
+      });
     } catch (error) {
       this.loading = false;
       this.$router.push(`/404`);

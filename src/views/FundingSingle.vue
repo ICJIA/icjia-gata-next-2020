@@ -75,6 +75,11 @@ export default {
   async created() {
     this.fetchContent();
   },
+  metaInfo() {
+    return {
+      title: this.pageTitle
+    };
+  },
   data() {
     return {
       hideExpired: true,
@@ -118,8 +123,8 @@ export default {
         page.content = await getContent("funding", this.$route.params.slug);
         page.error = null;
         page.status = 200;
-
         page.redirect = null;
+
         page.loading = false;
       } catch (error) {
         this.loading = false;
@@ -131,6 +136,11 @@ export default {
         this.page = page;
         this.showToc = this.page.content.showToc;
         this.loading = false;
+        this.$ga.page({
+          page: this.$route.path,
+          title: this.pageTitle,
+          location: window.location.href
+        });
       }
       this.loading = false;
     }

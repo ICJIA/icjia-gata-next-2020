@@ -43,6 +43,11 @@ export default {
     ListFunding,
     Toggle
   },
+  metaInfo() {
+    return {
+      title: this.pageTitle
+    };
+  },
   mixins: [handleClicks],
   data() {
     return {
@@ -53,6 +58,15 @@ export default {
 
       toggleState: null
     };
+  },
+  computed: {
+    pageTitle() {
+      if (this.page && this.page.status === 200) {
+        return this.page.content.title;
+      } else {
+        return "Error";
+      }
+    }
   },
   async created() {
     EventBus.$on("toggle", state => {
@@ -68,6 +82,11 @@ export default {
       page.error = null;
       page.status = 200;
       page.redirect = null;
+      this.$ga.page({
+        page: this.$route.path,
+        title: this.pageTitle,
+        location: window.location.href
+      });
     } catch (error) {
       this.loading = false;
       this.$router.push(`/404`);
