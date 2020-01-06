@@ -69,21 +69,21 @@ export const handleClicks = {
         href.indexOf(urlToCheck) > 1
       ) {
         $event.preventDefault();
-        const filename = href.split("/");
-        console.log(
-          "register download event: ",
-          "/" +
-            filename[filename.length - 3] +
-            "/" +
-            filename[filename.length - 2] +
-            "/" +
-            filename[filename.length - 1]
-        );
+        //const filename = href.split("/");
+        // console.log(
+        //   "register download event: ",
+        //   "/" +
+        //     filename[filename.length - 3] +
+        //     "/" +
+        //     filename[filename.length - 2] +
+        //     "/" +
+        //     filename[filename.length - 1]
+        // );
         //console.log(href);
         this.$ga.event({
           eventCategory: "File",
           eventAction: "Download",
-          eventLabel: filename
+          eventLabel: href
         });
         // const win = window.open(href, "_blank");
         // win.focus();
