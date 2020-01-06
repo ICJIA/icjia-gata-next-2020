@@ -32,6 +32,7 @@
               <div
                 class="dynamic-content markdown-body"
                 v-html="page.content.html"
+                @click="handleClicks"
               />
             </v-col>
             <v-col

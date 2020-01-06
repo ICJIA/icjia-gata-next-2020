@@ -60,7 +60,7 @@ export default {
     // eslint-disable-next-line no-unused-vars
     $route(to, from) {
       this.canonical = "https://icjia.illinois.gov/gata" + this.$route.path;
-      console.log(this.canonical);
+      // console.log(this.canonical);
     }
   },
   async mounted() {},
