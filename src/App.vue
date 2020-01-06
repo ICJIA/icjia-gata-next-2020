@@ -55,7 +55,8 @@ export default {
   watch: {
     // eslint-disable-next-line no-unused-vars
     $route(to, from) {
-      this.canonical = "https://www.example.com" + this.$route.path;
+      this.canonical = "https://icjia.illinois.gov/gata" + this.$route.path;
+      console.log(this.canonical);
     }
   },
   async mounted() {},

@@ -2,14 +2,15 @@ a {
   color: #0d4474;
   font-weight: 900;
 }
-.page-enter-active,
-.page-leave-active {
+.fade-enter-active,
+.fade-leave-active {
+  transition-duration: 0.2s;
   transition-property: opacity;
-  transition-timing-function: ease-in-out;
-  transition-duration: 200ms;
+  transition-timing-function: ease;
 }
-.page-enter,
-.page-leave-to {
+
+.fade-enter,
+.fade-leave-active {
   opacity: 0;
 }
 .hover {
@@ -73,7 +74,7 @@ h1 {
 .markdown-body h2,
 h2 {
   font-size: 1.7em !important;
-  line-height: 1.8em;
+  line-height: 1.4em;
 }
 
 h2.news-headline {

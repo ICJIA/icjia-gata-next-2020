@@ -26,30 +26,42 @@ const router = new Router({
       component: Home,
       meta: {}
     },
-    {
-      path: "/:slug",
-      name: "page",
-      component: () => import(/* webpackChunkName: "Page" */ "./views/Page.vue")
-    }
 
     /**
      *
      * Funding
      *
      */
-    // {
-    //   path: "/funding/:slug",
-    //   name: "fundingSingle",
-    //   component: () =>
-    //     import(/* webpackChunkName: "funding" */ "./views/FundingSingle.vue")
-    // },
+    {
+      path: "/funding/:slug",
+      name: "fundingSingle",
+      component: () =>
+        import(/* webpackChunkName: "funding" */ "@/views/FundingSingle.vue")
+    },
 
-    // {
-    //   path: "/funding",
-    //   name: "funding",
-    //   component: () =>
-    //     import(/* webpackChunkName: "funding" */ "./views/Funding.vue")
-    // }
+    {
+      path: "/funding",
+      name: "funding",
+      component: () =>
+        import(/* webpackChunkName: "funding" */ "@/views/Funding.vue")
+    },
+
+    {
+      path: "/404",
+      name: "404",
+      component: () => import(/* webpackChunkName: '404' */ "@/views/404.vue")
+    },
+    {
+      path: "/sandbox",
+      name: "sandbox",
+      component: () =>
+        import(/* webpackChunkName: '404' */ "@/views/Sandbox.vue")
+    },
+    {
+      path: "/:slug",
+      name: "page",
+      component: () => import(/* webpackChunkName: "Page" */ "@/views/Page.vue")
+    }
   ]
 });
 

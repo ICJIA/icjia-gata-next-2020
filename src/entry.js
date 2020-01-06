@@ -9,7 +9,7 @@
 
 //   banner =
 //     banner +
-//     "<h1>The <a href='/'>Adult Redeploy Illinois website</a> does not support Internet Explorer.";
+//     "<h1>The <a href='/'>The ICJIA GATA website</a> does not support Internet Explorer.";
 //   banner =
 //     banner +
 //     "<br><br>Please upgrade to a modern, secure browser such as <a href='https://www.google.com/chrome/'>Chrome</a>, <a href='https://www.mozilla.org/en-US/firefox/new/'>Firefox</a>, or <a href='https://www.microsoft.com/en-us/windows/microsoft-edge'>MS Edge</a>.</h1>";

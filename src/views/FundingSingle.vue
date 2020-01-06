@@ -110,25 +110,20 @@ export default {
         return this.showToc ? "9" : "12";
       }
     },
-    updateRender() {
-      this.renderKey = this.renderKey + 1;
-    },
+
     async fetchContent() {
       this.loading = true;
       let page = {};
       try {
-        page.content = await getContent("pages", this.$route.params.slug);
+        page.content = await getContent("funding", this.$route.params.slug);
         page.error = null;
         page.status = 200;
-        if (this.$route.params.slug === "home") {
-          page.redirect = "/";
-          page.loading = true;
-        } else {
-          page.redirect = null;
-          page.loading = false;
-        }
+
+        page.redirect = null;
+        page.loading = false;
       } catch (error) {
         this.loading = false;
+        console.log(error);
         this.$router.push(`/404`);
       }
       this.page = page;
@@ -137,6 +132,7 @@ export default {
         this.showToc = this.page.content.showToc;
         this.loading = false;
       }
+      this.loading = false;
     }
   }
 };

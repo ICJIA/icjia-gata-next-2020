@@ -1,39 +1,25 @@
 <template>
-  <v-footer
-    dark
-    padless
-    class="noprint"
-  >
+  <v-footer dark padless class="noprint">
     <v-card
       flat
       tile
       class="white--text text-center"
-      
       style="width: 100%; background: #235e8e"
     >
       <v-card-text>
-        <span
-          v-for="link in pages"
-          :key="link.title"
-          class="flexitem"
-        >
+        <span v-for="link in pages" :key="link.title" class="flexitem">
           <span v-if="link.displayFooter && link.status === 'live'">
             <v-btn
               :to="link.slug === 'home' ? '/' : `/${link.slug}`"
               depressed
               class=" mr-1"
-              
               style="background: #235e8e; font-weight: 900 !important"
               :aria-label="link.title"
             >
-              <span
-                v-if="link.menuTitle"
-                style="font-size: 12px"
-              >{{ link.menuTitle }}</span>
-              <span
-                v-else
-                style="font-size: 12px"
-              >{{ link.title }}</span>
+              <span v-if="link.menuTitle" style="font-size: 12px">{{
+                link.menuTitle
+              }}</span>
+              <span v-else style="font-size: 12px">{{ link.title }}</span>
             </v-btn>
           </span>
         </span>
@@ -43,7 +29,6 @@
       flat
       tile
       class="white--text text-center"
-     
       style="width: 100%; background: #0D4474"
     >
       <v-divider />
@@ -54,8 +39,8 @@
           alt="Illinois Criminal Justice Information Authority"
           width="65"
           class="mt-3"
-        >
-        <br>
+        />
+        <br />
 
         <v-btn
           v-for="icon in icons"
@@ -68,21 +53,22 @@
             {{ icon }}
           </v-icon>
         </v-btn>
-        <br>
+        <br />
         <div style="font-size: 12px">
           {{ new Date().getFullYear() }}
           <strong>
-            <a
-              href="http://www.icjia.state.il.us"
-              class="footer-link"
-            >Illinois Criminal Justice Information Authority</a> </strong>&nbsp;|&nbsp;
+            <a href="http://www.icjia.state.il.us" class="footer-link"
+              >Illinois Criminal Justice Information Authority</a
+            > </strong
+          >&nbsp;|&nbsp;
           <strong>
             <a
-              href="https://github.com/ICJIA/adult-redeploy-client-next"
+              href="https://github.com/ICJIA/icjia-gata-next-2.0"
               target="_blank"
               class="footer-link"
               rel="noreferrer"
-            >Github</a>
+              >Github</a
+            >
           </strong>
         </div>
       </v-card-text>
@@ -91,7 +77,7 @@
 </template>
 
 <script>
-import { getAllPages } from '@/services/Content'
+import { getAllPages } from "@/services/Content";
 export default {
   props: {
     // sections: {
@@ -100,20 +86,20 @@ export default {
     // }
   },
   data: () => ({
-    icons: ['fab fa-facebook', 'fab fa-twitter'],
+    icons: ["fab fa-facebook", "fab fa-twitter"],
     loading: true,
     pages: []
   }),
   async created() {
-    this.pages = await getAllPages()
-    this.loading = false
+    this.pages = await getAllPages();
+    this.loading = false;
   },
   methods: {
     getArchive() {
-      return `https://${process.env.VUE_APP_ARCHIVE_SERVER_URL}`
+      return `https://${process.env.VUE_APP_ARCHIVE_SERVER_URL}`;
     }
   }
-}
+};
 </script>
 
 <style>
