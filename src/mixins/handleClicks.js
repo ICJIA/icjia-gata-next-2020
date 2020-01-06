@@ -85,8 +85,9 @@ export const handleClicks = {
           eventAction: "Download",
           eventLabel: filename
         });
-        const win = window.open(href, "_blank");
-        win.focus();
+        // const win = window.open(href, "_blank");
+        // win.focus();
+        location.href = href;
       }
       // TODO: Add YouTube Event tracking
     }
