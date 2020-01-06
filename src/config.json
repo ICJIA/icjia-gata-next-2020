@@ -1,7 +1,7 @@
 {
   "clientURL": "https://icjia.illinois.gov",
-  "publicPath": "/ie11",
-  "base": "ie11",
+  "publicPath": "/gata",
+  "base": "gata",
 
   "search": {
     "shouldSort": true,
