@@ -8,9 +8,20 @@
       :width="logoWidth()"
       style="margin-left: -5px; margin-right: 8px;"
       class="hover"
-      @click="$router.push('/')"
+      @click="
+        $router.push('/').catch(err => {
+          $vuetify.goTo(0);
+        })
+      "
     />&nbsp;&nbsp;&nbsp;&nbsp;
-    <v-toolbar-title class="heavy hover" @click="$router.push('/')">
+    <v-toolbar-title
+      class="heavy hover"
+      @click="
+        $router.push('/').catch(err => {
+          $vuetify.goTo(0);
+        })
+      "
+    >
       <span style="" class="agency hover">ICJIA GATA INFORMATION</span>
     </v-toolbar-title>
     <v-spacer />
@@ -20,10 +31,16 @@
       style="font-weight: 900"
       class="hover hidden-sm-and-down"
       @click="toggleDrawer"
+      aria-label="Menu"
     >
       MENU&nbsp;
     </span>
-    <v-app-bar-nav-icon style="color: black" large @click="toggleDrawer" />
+    <v-app-bar-nav-icon
+      aria-label="Menu"
+      style="color: black"
+      large
+      @click="toggleDrawer"
+    />
   </v-app-bar>
 </template>
 

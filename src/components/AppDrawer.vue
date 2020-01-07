@@ -56,7 +56,6 @@
           </div>
         </div>
       </v-list>
-      <v-spacer></v-spacer>
     </v-row>
   </v-navigation-drawer>
 </template>
