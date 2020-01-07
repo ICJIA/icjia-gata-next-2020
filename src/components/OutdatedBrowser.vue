@@ -30,10 +30,11 @@
       class="text-center pt-12 pb-12"
       style="font-size: 18px; color: #fff; font-weight: 900"
     >
-      You're using <span style="font-weight: 900">Internet Explorer</span>.
-      Internet Explorer is outdated and will not display everything correctly
-      for this website.<br /><br />ICJIA recommends updating to a safe, secure,
-      modern browser.<br /><br />Please download the latest version of
+      You're using
+      <span style="font-weight: 900"
+        >an outdated version of Internet Explorer</span
+      >.<br /><br />ICJIA recommends updating to a safe, secure, modern
+      browser.<br /><br />Please download the latest version of
       <a href="https://www.google.com/chrome" target="_blank" rel="noreferrer"
         >Chrome</a
       >,
@@ -48,7 +49,8 @@
         rel="noreferrer"
         target="_blank"
         >Microsoft Edge</a
-      >.
+      >
+      to properly view the ICJIA GATA website.
     </div>
 
     <!-- <template v-slot:actions>
