@@ -4,19 +4,10 @@
       class="mb-10 elevation-1 py-6 px-6 funding-card"
       @click="routeToItem(item)"
     >
-      <div
-        v-if="toggleState === 'expired'"
-        class="expired"
-      >
+      <div v-if="toggleState === 'expired'" class="expired">
         Expired: {{ item.expires | format }}
       </div>
-      <div
-        v-else
-        class="current"
-      >
-        Expires: {{ item.expires | format }}
-      </div>
-      
+      <div v-else class="current">Expires: {{ item.expires | format }}</div>
 
       <h2 class="pt-8">
         {{ item.title }}
@@ -40,15 +31,15 @@ export default {
     },
     toggleState: {
       type: String,
-      default: ''
+      default: ""
     }
   },
   methods: {
     routeToItem(item) {
-      this.$router.push(item.path)
+      this.$router.push(item.path);
     }
   }
-}
+};
 </script>
 
 <style>

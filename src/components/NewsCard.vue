@@ -1,4 +1,3 @@
-
 <template>
   <div>
     <v-card
@@ -10,10 +9,7 @@
       }"
     >
       <v-row>
-        <v-col
-          v-if="displayNewsLink"
-          cols="12"
-        >
+        <v-col v-if="displayNewsLink" cols="12">
           <div class="text-right mr-10">
             <div
               class="heavy category hover"
@@ -32,39 +28,23 @@
       <v-list-item three-line>
         <v-list-item-content>
           {{ content.posted | format }}
-          <h2
-            class="news-headline"
-            style=""
-          >
-            <router-link
-              :to="`/news/${content.slug}`"
-              class="news-link"
-            >
-              {{
-                content.title
-              }}
+          <h2 class="news-headline" style="">
+            <router-link :to="`/news/${content.slug}`" class="news-link">
+              {{ content.title }}
             </router-link>
           </h2>
         </v-list-item-content>
       </v-list-item>
-      <v-card-text
-        style="font-size: 14px"
-        class=""
-      >
+      <v-card-text style="font-size: 14px" class="">
         <div
-         
           class="dynamic-content markdown-body"
           @click="handleClicks"
           v-html="content.html"
         />
-       
+
         <v-container class="mt-4">
           <v-row>
-            <v-col
-              cols="12"
-              sm="12"
-              md="12"
-            >
+            <v-col cols="12" sm="12" md="12">
               <!-- <div
                 class="text-right"
                 v-if="
@@ -84,7 +64,7 @@
 
 <script>
 /* eslint-disable vue/no-v-html */
-import { handleClicks } from '@/mixins/handleClicks'
+import { handleClicks } from "@/mixins/handleClicks";
 
 export default {
   components: {},
@@ -112,10 +92,10 @@ export default {
     }
   },
   data() {
-    return {}
+    return {};
   },
   methods: {}
-}
+};
 </script>
 
 <style>
