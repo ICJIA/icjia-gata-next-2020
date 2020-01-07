@@ -49,6 +49,7 @@ export default {
     };
   },
   mounted() {
+    NProgress.done();
     try {
       const referrer = localStorage.getItem(process.env.VUE_APP_LS_ROUTE_KEY);
       this.debug = {};

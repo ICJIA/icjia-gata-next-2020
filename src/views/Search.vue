@@ -90,6 +90,7 @@ export default {
     }
   },
   async created() {
+    NProgress.start();
     this.loading = true;
     let page = {};
     try {
@@ -111,6 +112,7 @@ export default {
 
     this.page = page;
     this.loading = false;
+    NProgress.done();
   }
 };
 </script>

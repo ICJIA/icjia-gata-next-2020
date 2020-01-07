@@ -132,6 +132,7 @@ export default {
         .catch(err => {});
     },
     async fetchContent() {
+      NProgress.start();
       this.loading = true;
       let page = {};
       try {
@@ -160,6 +161,7 @@ export default {
         });
         //console.log("title: ", this.pageTitle);
         this.loading = false;
+        NProgress.done();
       }
     }
   }

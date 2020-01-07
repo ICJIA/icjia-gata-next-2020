@@ -133,6 +133,7 @@ export default {
     },
 
     async fetchContent() {
+      NProgress.start();
       this.loading = true;
       let page = {};
       try {
@@ -159,6 +160,7 @@ export default {
         });
       }
       this.loading = false;
+      NProgress.done();
     }
   }
 };

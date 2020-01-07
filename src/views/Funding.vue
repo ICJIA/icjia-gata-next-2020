@@ -90,6 +90,7 @@ export default {
       this.toggleState = state;
       //console.log(this.toggleState)
     });
+    NProgress.start();
     this.loading = true;
     let page = {};
     try {
@@ -113,6 +114,7 @@ export default {
       });
     }
     this.loading = false;
+    NProgress.done();
   }
 };
 </script>

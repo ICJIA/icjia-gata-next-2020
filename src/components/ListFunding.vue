@@ -50,6 +50,7 @@ export default {
   },
   watch: {
     toggleState(newValue, oldValue) {
+      NProgress.start();
       this.loading = true;
       const today = new Date();
       const target = new Date(today.setHours(0, 0, 0, 0));
@@ -86,6 +87,7 @@ export default {
       }
       this.filteredFunding = filteredFunding;
       this.loading = false;
+      NProgress.done();
     }
   }
 };
