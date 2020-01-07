@@ -159,6 +159,7 @@ siteArray.forEach(obj => {
         meta.expires = item.expires;
         meta.path = item.path;
         meta.status = item.status;
+
         if (item.dividerAfter) {
           meta.dividerAfter = item.dividerAfter;
         } else {

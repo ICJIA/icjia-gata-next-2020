@@ -22,7 +22,7 @@
         })
       "
     >
-      <span style="" class="agency hover">ICJIA GATA INFORMATION</span>
+      <span style="" class="agency hover">GATA INFORMATION</span>
     </v-toolbar-title>
     <v-spacer />
 
