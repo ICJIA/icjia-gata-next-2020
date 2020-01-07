@@ -1,5 +1,5 @@
 <template>
-  <div style="margin-top: 120px; background: red;" v-if="displayBanner">
+  <div style="margin-top: 120px; background: #EF534F;" v-if="displayBanner">
     <!-- <h1 style="color: #555; font-size: 20px">
       You're using an <strong>outdated</strong> version of Internet Explorer.<br /><br />We
       recommend updating to a more secure, modern browser.<br /><br />Please

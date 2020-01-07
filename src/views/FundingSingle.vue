@@ -7,10 +7,10 @@
       :loading="page.loading"
       style="margin-top: 100px"
     >
-      <template v-if="isExpired" slot="expired">
+      <template v-if="isExpired && !$browserDetect.isIE" slot="expired">
         <div
-          style="background: #EF5350; color: #fff; font-weight: bold; font-size: 20px; margin-left: -20px; margin-right: -20px; margin-top: -10px !important"
-          class="px-2 py-12 text-center mb-10"
+          style="background: #EF5350; color: #fff; font-weight: bold; font-size: 18px; margin-left: -20px; margin-right: -20px; margin-top: -10px"
+          class="px-2 py-2 text-center mb-10"
         >
           THIS FUNDING OPPORTUNITY HAS EXPIRED
         </div>
