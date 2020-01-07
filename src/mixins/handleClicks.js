@@ -80,10 +80,11 @@ export const handleClicks = {
         //     filename[filename.length - 1]
         // );
         //console.log(href);
+        let filename = href.replace(/https:\/\/icjia.illinois.gov\/gata/, "");
         this.$ga.event({
           eventCategory: "File",
           eventAction: "Download",
-          eventLabel: href
+          eventLabel: filename
         });
         // const win = window.open(href, "_blank");
         // win.focus();
