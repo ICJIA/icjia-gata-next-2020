@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "NODE_ENV=development node generateApi.js && vue-cli-service serve",
-    "build": "NODE_ENV=production node generateApi.js && vue-cli-service build ",
+    "serve": "NODE_ENV=development node generateApi.js && node generateSitemap.js && vue-cli-service serve",
+    "build": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build ",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "deploy": "NODE_ENV=production node generateApi.js && vue-cli-service build ",
+    "deploy": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build ",
     "build:lambda": "netlify-lambda build ./src/lambda",
     "start:lambda": "netlify-lambda serve ./src/lambda"
   },
