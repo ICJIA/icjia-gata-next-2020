@@ -86,7 +86,7 @@ export const handleClicks = {
           eventAction: "Download",
           eventLabel: filename
         });
-        // const win = window.open(href, "_blank");
+        // const win = window.open(href);
         // win.focus();
         location.href = href;
       }
