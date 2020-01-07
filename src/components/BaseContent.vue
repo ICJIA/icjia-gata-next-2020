@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="px-4" v-if="!loading">
+      <slot name="expired" />
       <slot name="title"></slot>
       <slot name="printer"></slot>
       <slot name="content"></slot>
