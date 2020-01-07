@@ -63,6 +63,15 @@
           >&nbsp;|&nbsp;
           <strong>
             <a
+              href="https://archive.icjia.cloud"
+              target="_blank"
+              class="footer-link"
+              rel="noreferrer"
+              >ICJIA Document Archive</a
+            > </strong
+          >&nbsp;|&nbsp;
+          <strong>
+            <a
               href="https://github.com/ICJIA/icjia-gata-next-2020"
               target="_blank"
               class="footer-link"
