@@ -8,10 +8,12 @@
     />
     <div v-for="(result, index) in queryResults" :key="index" class="px-4 py-3">
       <div v-if="query.length">
-        <router-link :to="result.path" style="text-decoration: none">
+        <div @click="routeAndLogEvent(result)" class="hover searchTitle">
           <h2>{{ result.title }}</h2>
-        </router-link>
-        <p>{{ result.excerpt }}</p>
+        </div>
+        <p class="hover" @click="routeAndLogEvent(result)">
+          {{ result.excerpt }}
+        </p>
       </div>
     </div>
   </v-form>
@@ -60,9 +62,25 @@ export default {
   methods: {
     instantSearch() {
       this.queryResults = this.fuse.search(this.query);
+    },
+    routeAndLogEvent(item) {
+      if (!item.path) return;
+      console.log(this.query + " --> ", item.path);
+      this.$ga.event({
+        eventCategory: "Search Conversion",
+        eventAction: "Click",
+        eventLabel: "Query: '" + this.query + "' --> " + `${item.path}`
+      });
+      this.$router.push(`${item.path}`).catch(err => {
+        this.$vuetify.goTo(0);
+      });
     }
   }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.searchTitle:hover {
+  color: #777;
+}
+</style>

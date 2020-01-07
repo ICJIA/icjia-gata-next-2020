@@ -27,10 +27,7 @@
           :key="index"
           @click="scrollTo(item.id)"
         >
-          <span
-            :id="`scrollTo-${item.id}`"
-            class="tocItem"
-          >{{
+          <span :id="`scrollTo-${item.id}`" class="tocItem">{{
             item.text
           }}</span>
         </li>
@@ -44,15 +41,15 @@ export default {
   props: {
     selector: {
       type: String,
-      default: '#scrollArea'
+      default: "#scrollArea"
     },
     tocHeading: {
       type: String,
-      default: 'NAVIGATION'
+      default: "NAVIGATION"
     },
     top: {
       type: String,
-      default: '#baseContentTop'
+      default: "#baseContentTop"
     },
     mini: {
       type: Boolean,
@@ -67,67 +64,67 @@ export default {
   data() {
     return {
       toc: []
-    }
+    };
   },
   async mounted() {
-    await this.setToc()
-    var section = document.querySelectorAll('h2')
+    await this.setToc();
+    var section = document.querySelectorAll("h2");
     if (section) {
-      var sections = {}
-      var i = 0
-      this.$refs['anchor'].classList.add('visible')
+      var sections = {};
+      var i = 0;
+      this.$refs["anchor"].classList.add("visible");
       section.forEach(e => {
-        sections[e.id] = e.offsetTop - 100
-      })
+        sections[e.id] = e.offsetTop - 100;
+      });
 
       if (this.enableTracking) {
         window.onscroll = () => {
           var scrollPosition =
-            document.documentElement.scrollTop || document.body.scrollTop
-          const tocItems = document.querySelectorAll('.tocItem')
+            document.documentElement.scrollTop || document.body.scrollTop;
+          const tocItems = document.querySelectorAll(".tocItem");
 
           if (scrollPosition < 100) {
             tocItems.forEach(toc => {
-              toc.classList.remove('visible')
-            })
-            this.$refs['anchor'].classList.add('visible')
+              toc.classList.remove("visible");
+            });
+            this.$refs["anchor"].classList.add("visible");
           } else {
-            this.$refs['anchor'].classList.remove('visible')
+            this.$refs["anchor"].classList.remove("visible");
           }
           //console.log(scrollPosition);
           for (i in sections) {
             if (sections[i] <= scrollPosition) {
-              const sectionItem = document.getElementById(`scrollTo-${i}`)
+              const sectionItem = document.getElementById(`scrollTo-${i}`);
 
               tocItems.forEach(toc => {
-                toc.classList.remove('visible')
-              })
-              sectionItem.classList.add('visible')
+                toc.classList.remove("visible");
+              });
+              sectionItem.classList.add("visible");
             }
           }
-        }
+        };
       }
     }
   },
   beforeDestroy() {
-    window.onscroll = () => {}
+    window.onscroll = () => {};
   },
   methods: {
     scrollTo(id) {
       //console.log(id);
-      this.$vuetify.goTo(`#${id}`, { offset: 100 })
+      this.$vuetify.goTo(`#${id}`, { offset: 100 });
     },
     setToc() {
-      const sections = Array.from(document.querySelectorAll('h2'))
+      const sections = Array.from(document.querySelectorAll("h2"));
       sections.forEach(section => {
-        let obj = {}
-        obj.text = section.innerText
-        obj.id = section.id
-        this.toc.push(obj)
-      })
+        let obj = {};
+        obj.text = section.innerText;
+        obj.id = section.id;
+        this.toc.push(obj);
+      });
     }
   }
-}
+};
 </script>
 
 <style>
