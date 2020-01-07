@@ -63,7 +63,7 @@
           >&nbsp;|&nbsp;
           <strong>
             <a
-              href="https://github.com/ICJIA/icjia-gata-next-2.0"
+              href="https://github.com/ICJIA/icjia-gata-next-2020"
               target="_blank"
               class="footer-link"
               rel="noreferrer"
