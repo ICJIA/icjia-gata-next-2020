@@ -28,6 +28,18 @@
               order-md="1"
               order="2"
               order-sm="2"
+              class="mb-5"
+              style="margin-top: -35px; font-size: 14px; font-weight: bold; color: #555"
+            >
+              {{ page.content.posted | format }}
+            </v-col>
+            <v-col
+              cols="12"
+              sm="12"
+              :md="dynamicFlex()"
+              order-md="1"
+              order="2"
+              order-sm="2"
             >
               <div
                 class="dynamic-content markdown-body"
