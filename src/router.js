@@ -26,6 +26,16 @@ const router = new Router({
       component: Home,
       meta: {}
     },
+    /**
+     *
+     * Technical Assistance redirect
+     *
+     */
+
+    {
+      path: "/technical-assistance",
+      redirect: "/ta"
+    },
 
     /**
      *
