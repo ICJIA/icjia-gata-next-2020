@@ -33,8 +33,8 @@ const router = new Router({
      */
 
     {
-      path: "/technical-assistance",
-      redirect: "/ta"
+      path: "/ta",
+      redirect: "/technical-assistance"
     },
 
     /**
