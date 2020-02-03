@@ -4,6 +4,7 @@ const sm = require("sitemap");
 const routes = require("./routes");
 
 let urls = routes.map(route => {
+  console.log(route);
   let obj = {};
   obj.url = `${config.clientURL}${config.publicPath}${route}`;
   obj.changefreq = "weekly";

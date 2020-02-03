@@ -1,10 +1,10 @@
 ---
-title: 'Important Announcement for All State Agencies and Grantee Organizations'
-created: '2017-04-04'
-posted: '2017-04-04'
-excerpt: 'Announcing the public release of the Catalog of State Financial Assistance (CSFA) and the Grantee Compliance Enforcement System.'
-status: 'live'
-section: 'news'
+title: "Important Announcement for All State Agencies and Grantee Organizations"
+created: "2017-04-04"
+posted: "2017-04-04"
+excerpt: "Announcing the public release of the Catalog of State Financial Assistance (CSFA) and the Grantee Compliance Enforcement System."
+status: "live"
+section: "news"
 showToc: true
 ---
 
