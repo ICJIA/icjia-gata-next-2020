@@ -69,6 +69,20 @@ const router = new Router({
     },
     /**
      *
+     * Registration
+     *
+     */
+
+    // {
+    //   path: "/registration",
+    //   name: "registration",
+    //   component: () =>
+    //     import(
+    //       /* webpackChunkName: 'registration' */ "@/views/Registration.vue"
+    //     )
+    // },
+    /**
+     *
      * News
      *
      */
