@@ -5,7 +5,7 @@
         <v-col>
           <div style="margin-top: 100px">
             <h1 class="page-title mb-10">
-              GATA EVENT REGISTRATION
+              GATA WORKSHOP REGISTRATION
             </h1>
 
             <v-card class="hidden-sm-and-down mb-12">
