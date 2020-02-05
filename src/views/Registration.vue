@@ -1,14 +1,19 @@
 <template>
   <div>
-    <v-container>
+    <v-container
+      v-if="
+        $vuetify.breakpoint.md ||
+          $vuetify.breakpoint.lg ||
+          $vuetify.breakpoint.xl
+      "
+    >
       <v-row>
         <v-col>
           <div style="margin-top: 100px">
             <h1 class="page-title mb-10">
               GATA WORKSHOP REGISTRATION
             </h1>
-
-            <v-card class="hidden-sm-and-down mb-12">
+            <v-card>
               <v-tabs
                 v-model="tab"
                 grow
@@ -19,29 +24,55 @@
                 <v-tabs-slider></v-tabs-slider>
 
                 <v-tab href="#tab-by-date">
-                  Events by Date
-                  <v-icon>calendar_today</v-icon>
+                  All Workshops
+
+                  <v-icon
+                    v-if="loading"
+                    left
+                    :disabled="loading"
+                    class="custom-loader"
+                    color="blue darken-4"
+                    >cached</v-icon
+                  >
+                  <v-icon v-else left>format_align_justify</v-icon>
                 </v-tab>
 
                 <v-tab :disabled="loading" href="#tab-map">
-                  Events by Location
-                  <v-icon>add_location</v-icon>
+                  Workshops by Location
+                  <v-icon
+                    v-if="loading"
+                    left
+                    :disabled="loading"
+                    class="custom-loader"
+                    color="blue darken-4"
+                    >cached</v-icon
+                  >
+                  <v-icon v-else left>add_location</v-icon>
                 </v-tab>
 
                 <v-tab :disabled="loading" href="#tab-full-list">
-                  All Events
-                  <v-icon class="material-icons">format_align_justify</v-icon>
+                  Workshops by Date
+                  <v-icon
+                    v-if="loading"
+                    left
+                    :disabled="loading"
+                    class="custom-loader"
+                    color="blue darken-4"
+                    >cached</v-icon
+                  >
+                  <v-icon v-else left>calendar_today</v-icon>
                 </v-tab>
               </v-tabs>
 
               <v-tabs-items v-model="tab">
                 <v-tab-item value="tab-by-date" :eager="true">
-                  <v-card flat>
-                    <EventCalendar
-                      :events="events"
-                      :loading="loading"
-                      :showTitle="false"
-                    ></EventCalendar>
+                  <v-card flat px-3>
+                    <v-card-text>
+                      <EventList
+                        :events="events"
+                        :loading="loading"
+                      ></EventList>
+                    </v-card-text>
                   </v-card>
                 </v-tab-item>
 
@@ -58,34 +89,38 @@
 
                 <v-tab-item value="tab-full-list" :eager="true">
                   <v-card flat>
-                    <v-card-text
-                      ><EventList
+                    <v-card-text>
+                      <EventCalendar
                         :events="events"
                         :loading="loading"
-                      ></EventList
+                        :showTitle="false"
+                      ></EventCalendar
                     ></v-card-text>
                   </v-card>
                 </v-tab-item>
               </v-tabs-items>
             </v-card>
-            <div class="hidden-md-and-up">
-              <v-card flat>
-                <v-card-text
-                  ><EventList :events="events" :loading="loading"></EventList
-                ></v-card-text>
-              </v-card>
-              <div v-if="loading" class="text-center">
-                <v-progress-circular
-                  :size="60"
-                  :width="7"
-                  color="purple"
-                  class="mt-10"
-                  indeterminate
-                ></v-progress-circular>
-              </div>
-              <EventList v-else :events="events"></EventList>
-            </div>
           </div>
+        </v-col>
+      </v-row>
+    </v-container>
+    <v-container v-else style="margin-top: 90px">
+      <v-row>
+        <v-col>
+          <div class="text-center">
+            <h1 class="page-title mb-5">
+              GATA WORKSHOP REGISTRATION
+            </h1>
+          </div>
+          <v-card flat>
+            <v-card-text>
+              <EventList
+                :events="events"
+                :loading="loading"
+                domElement="h2.tocHeadingList"
+              ></EventList>
+            </v-card-text>
+          </v-card>
         </v-col>
       </v-row>
     </v-container>
@@ -96,6 +131,7 @@
 /* eslint-disable vue/no-unused-components */
 
 import axios from "axios";
+
 import EventCalendar from "@/components/EventCalendar";
 import EventMap from "@/components/EventMap";
 import EventList from "@/components/EventList";
@@ -108,16 +144,7 @@ export default {
   created() {
     this.getEventBriteEvents();
   },
-  watch: {
-    tab(newValue, oldValue) {
-      if (newValue === "tab-by-date") {
-        this.hideInstructions = true;
-      } else {
-        this.hideInstructions = false;
-      }
-    }
-  },
-
+  mounted() {},
   methods: {
     getColor(name) {
       let type = name.split(":");
@@ -131,6 +158,7 @@ export default {
         return "red";
       }
     },
+
     async getEventBriteEvents() {
       this.loading = true;
       let events = null;
@@ -159,8 +187,7 @@ export default {
     tab: null,
     isError: true,
     errorMsg: null,
-    clientGeolocation: null,
-    hideInstructions: false
+    clientGeolocation: null
   })
 };
 </script>

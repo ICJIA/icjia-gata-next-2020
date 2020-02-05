@@ -1,14 +1,5 @@
 <template>
   <div>
-    <div v-if="!displayInfo">
-      <div class="text-center">
-        <div class="py-3">
-          <h4 style="color: #999;" class="animated fadeIn text-center mt-2">
-            Click marker view events.
-          </h4>
-        </div>
-      </div>
-    </div>
     <GmapMap
       :center="center"
       :zoom="6"
@@ -32,7 +23,18 @@
         @click="displayUpcomingEvents(m, i)"
       ></gmap-marker>
     </GmapMap>
-
+    <div v-if="!displayInfo">
+      <div class="text-center">
+        <div class="py-3">
+          <h2
+            style="color: #888; font-size: 14px  !important;"
+            class="animated fadeInLeft"
+          >
+            Click marker for venue information.
+          </h2>
+        </div>
+      </div>
+    </div>
     <div id="upcoming-events">
       <div v-if="displayInfo" class="mt-3">
         <div v-for="event in eventsAtThisPosition" :key="event.details.id">

@@ -38,12 +38,23 @@
       <!-- <v-card-title>Availability</v-card-title> -->
 
       <v-card-actions class="mt-3">
-        <v-chip class="seats-available">
+        <v-chip
+          class="seats-available hidden-sm-and-down"
+          style="font-size: 14px"
+        >
           {{ seatsRemaing }}
           seats remaining</v-chip
         >
+        <v-chip
+          class="seats-available hidden-md-and-up"
+          style="font-size: 12px"
+        >
+          {{ seatsRemaing }}
+          seats left</v-chip
+        >
         <v-spacer></v-spacer>
         <v-btn
+          small
           v-if="seatsRemaing > 0"
           color="blue darken-4"
           :href="event.details.url"
@@ -51,11 +62,12 @@
           class="mr-5"
           dark
         >
-          Register Now&nbsp;
-          <v-icon small right>open_in_new</v-icon>
+          Register<span class="hidden-sm-and-down"> Now&nbsp;</span
+          ><v-icon small right>open_in_new</v-icon>
         </v-btn>
         <v-btn
           v-else
+          small
           dark
           color="red lighten-2"
           :href="event.details.url"

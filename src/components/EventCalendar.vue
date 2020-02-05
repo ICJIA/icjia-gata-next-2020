@@ -1,14 +1,10 @@
 <template>
-  <div>
+  <div style="margin-top: -50px">
     <v-container
       ><v-row
         ><v-col>
           <!-- {{ this.start.date }} - {{ this.end.date }} - {{ this.type }} -->
-          <h4 style="color: #999;" class="animated fadeIn text-center mb-5">
-            Click event to register and view venue information.
-          </h4>
-
-          <!-- <div style="min-height: 30px">
+          <div style="min-height: 30px">
             <div
               class="text-right"
               style="max-height: 20px; font-size: 12px; font-weight: 900; color: #B71C1C"
@@ -16,13 +12,13 @@
             >
               Fetching GATA events
             </div>
-          </div> -->
+          </div>
           <v-sheet tile height="54" color="grey lighten-3" class="d-flex ">
             <v-btn class="mt-2" icon @click="$refs.calendar.prev()">
               <v-icon>mdi-chevron-left</v-icon>
             </v-btn>
             <span
-              style="font-weight: 900; font-size: 24px; margin-top: 8px; "
+              style="font-weight: 900; font-size: 24px; margin-top: 14px; "
               class="hover "
               @click="setCalendar('month')"
             >
@@ -104,7 +100,7 @@
               @click:more="viewDay"
               @click:date="viewDay"
               :events="events"
-              event-overlap-mode="stack"
+              :event-overlap-mode="mode"
               :event-overlap-threshold="30"
               :event-color="getEventColor"
               @change="getEvents"

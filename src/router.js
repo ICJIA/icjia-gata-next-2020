@@ -73,14 +73,14 @@ const router = new Router({
      *
      */
 
-    // {
-    //   path: "/registration",
-    //   name: "registration",
-    //   component: () =>
-    //     import(
-    //       /* webpackChunkName: 'registration' */ "@/views/Registration.vue"
-    //     )
-    // },
+    {
+      path: "/registration",
+      name: "registration",
+      component: () =>
+        import(
+          /* webpackChunkName: 'registration' */ "@/views/Registration.vue"
+        )
+    },
     /**
      *
      * News
