@@ -35,7 +35,7 @@
               <h3
                 v-else
                 class="pl-3"
-                style="font-weight: 700;"
+                style="font-weight: 700; line-height: 1.5em;"
                 @click="
                   $router.push(`/${item.slug}`).catch(err => {
                     $vuetify.goTo(0);
