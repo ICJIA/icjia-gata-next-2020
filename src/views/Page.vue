@@ -49,6 +49,7 @@
                 top="#baseContentTop"
                 :enable-tracking="page.content.enableTracking"
                 :key="page.content.title"
+                :tocHeading="page.content.title"
               />
             </v-col>
           </v-row>
