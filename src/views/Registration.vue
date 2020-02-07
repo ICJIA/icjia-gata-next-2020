@@ -181,6 +181,7 @@ export default {
     },
 
     async getEventBriteEvents() {
+      NProgress.start();
       this.loading = true;
       let events = null;
       //events = await axios.get(`/.netlify/functions/events`);
@@ -214,7 +215,7 @@ export default {
       );
 
       //console.log(this.workshopsLastUpdated);
-
+      NProgress.done();
       this.loading = false;
     }
   },
