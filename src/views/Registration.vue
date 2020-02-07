@@ -7,12 +7,13 @@
           $vuetify.breakpoint.xl
       "
     >
-      <v-row>
+      <v-row class="mb-12">
         <v-col>
           <div style="margin-top: 100px">
             <h1 class="page-title mb-10">
               GATA WORKSHOP REGISTRATION
             </h1>
+
             <v-card>
               <v-tabs
                 v-model="tab"
@@ -100,6 +101,16 @@
                 </v-tab-item>
               </v-tabs-items>
             </v-card>
+            <div
+              v-if="!loading"
+              class="text-right mt-2"
+              style="font-size: 12px; font-weight: 900; color: #888"
+            >
+              Workshop list last updated:
+              <span style="color: #2758A9">{{
+                moment(workshopsLastUpdated).fromNow()
+              }}</span>
+            </div>
           </div>
         </v-col>
       </v-row>
@@ -111,6 +122,16 @@
             <h1 class="page-title mb-5">
               GATA WORKSHOP REGISTRATION
             </h1>
+          </div>
+          <div
+            v-if="!loading"
+            class="text-center mt-2"
+            style="font-size: 12px; font-weight: 900; color: #888"
+          >
+            Workshop list last updated:
+            <span style="color: #2758A9">{{
+              moment(workshopsLastUpdated).fromNow()
+            }}</span>
           </div>
           <v-card flat>
             <v-card-text>
@@ -131,7 +152,7 @@
 /* eslint-disable vue/no-unused-components */
 
 import axios from "axios";
-
+import moment from "moment";
 import EventCalendar from "@/components/EventCalendar";
 import EventMap from "@/components/EventMap";
 import EventList from "@/components/EventList";
@@ -163,10 +184,14 @@ export default {
       this.loading = true;
       let events = null;
       //events = await axios.get(`/.netlify/functions/events`);
+      //console.log(process.env);
 
-      events = await axios.get(
-        `https://gatadev.netlify.com/.netlify/functions/events`
-      );
+      let calendarFeedEndpoint =
+        process.env.NODE_ENV === "development"
+          ? `/.netlify/functions/events`
+          : `https://gatadev.netlify.com/.netlify/functions/events`;
+
+      events = await axios.get(calendarFeedEndpoint);
 
       this.events = events.data.events.map(event => {
         let obj = {};
@@ -175,8 +200,20 @@ export default {
         obj.end = event.end.local;
         obj.color = "blue darken-4";
         obj.details = event;
+        obj.updatedAt = event.changed;
         return obj;
       });
+
+      this.workshopsLastUpdated = new Date(
+        Math.max.apply(
+          null,
+          this.events.map(function(e) {
+            return new Date(e.updatedAt);
+          })
+        )
+      );
+
+      //console.log(this.workshopsLastUpdated);
 
       this.loading = false;
     }
@@ -187,7 +224,9 @@ export default {
     tab: null,
     isError: true,
     errorMsg: null,
-    clientGeolocation: null
+    clientGeolocation: null,
+    workshopsLastUpdated: null,
+    moment
   })
 };
 </script>

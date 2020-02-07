@@ -34,7 +34,7 @@ ICJIA offers Technical Assistance Workshops to the public in partnership with lo
 
 ## REGISTER
 
-Check back regularly as new sites and dates are [posted weekly](/registration). 
+Check back regularly as [new sites and dates are posted weekly](/registration). 
 
 ## COST
 

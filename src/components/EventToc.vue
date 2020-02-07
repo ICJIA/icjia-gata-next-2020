@@ -77,7 +77,7 @@ export default {
       section.forEach(e => {
         sections[e.id] = e.offsetTop;
       });
-      console.log(sections);
+      //console.log(sections);
 
       if (this.enableTracking) {
         window.onscroll = () => {
@@ -97,7 +97,7 @@ export default {
           for (i in sections) {
             if (sections[i] <= scrollPosition) {
               const sectionItem = document.getElementById(`scrollTo-${i}`);
-              console.log(i, sectionItem, sections[i]);
+              //console.log(i, sectionItem, sections[i]);
               tocItems.forEach(toc => {
                 toc.classList.remove("visible");
               });
