@@ -38,7 +38,7 @@
                   <v-icon v-else left>format_align_justify</v-icon>
                 </v-tab>
 
-                <v-tab :disabled="loading" href="#tab-map">
+                <v-tab :disabled="loading || isError" href="#tab-map">
                   Workshops by Location
                   <v-icon
                     v-if="loading"
@@ -51,7 +51,7 @@
                   <v-icon v-else left>add_location</v-icon>
                 </v-tab>
 
-                <v-tab :disabled="loading" href="#tab-full-list">
+                <v-tab :disabled="loading || isError" href="#tab-full-list">
                   Workshops by Date
                   <v-icon
                     v-if="loading"
@@ -64,7 +64,25 @@
                   <v-icon v-else left>calendar_today</v-icon>
                 </v-tab>
               </v-tabs>
+              <div
+                v-if="isError"
+                class="mt-8 text-center"
+                style="color: red; font-size: 16px"
+              >
+                <div>
+                  Cannot get workshop information. Please reload and try again.
+                </div>
 
+                <div>
+                  If this error persists, please contact
+                  <a href="mailto: CJA.GrantTA@Illinois.gov"
+                    >CJA.GrantTA@Illinois.gov</a
+                  >.
+                </div>
+                <div style="font-weight: 900" class="mt-5">
+                  {{ errorMsg }}
+                </div>
+              </div>
               <v-tabs-items v-model="tab">
                 <v-tab-item value="tab-by-date" :eager="true">
                   <v-card flat px-3>
@@ -72,6 +90,7 @@
                       <EventList
                         :events="events"
                         :loading="loading"
+                        :isError="isError"
                       ></EventList>
                     </v-card-text>
                   </v-card>
@@ -84,6 +103,7 @@
                       :loading="loading"
                       :showAddress="false"
                       :showTitle="true"
+                      :isError="isError"
                     ></EventMap>
                   </v-card>
                 </v-tab-item>
@@ -95,6 +115,7 @@
                         :events="events"
                         :loading="loading"
                         :showTitle="false"
+                        :isError="isError"
                       ></EventCalendar
                     ></v-card-text>
                   </v-card>
@@ -102,7 +123,7 @@
               </v-tabs-items>
             </v-card>
             <div
-              v-if="!loading"
+              v-if="!loading && !isError"
               class="text-right mt-2"
               style="font-size: 12px; font-weight: 900; color: #888"
             >
@@ -124,7 +145,26 @@
             </h1>
           </div>
           <div
-            v-if="!loading"
+            v-if="isError"
+            class="mt-8 text-center"
+            style="color: red; font-size: 16px"
+          >
+            <div>
+              Cannot get workshop information. Please reload and try again.
+            </div>
+
+            <div>
+              If this error persists, please contact
+              <a href="mailto: CJA.GrantTA@Illinois.gov"
+                >CJA.GrantTA@Illinois.gov</a
+              >.
+            </div>
+            <div style="font-weight: 900" class="mt-5">
+              {{ errorMsg }}
+            </div>
+          </div>
+          <div
+            v-if="!loading && !isError"
             class="text-center mt-2"
             style="font-size: 12px; font-weight: 900; color: #888"
           >
@@ -138,6 +178,7 @@
               <EventList
                 :events="events"
                 :loading="loading"
+                :isError="isError"
                 domElement="h2.tocHeadingList"
               ></EventList>
             </v-card-text>
@@ -192,27 +233,35 @@ export default {
           ? `/.netlify/functions/events`
           : `https://gatadev.netlify.com/.netlify/functions/events`;
 
-      events = await axios.get(calendarFeedEndpoint);
+      await axios
+        .get(calendarFeedEndpoint, { timeout: 10000 })
+        .then(res => {
+          events = res;
+          this.isError = false;
+          this.events = events.data.events.map(event => {
+            let obj = {};
+            obj.name = event.name.text;
+            obj.start = event.start.local;
+            obj.end = event.end.local;
+            obj.color = "blue darken-4";
+            obj.details = event;
+            obj.updatedAt = event.changed;
+            return obj;
+          });
 
-      this.events = events.data.events.map(event => {
-        let obj = {};
-        obj.name = event.name.text;
-        obj.start = event.start.local;
-        obj.end = event.end.local;
-        obj.color = "blue darken-4";
-        obj.details = event;
-        obj.updatedAt = event.changed;
-        return obj;
-      });
-
-      this.workshopsLastUpdated = new Date(
-        Math.max.apply(
-          null,
-          this.events.map(function(e) {
-            return new Date(e.updatedAt);
-          })
-        )
-      );
+          this.workshopsLastUpdated = new Date(
+            Math.max.apply(
+              null,
+              this.events.map(function(e) {
+                return new Date(e.updatedAt);
+              })
+            )
+          );
+        })
+        .catch(err => {
+          this.errorMsg = err.message;
+          this.isError = true;
+        });
 
       //console.log(this.workshopsLastUpdated);
       NProgress.done();
@@ -223,7 +272,7 @@ export default {
     loading: true,
     events: [],
     tab: null,
-    isError: true,
+    isError: null,
     errorMsg: null,
     clientGeolocation: null,
     workshopsLastUpdated: null,

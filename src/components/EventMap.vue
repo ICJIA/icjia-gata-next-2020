@@ -99,27 +99,27 @@ export default {
     },
     geolocateClient() {
       let vm = this;
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-          function(position) {
-            let pos = {
-              lat: position.coords.latitude,
-              lng: position.coords.longitude
-            };
+      // if (navigator.geolocation) {
+      //   navigator.geolocation.getCurrentPosition(
+      //     function(position) {
+      //       let pos = {
+      //         lat: position.coords.latitude,
+      //         lng: position.coords.longitude
+      //       };
 
-            console.log("Setting client location: ", pos);
-            vm.center.lat = pos.lat;
-            vm.center.lng = pos.lng;
-          },
-          function() {
-            console.log("using default map geolocation");
-          }
-        );
-      } else {
-        // Browser doesn't support Geolocation
+      //       console.log("Setting client location: ", pos);
+      //       vm.center.lat = pos.lat;
+      //       vm.center.lng = pos.lng;
+      //     },
+      //     function() {
+      //       console.log("using default map geolocation");
+      //     }
+      //   );
+      // } else {
+      //   // Browser doesn't support Geolocation
 
-        console.log("using default map geolocation");
-      }
+      //   console.log("using default map geolocation");
+      // }
     },
     setMarkers() {
       this.markersLoading = true;
@@ -179,6 +179,10 @@ export default {
       default: () => []
     },
     loading: {
+      type: Boolean,
+      default: true
+    },
+    isError: {
       type: Boolean,
       default: true
     }

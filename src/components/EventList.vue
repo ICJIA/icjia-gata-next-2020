@@ -1,6 +1,7 @@
 <template>
   <div>
     <v-select
+      v-if="!isError"
       v-model="sort.sort_id"
       :items="sortBy"
       item-value="id"
@@ -13,7 +14,7 @@
 
     <div v-if="loading"><EventLoader></EventLoader></div>
 
-    <v-container style="margin: 0; padding: 0; width: 100%; ">
+    <v-container style="margin: 0; padding: 0; width: 100%;" v-if="!isError">
       <v-row>
         <v-col
           cols="12"
@@ -184,6 +185,10 @@ export default {
       default: () => []
     },
     loading: {
+      type: Boolean,
+      default: true
+    },
+    isError: {
       type: Boolean,
       default: true
     }
