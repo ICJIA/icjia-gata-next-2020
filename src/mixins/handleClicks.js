@@ -69,17 +69,7 @@ export const handleClicks = {
         href.indexOf(urlToCheck) > 1
       ) {
         $event.preventDefault();
-        //const filename = href.split("/");
-        // console.log(
-        //   "register download event: ",
-        //   "/" +
-        //     filename[filename.length - 3] +
-        //     "/" +
-        //     filename[filename.length - 2] +
-        //     "/" +
-        //     filename[filename.length - 1]
-        // );
-        //console.log(href);
+
         let filename = href.replace(/https:\/\/icjia.illinois.gov\/gata/, "");
         this.$ga.event({
           eventCategory: "File",
