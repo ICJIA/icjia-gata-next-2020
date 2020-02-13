@@ -123,7 +123,7 @@
               </v-tabs-items>
             </v-card>
             <div
-              v-if="!loading && !isError"
+              v-if="!loading && !isError && events.length > 0"
               class="text-right mt-2"
               style="font-size: 12px; font-weight: 900; color: #888"
             >
@@ -163,8 +163,9 @@
               {{ errorMsg }}
             </div>
           </div>
+
           <div
-            v-if="!loading && !isError"
+            v-if="!loading && !isError && events.length > 0"
             class="text-center mt-2"
             style="font-size: 12px; font-weight: 900; color: #888"
           >
@@ -257,6 +258,8 @@ export default {
               })
             )
           );
+          // this.events = [];
+          // this.workshopsLastUpdated = new Date();
         })
         .catch(err => {
           this.errorMsg = err.message;

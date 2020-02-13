@@ -14,6 +14,20 @@
 
     <div v-if="loading"><EventLoader></EventLoader></div>
 
+    <div
+      v-if="!events.length"
+      class="my-10 text-center"
+      style="font-size: 24px; font-weight: 900; line-height: 1.3em"
+    >
+      No workshops currently scheduled. Please check back shortly.
+      <br />
+      <br />
+      <div style="font-size: 16px;">
+        For questions, please contact:
+        <a href="mailto: CJA.GrantTA@Illinois.gov">CJA.GrantTA@Illinois.gov</a>
+      </div>
+    </div>
+
     <v-container style="margin: 0; padding: 0; width: 100%;" v-if="!isError">
       <v-row>
         <v-col
@@ -73,7 +87,7 @@
           order-md="2"
           order="1"
           order-sm="1"
-          v-if="sort.sort_id === 1"
+          v-if="sort.sort_id === 1 && events.length"
         >
           <EventToc
             selector="#scrollArea"
