@@ -207,6 +207,11 @@ export default {
   created() {
     this.getEventBriteEvents();
   },
+  metaInfo() {
+    return {
+      title: this.pageTitle
+    };
+  },
   mounted() {},
   methods: {
     getColor(name) {
@@ -267,6 +272,11 @@ export default {
         });
 
       //console.log(this.workshopsLastUpdated);
+      this.$ga.page({
+        page: this.$route.path,
+        title: this.pageTitle,
+        location: window.location.href
+      });
       NProgress.done();
       this.loading = false;
     }
@@ -279,7 +289,8 @@ export default {
     errorMsg: null,
     clientGeolocation: null,
     workshopsLastUpdated: null,
-    moment
+    moment,
+    pageTitle: "Workshop Registration"
   })
 };
 </script>
