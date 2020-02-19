@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-select
-      v-if="!isError"
+      v-if="!isError && events.length"
       v-model="sort.sort_id"
       :items="sortBy"
       item-value="id"
