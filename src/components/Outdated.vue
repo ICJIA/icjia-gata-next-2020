@@ -6,9 +6,9 @@
           You're using
           <span style="font-weight: 900; ">Internet Explorer</span>.<br />
           Internet Explorer
-          <span style="font-weight: 900">will not</span> display the R3 website
-          correctly. ICJIA recommends updating to a secure, modern browser.<br />Please
-          download the latest version of
+          <span style="font-weight: 900">will not</span> display the ICJIA GATA
+          website correctly. ICJIA recommends updating to a secure, modern
+          browser.<br />Please download the latest version of
           <a
             class="warning-link"
             href="https://www.google.com/chrome"
