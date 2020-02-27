@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2de6c7f6-eb69-4419-baf5-7e54a8943b00/deploy-status)](https://app.netlify.com/sites/gatadev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2de6c7f6-eb69-4419-baf5-7e54a8943b00/deploy-status)](https://app.netlify.com/sites/gatadev/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 # ICJIA GATA Client
 
