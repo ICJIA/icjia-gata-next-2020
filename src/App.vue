@@ -1,8 +1,12 @@
 <template>
   <v-app id="page-top">
     <app-nav />
-    <outdated-browser v-if="$browserDetect.isIE"></outdated-browser>
+
     <app-drawer />
+
+    <Outdated
+      v-if="$store.state && !$store.state.warningSeen && $browserDetect.isIE"
+    ></Outdated>
 
     <v-content
       id="content-top"
@@ -21,7 +25,8 @@
 import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
 import AppDrawer from "@/components/AppDrawer";
-import OutdatedBrowser from "@/components/OutdatedBrowser";
+// import OutdatedBrowser from "@/components/OutdatedBrowser";
+import Outdated from "@/components/Outdated";
 export default {
   name: "App",
   metaInfo() {
@@ -53,9 +58,18 @@ export default {
     AppNav,
     AppFooter,
     AppDrawer,
-    OutdatedBrowser
+    Outdated
   },
-  methods: {},
+  methods: {
+    onScroll(e) {
+      if (typeof window === "undefined") return;
+      const top = window.pageYOffset || e.target.scrollTop || 0;
+      this.fab = top > 100;
+    },
+    toTop() {
+      this.$vuetify.goTo(0);
+    }
+  },
   watch: {
     // eslint-disable-next-line no-unused-vars
     $route(to, from) {

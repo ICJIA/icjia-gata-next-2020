@@ -39,6 +39,7 @@ export default new Vuex.Store({
     lastBuild: null,
     apiStatus: null,
     cache: new Map(),
+    warningSeen: false,
     selectedCountyData: null,
     jwt: localStorage.getItem("jwt") || "",
     userMeta: JSON.parse(localStorage.getItem("userMeta")) || ""
@@ -85,6 +86,10 @@ export default new Vuex.Store({
     SET_SELECTED_COUNTY_DATA(state, payload) {
       state.selectedCountyData = payload;
       //console.log("Selected county data: ", payload);
+    },
+    SET_WARNING_SEEN(state, bool) {
+      state.warningSeen = bool;
+      console.log("IE Warning clicked.");
     }
   },
   actions: {
@@ -93,7 +98,10 @@ export default new Vuex.Store({
       commit("CLEAR_LOCAL_STORAGE");
       commit("SET_APP_READY", true);
     },
-    async setApiStatus({ commit }) {
+    warningSeen({ commit }, bool) {
+      commit("SET_WARNING_SEEN", bool);
+    },
+    setApiStatus({ commit }) {
       commit("SET_API_STATUS", 200);
       console.log("status server bypassed");
     },
