@@ -34,7 +34,7 @@ ICJIA offers Technical Assistance Workshops to the public in partnership with lo
 
 ## REGISTER
 
-Check back regularly as [new sites and dates are posted weekly](/registration). 
+Check back regularly as new sites and dates are [posted weekly](/registration). 
 
 ## COST
 
@@ -45,7 +45,7 @@ Participants in these workshops can register free of charge.
 Partner with ICJIA to host a training. Community outreach to promote registration and encourage local participation also will be needed.
 
 Requirements: 
-* Space for up to 50 participants in a classroom setting (25 minimum participants)
+* Space for up to 50 participants in a classroom setting
 * Space reserved a minimum of 5 hours (workshop length is 4 hours)
 * Audio-visual (projector and screen) 
 * Wi-Fi access for participants (preferred but not required) 
