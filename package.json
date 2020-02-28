@@ -1,7 +1,18 @@
 {
-  "name": "icjia-gata-next-2.0",
+  "name": "icjia-gata-next-2020",
   "version": "0.1.0",
   "private": true,
+  "description": "ICJIA GATA Information",
+  "author": {
+    "name": "Christopher Schweda",
+    "email": "christopher.schweda@illinois.gov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ICJIA/icjia-gata-next-2020"
+  },
+  "license": "MIT",
+  "homepage": "https://icjia.illinois.gov/gata",
   "scripts": {
     "serve": "NODE_ENV=development node generateApi.js && node generateSitemap.js && vue-cli-service serve",
     "build": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && npm run build:lambda",
@@ -9,7 +20,8 @@
     "lint": "vue-cli-service lint",
     "deploy": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && npm run build:lambda",
     "build:lambda": "netlify-lambda build ./src/lambda",
-    "start:lambda": "netlify-lambda serve ./src/lambda"
+    "start:lambda": "netlify-lambda serve ./src/lambda",
+    "postbuild": "node generateBuildInfo.js"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
@@ -29,6 +41,7 @@
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-named-headers": "0.0.4",
     "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
     "netlify-lambda": "^1.6.3",
     "nprogress": "^0.2.0",
     "rimraf": "^3.0.2",

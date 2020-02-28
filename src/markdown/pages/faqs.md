@@ -7,6 +7,7 @@ position: 700
 section: "pages"
 displayFooter: true
 showToc: true
+showInNav: false
 status: "live"
 menuTitle: "FAQs"
 ---

@@ -7,5 +7,6 @@ position: 9999
 section: "pages"
 displayFooter: true
 showToc: false
+showInNav: false
 status: "live"
 ---

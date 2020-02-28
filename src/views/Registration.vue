@@ -11,7 +11,7 @@
         <v-col>
           <div style="margin-top: 100px">
             <h1 class="page-title mb-10">
-              GATA WORKSHOP REGISTRATION
+              GRANT WORKSHOP REGISTRATION
             </h1>
 
             <v-card>

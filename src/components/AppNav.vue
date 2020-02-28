@@ -1,7 +1,12 @@
 <template>
   <v-app-bar color="white" fixed height="90" class="noprint">
+    <v-app-bar-nav-icon
+      aria-label="Menu"
+      style="color: black"
+      large
+      @click="toggleDrawer"
+    />
     <div style="width: 15px" />
-
     <img
       :src="require('@/assets/icjia-logo.png')"
       alt="Illinois Criminal Justice Information Authority"
@@ -22,38 +27,47 @@
         })
       "
     >
-      <span style="" class="agency hover">GATA INFORMATION</span>
+      <span style="" class="agency hover">GRANT INFORMATION</span>
     </v-toolbar-title>
     <v-spacer />
-
-    <div class="flex-grow-1" />
-    <span
+    <v-btn
+      :to="item.path === '/home' ? '/' : `${item.path}`"
+      text
+      class="hidden-sm-and-down"
       style="font-weight: 900"
-      class="hover hidden-sm-and-down"
-      @click="toggleDrawer"
-      aria-label="Menu"
+      :aria-label="item.title"
+      v-for="item in links"
+      :key="item.menuTitle"
+      >{{ item.menuTitle }}</v-btn
     >
-      MENU&nbsp;
-    </span>
-    <v-app-bar-nav-icon
-      aria-label="Menu"
-      style="color: black"
-      large
-      @click="toggleDrawer"
-    />
+    <v-btn text to="/search">
+      <v-icon>search</v-icon>
+    </v-btn>
   </v-app-bar>
 </template>
 
 <script>
 /* eslint-disable vue/no-use-v-if-with-v-for */
+import { getAllPages } from "@/services/Content";
 import { EventBus } from "@/event-bus";
 export default {
-  props: {
-    sections: {
-      type: Array,
-      default: () => []
-    }
+  async created() {
+    let pages = await getAllPages();
+
+    let filteredPages = pages.filter(item => {
+      if (item.showInNav) return item;
+    });
+    this.links = filteredPages;
+    console.log(this.links);
+    this.loading = false;
   },
+  data() {
+    return {
+      loading: true,
+      links: null
+    };
+  },
+  mounted() {},
   methods: {
     toggleDrawer() {
       EventBus.$emit("toggleDrawer");

@@ -159,27 +159,12 @@ siteArray.forEach(obj => {
         meta.expires = item.expires;
         meta.path = item.path;
         meta.status = item.status;
+        meta.showInNav = item.showInNav || false;
+        meta.dividerAfter = item.dividerAfter || false;
+        meta.showToc = item.showToc || false;
+        meta.searchMeta = item.searchMeta || "";
+        meta.menuTitle = item.menuTitle || item.title;
 
-        if (item.dividerAfter) {
-          meta.dividerAfter = item.dividerAfter;
-        } else {
-          meta.dividerAfter = false;
-        }
-
-        if (item.showToc) {
-          meta.showToc = item.showToc;
-        } else {
-          meta.showToc = false;
-        }
-
-        if (item.menuTitle) {
-          meta.menuTitle = item.menuTitle;
-        }
-        if (item.searchMeta) {
-          meta.searchMeta = item.searchMeta;
-        } else {
-          meta.searchMeta = "";
-        }
         meta.displayFooter = item.displayFooter;
         if (item.section === "news") {
           meta.html = item.html;

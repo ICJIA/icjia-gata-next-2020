@@ -4,6 +4,9 @@
       class="mb-10 elevation-1 py-6 px-6 funding-card"
       @click="routeToItem(item)"
     >
+      <v-btn absolute dark fab top right color="blue darken-3" v-if="isItNew">
+        new!
+      </v-btn>
       <div v-if="toggleState === 'expired'" class="expired">
         Expired: {{ item.expires | format }}
       </div>
@@ -23,6 +26,7 @@
 </template>
 
 <script>
+import moment from "moment";
 export default {
   props: {
     item: {
@@ -32,6 +36,19 @@ export default {
     toggleState: {
       type: String,
       default: ""
+    }
+  },
+  computed: {
+    isItNew() {
+      let now = moment(new Date()); //todays date
+      let end = moment(this.item.posted); // another date
+      let duration = moment.duration(now.diff(end));
+      let days = duration.asDays();
+      if (days <= 10) {
+        return true;
+      } else {
+        return false;
+      }
     }
   },
   methods: {
