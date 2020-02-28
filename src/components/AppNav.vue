@@ -19,6 +19,7 @@
         })
       "
     />&nbsp;&nbsp;&nbsp;&nbsp;
+
     <v-toolbar-title
       class="heavy hover"
       @click="
@@ -27,8 +28,14 @@
         })
       "
     >
-      <span style="" class="agency hover">GRANT INFORMATION</span>
+      <span style="" class="agency hover"
+        >GRANT INFO<span
+          v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
+          >RMATION</span
+        ></span
+      >
     </v-toolbar-title>
+
     <v-spacer />
     <v-btn
       :to="item.path === '/home' ? '/' : `${item.path}`"
