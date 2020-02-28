@@ -13,7 +13,7 @@ const banner = `
 <!-- 
 
 *************************************************************************************************************************
-build:          ${chicagoTime}
+last build:     ${chicagoTime}
 name:           ${pkg.name}
 description:    ${pkg.description}
 homepage:       ${pkg.homepage}
