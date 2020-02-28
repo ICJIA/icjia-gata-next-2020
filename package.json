@@ -21,7 +21,8 @@
     "deploy": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && npm run build:lambda",
     "build:lambda": "netlify-lambda build ./src/lambda",
     "start:lambda": "netlify-lambda serve ./src/lambda",
-    "postbuild": "node generateBuildInfo.js"
+    "postbuild": "node generateBuildInfo.js",
+    "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
@@ -71,6 +72,7 @@
     "@vue/cli-service": "^4.1.1",
     "@vue/eslint-config-prettier": "^6.0.0",
     "@vue/test-utils": "1.0.0-beta.30",
+    "auto-changelog": "^1.16.2",
     "babel-core": "6.26.3",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
