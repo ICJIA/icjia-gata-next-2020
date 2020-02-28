@@ -15,12 +15,13 @@
   "homepage": "https://icjia.illinois.gov/gata",
   "scripts": {
     "serve": "NODE_ENV=development node generateApi.js && node generateSitemap.js && vue-cli-service serve",
-    "build": "npm run build:lambda && NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && node generateBuildInfo.js",
+    "build": "npm run build:lambda && NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "deploy": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && npm run build:lambda",
+    "deploy": "NODE_ENV=production node generateApi.js && node generateSitemap.js && vue-cli-service build && npm run build:lambda && node generateBuildInfo.js",
     "build:lambda": "netlify-lambda build ./src/lambda",
     "start:lambda": "netlify-lambda serve ./src/lambda",
+    "postbuild": "node generateBuildInfo.js",
     "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"
   },
   "dependencies": {
