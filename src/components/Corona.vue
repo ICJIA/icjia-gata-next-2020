@@ -1,11 +1,11 @@
 <template>
   <div v-if="alert">
     <v-system-bar
-      style=""
       height="100px"
       app
       color="blue lighten-5"
       class="breadcrumb"
+      style="z-index: 9999"
     >
       <v-icon color="red">error</v-icon>
       <span style="font-weight: 900!important" v-html="html"></span>
