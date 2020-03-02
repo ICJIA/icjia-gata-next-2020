@@ -3,7 +3,7 @@
     <app-nav />
 
     <app-drawer />
-    <corona :showWarning="showWarning"></corona>
+
     <Outdated
       v-if="$store.state && !$store.state.warningSeen && $browserDetect.isIE"
     ></Outdated>
@@ -13,6 +13,8 @@
       aria-live="polite"
       style="background: #fafafa; min-height: 68vh"
     >
+      <Corona ref="alert" />
+      <!-- <corona :showWarning="showWarning"></corona> -->
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
@@ -79,7 +81,7 @@ export default {
     $route(to, from) {
       this.canonical = "https://icjia.illinois.gov/gata" + this.$route.path;
       // console.log(this.canonical);
-      this.showWarning = true;
+      if (this.$refs.alert) this.$refs.alert.reset();
     }
   },
   mounted() {

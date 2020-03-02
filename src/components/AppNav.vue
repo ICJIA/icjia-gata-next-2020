@@ -1,59 +1,56 @@
 <template>
-  <div>
-    <v-app-bar color="white" fixed height="90" class="noprint">
-      <v-app-bar-nav-icon
-        aria-label="Menu"
-        style="color: black"
-        large
-        @click="toggleDrawer"
-      />
-      <div style="width: 15px" />
-      <img
-        :src="require('@/assets/icjia-logo.png')"
-        alt="Illinois Criminal Justice Information Authority"
-        :width="logoWidth()"
-        style="margin-left: -5px; margin-right: 8px;"
-        class="hover"
-        @click="
-          $router.push('/').catch(err => {
-            $vuetify.goTo(0);
-          })
-        "
-      />&nbsp;&nbsp;&nbsp;&nbsp;
+  <v-app-bar color="white" fixed height="90" class="noprint" app>
+    <v-app-bar-nav-icon
+      aria-label="Menu"
+      style="color: black"
+      large
+      @click="toggleDrawer"
+    />
+    <div style="width: 15px" />
+    <img
+      :src="require('@/assets/icjia-logo.png')"
+      alt="Illinois Criminal Justice Information Authority"
+      :width="logoWidth()"
+      style="margin-left: -5px; margin-right: 8px;"
+      class="hover"
+      @click="
+        $router.push('/').catch(err => {
+          $vuetify.goTo(0);
+        })
+      "
+    />&nbsp;&nbsp;&nbsp;&nbsp;
 
-      <v-toolbar-title
-        class="heavy hover"
-        @click="
-          $router.push('/').catch(err => {
-            $vuetify.goTo(0);
-          })
-        "
+    <v-toolbar-title
+      class="heavy hover"
+      @click="
+        $router.push('/').catch(err => {
+          $vuetify.goTo(0);
+        })
+      "
+    >
+      <span style="" class="agency hover"
+        >GRANT INFO<span
+          v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
+          >RMATION</span
+        ></span
       >
-        <span style="" class="agency hover"
-          >GRANT INFO<span
-            v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
-            >RMATION</span
-          ></span
-        >
-      </v-toolbar-title>
+    </v-toolbar-title>
 
-      <v-spacer />
-      <v-btn
-        :to="item.path === '/home' ? '/' : `${item.path}`"
-        text
-        class="hidden-sm-and-down"
-        style="font-weight: 900"
-        :aria-label="item.title"
-        v-for="item in links"
-        :key="item.menuTitle"
-        >{{ item.menuTitle }}</v-btn
-      >
-      <v-btn text to="/search">
-        <v-icon>search</v-icon>
-      </v-btn>
-    </v-app-bar>
-    test
-  </div>
+    <v-spacer />
+    <v-btn
+      :to="item.path === '/home' ? '/' : `${item.path}`"
+      text
+      class="hidden-sm-and-down"
+      style="font-weight: 900"
+      :aria-label="item.title"
+      v-for="item in links"
+      :key="item.menuTitle"
+      >{{ item.menuTitle }}</v-btn
+    >
+    <v-btn text to="/search">
+      <v-icon>search</v-icon>
+    </v-btn>
+  </v-app-bar>
 </template>
 
 <script>

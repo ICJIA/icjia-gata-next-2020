@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="px-4" v-if="!loading">
+    <div class="px-4" v-if="!loading" style="margin-top: -50px">
       <slot name="expired" />
       <slot name="title"></slot>
       <slot name="printer"></slot>

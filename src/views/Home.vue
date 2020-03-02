@@ -3,7 +3,7 @@
     <div
       v-if="page && page.content && page.status === 200"
       class="text-center py-8"
-      style="background: #0D4474; margin-top:65px;"
+      style="background: #0D4474;"
     >
       <h1 style="color: #fff">
         {{ page.content.title }}
@@ -13,6 +13,7 @@
     <base-content
       v-if="page && page.content && page.status === 200"
       :loading="page.loading"
+      style="margin-top: 50px;"
     >
       <template v-slot:content>
         <v-container v-if="page.content && page.status === 200" id="scrollArea">
