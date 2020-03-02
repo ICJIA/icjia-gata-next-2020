@@ -3,7 +3,7 @@
     <div
       v-if="page && page.content && page.status === 200"
       class="text-center py-8"
-      style="background: #0D4474; margin-top:90px;"
+      style="background: #0D4474; margin-top:65px;"
     >
       <h1 style="color: #fff">
         {{ page.content.title }}

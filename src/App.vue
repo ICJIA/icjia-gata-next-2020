@@ -3,7 +3,7 @@
     <app-nav />
 
     <app-drawer />
-
+    <corona :showWarning="showWarning"></corona>
     <Outdated
       v-if="$store.state && !$store.state.warningSeen && $browserDetect.isIE"
     ></Outdated>
@@ -22,11 +22,14 @@
 </template>
 
 <script>
+/* eslint-disable vue/no-unused-components */
+import { EventBus } from "@/event-bus";
 import AppNav from "@/components/AppNav";
 import AppFooter from "@/components/AppFooter";
 import AppDrawer from "@/components/AppDrawer";
 // import OutdatedBrowser from "@/components/OutdatedBrowser";
 import Outdated from "@/components/Outdated";
+import Corona from "@/components/Corona";
 export default {
   name: "App",
   metaInfo() {
@@ -58,7 +61,8 @@ export default {
     AppNav,
     AppFooter,
     AppDrawer,
-    Outdated
+    Outdated,
+    Corona
   },
   methods: {
     onScroll(e) {
@@ -75,9 +79,12 @@ export default {
     $route(to, from) {
       this.canonical = "https://icjia.illinois.gov/gata" + this.$route.path;
       // console.log(this.canonical);
+      this.showWarning = true;
     }
   },
-  async mounted() {},
+  mounted() {
+    EventBus.$on("showWarning", bool => (this.showWarning = bool));
+  },
   async created() {
     this.loading = true;
 
@@ -94,7 +101,8 @@ export default {
     return {
       loading: true,
       pages: [],
-      canonical: ""
+      canonical: "",
+      showWarning: true
     };
   }
 };
