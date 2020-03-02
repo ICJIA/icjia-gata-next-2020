@@ -2,7 +2,7 @@
   <div v-if="alert">
     <v-system-bar
       style=""
-      height="50px"
+      height="100px"
       app
       color="blue lighten-5"
       class="breadcrumb"

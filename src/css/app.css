@@ -19,7 +19,6 @@ a {
 
 .breadcrumb {
   margin-top: 90px;
-  margin-bottom: 48px;
 }
 
 .videoWrapper {
@@ -181,6 +180,10 @@ ul.toc-list li:hover {
 @media only screen and (max-width: 960px) {
   .divider {
     border-left: 0px solid #ccc;
+  }
+
+  .breadcrumb {
+    margin-top: 90px;
   }
 
   ul.toc-list li:hover {
