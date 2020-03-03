@@ -44,7 +44,7 @@ export default {
       let end = moment(this.item.posted); // another date
       let duration = moment.duration(now.diff(end));
       let days = duration.asDays();
-      if (days <= 10) {
+      if (days <= 7) {
         return true;
       } else {
         return false;
