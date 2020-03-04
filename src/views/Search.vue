@@ -3,7 +3,7 @@
     <base-content
       v-if="page && page.content && page.status === 200"
       :loading="page.loading"
-      style="margin-top: 100px"
+      style="margin-top: 50px"
     >
       <template v-slot:title>
         <v-container v-if="page.content && page.status === 200">

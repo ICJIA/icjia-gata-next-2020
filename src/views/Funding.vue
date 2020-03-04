@@ -3,17 +3,15 @@
     <base-content
       v-if="page && page.content && page.status === 200"
       :loading="page.loading"
-      style="margin-top: 100px"
+      style="margin-top: 50px"
     >
       <template v-slot:content>
         <v-container>
           <v-row>
             <v-col cols="12" sm="12" md="12">
-              <h2
-                style="text-transform: uppercase; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-bottom: 25px;"
-              >
+              <h1 class="page-title">
                 Funding Opportunities
-              </h2>
+              </h1>
               <toggle />
               <list-funding
                 :funding="page.funding"

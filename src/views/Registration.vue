@@ -9,7 +9,7 @@
     >
       <v-row class="mb-12">
         <v-col>
-          <div style="margin-top: 60px">
+          <div style="margin-top: 0px">
             <h1 class="page-title mb-10">
               GRANT WORKSHOP REGISTRATION
             </h1>
