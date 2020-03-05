@@ -128,7 +128,7 @@
               style="font-size: 12px; font-weight: 900; color: #888"
             >
               Workshop list last updated:
-              <span style="color: #2758A9">{{
+              <span style="color: #333">{{
                 moment(workshopsLastUpdated).fromNow()
               }}</span>
             </div>
@@ -170,7 +170,7 @@
             style="font-size: 12px; font-weight: 900; color: #888"
           >
             Workshop list last updated:
-            <span style="color: #2758A9">{{
+            <span style="color: #333">{{
               moment(workshopsLastUpdated).fromNow()
             }}</span>
           </div>
