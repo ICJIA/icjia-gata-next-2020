@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-select
-      v-if="!isError && events.length"
+      v-if="!isError && events.length && showElement"
       v-model="sort.sort_id"
       :items="sortBy"
       item-value="id"
@@ -87,7 +87,7 @@
           order-md="2"
           order="1"
           order-sm="1"
-          v-if="sort.sort_id === 1 && events.length"
+          v-if="sort.sort_id === 1 && events.length && showElement"
         >
           <EventToc
             selector="#scrollArea"
@@ -124,8 +124,16 @@ export default {
       } else {
         return true;
       }
+    },
+    showElement() {
+      if (this.$vuetify.breakpoint.sm || this.$vuetify.breakpoint.xs) {
+        return false;
+      } else {
+        return true;
+      }
     }
   },
+
   data() {
     return {
       groupedCities: null,

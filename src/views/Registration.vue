@@ -9,9 +9,9 @@
     >
       <v-row class="mb-12">
         <v-col>
-          <div style="margin-top: 0px">
+          <div>
             <h1 class="page-title mb-10">
-              GRANT WORKSHOP REGISTRATION
+              WORKSHOP REGISTRATION
             </h1>
 
             <v-card>
@@ -136,12 +136,12 @@
         </v-col>
       </v-row>
     </v-container>
-    <v-container v-else style="margin-top: 90px">
+    <v-container v-else>
       <v-row>
         <v-col>
           <div class="text-center">
             <h1 class="page-title mb-5">
-              GATA WORKSHOP REGISTRATION
+              WORKSHOP REGISTRATION
             </h1>
           </div>
           <div
@@ -294,3 +294,9 @@ export default {
   })
 };
 </script>
+
+<style>
+.pullPage {
+  margin-top: -25px;
+}
+</style>
