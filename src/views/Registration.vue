@@ -13,8 +13,19 @@
             <h1 class="page-title mb-10">
               WORKSHOP REGISTRATION
             </h1>
-
-            <v-card>
+            <p>
+              Take the mystery out of securing state grant funding with an ICJIA
+              Technical Assistance Workshop. ICJIA offers workshops throughout
+              the state to ease the application process for organizations
+              seeking grant funding. Participants will receive an overview of
+              the ICJIA grant process and what it means to comply with the Grant
+              Accountability and Transparency Act (GATA).
+            </p>
+            <p>
+              <router-link to="/technical-assistance">Click here</router-link>
+              for more information.
+            </p>
+            <v-card class="mt-8">
               <v-tabs
                 v-model="tab"
                 grow
@@ -139,10 +150,22 @@
     <v-container v-else>
       <v-row>
         <v-col>
-          <div class="text-center">
-            <h1 class="page-title mb-5">
+          <div>
+            <h1 class="page-title mb-5 text-center">
               WORKSHOP REGISTRATION
             </h1>
+            <p>
+              Take the mystery out of securing state grant funding with an ICJIA
+              Technical Assistance Workshop. ICJIA offers workshops throughout
+              the state to ease the application process for organizations
+              seeking grant funding. Participants will receive an overview of
+              the ICJIA grant process and what it means to comply with the Grant
+              Accountability and Transparency Act (GATA).
+            </p>
+            <p>
+              <router-link to="/technical-assistance">Click here</router-link>
+              for more information.
+            </p>
           </div>
           <div
             v-if="isError"
@@ -164,7 +187,7 @@
             </div>
           </div>
 
-          <div
+          <!-- <div
             v-if="!loading && !isError && events.length > 0"
             class="text-center mt-2"
             style="font-size: 12px; font-weight: 900; color: #888"
@@ -173,7 +196,7 @@
             <span style="color: #333">{{
               moment(workshopsLastUpdated).fromNow()
             }}</span>
-          </div>
+          </div> -->
           <v-card flat>
             <v-card-text>
               <EventList
@@ -240,7 +263,7 @@ export default {
           : `https://gatadev.netlify.com/.netlify/functions/events`;
 
       await axios
-        .get(calendarFeedEndpoint, { timeout: 10000 })
+        .get(calendarFeedEndpoint, { timeout: 15000 })
         .then(res => {
           events = res;
           this.isError = false;
