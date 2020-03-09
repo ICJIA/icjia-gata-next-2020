@@ -133,7 +133,7 @@
                 </v-tab-item>
               </v-tabs-items>
             </v-card>
-            <div
+            <!-- <div
               v-if="!loading && !isError && events.length > 0"
               class="text-right mt-2"
               style="font-size: 12px; font-weight: 900; color: #888"
@@ -142,7 +142,7 @@
               <span style="color: #333">{{
                 moment(workshopsLastUpdated).fromNow()
               }}</span>
-            </div>
+            </div> -->
           </div>
         </v-col>
       </v-row>
