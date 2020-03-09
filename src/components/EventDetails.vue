@@ -74,7 +74,7 @@
           target="_blank"
           class="mr-5"
         >
-          Add to Waitlist
+          SOLD OUT
           <v-icon small right>open_in_new</v-icon>
         </v-btn>
       </v-card-actions>
