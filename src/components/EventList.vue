@@ -15,7 +15,7 @@
     <div v-if="loading"><EventLoader></EventLoader></div>
 
     <div
-      v-if="!events.length && !isError"
+      v-if="!events.length && !isError && !loading"
       class="my-10 text-center"
       style="font-size: 24px; font-weight: 900; line-height: 1.3em"
     >

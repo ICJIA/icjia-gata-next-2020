@@ -74,10 +74,18 @@
           target="_blank"
           class="mr-5"
         >
-          SOLD OUT
+          JOIN THE WAITLIST
           <v-icon small right>open_in_new</v-icon>
         </v-btn>
       </v-card-actions>
+      <!-- <v-card-text style="padding: 0 !important;" class="mt-2">
+        <div class="text-right px-4" style="font-size: 10px;">
+          Registration link not working?<br />Email:
+          <a href="mailto: CJA.GrantTA@Illinois.gov"
+            >CJA.GrantTA@Illinois.gov</a
+          >
+        </div>
+      </v-card-text> -->
     </v-card>
   </div>
 </template>
