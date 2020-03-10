@@ -1,6 +1,17 @@
 <template>
   <div>
     <v-card class="py-5 grey lighten-4 elevation-6">
+      <!-- <v-btn
+        absolute
+        dark
+        fab
+        right
+        color="blue darken-3"
+        v-if="isItNew(event)"
+      >
+        New!
+      </v-btn> -->
+
       <h2
         v-if="showTitle"
         style="font-weight: 900"
@@ -94,7 +105,19 @@
 import moment from "moment";
 export default {
   methods: {
-    register() {}
+    register() {},
+    isItNew(event) {
+      let now = moment(new Date()); //todays date
+      let end = moment(event.details.created); // another date
+      let duration = moment.duration(now.diff(end));
+      let days = duration.asDays();
+      //console.log(days);
+      if (days <= 3) {
+        return true;
+      } else {
+        return false;
+      }
+    }
   },
   computed: {
     seatsRemaing() {
