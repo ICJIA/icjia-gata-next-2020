@@ -49,7 +49,7 @@
               <h2
                 class="mb-5 tocHeadingList"
                 style="font-size: 28px; line-height: 1.2em;background: #2657A9; color:  #fff; padding: 10px; margin-top: 50px; "
-                :id="`city-${city}`"
+                :id="`city-${slugs(city)}`"
               >
                 {{ city }}
               </h2>
@@ -106,6 +106,7 @@ import EventDetails from "@/components/EventDetails";
 import EventToc from "@/components/EventToc";
 import moment from "moment";
 import EventLoader from "@/components/EventLoader";
+const slugs = require("slugs");
 // eslint-disable-next-line no-unused-vars
 import _ from "lodash";
 export default {
@@ -140,7 +141,7 @@ export default {
       groupedDates: null,
       dates: [],
       cities: [],
-
+      slugs,
       sections: null,
       isGrouped: false,
       moment,
