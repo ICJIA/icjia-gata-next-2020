@@ -85,7 +85,8 @@
           target="_blank"
           class="mr-5"
         >
-          JOIN THE WAITLIST
+          <!-- JOIN THE WAITLIST -->
+          SOLD OUT
           <v-icon small right>open_in_new</v-icon>
         </v-btn>
       </v-card-actions>
