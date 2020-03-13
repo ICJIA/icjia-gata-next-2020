@@ -54,14 +54,14 @@
           style="font-size: 14px"
         >
           {{ seatsRemaing }}
-          seats remaining</v-chip
+          {{ seatWord }} remaining</v-chip
         >
         <v-chip
           class="seats-available hidden-md-and-up"
           style="font-size: 12px"
         >
           {{ seatsRemaing }}
-          seats left</v-chip
+          {{ seatWord }} left</v-chip
         >
         <v-spacer></v-spacer>
         <v-btn
@@ -126,6 +126,9 @@ export default {
         this.event.details.ticket_classes[0]["quantity_total"] -
         this.event.details.ticket_classes[0]["quantity_sold"]
       );
+    },
+    seatWord() {
+      return this.seatsRemaing === 1 ? "seat" : "seats";
     }
   },
   data() {
