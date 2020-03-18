@@ -23,7 +23,10 @@
             </p>
             <p>
               <router-link to="/technical-assistance">Click here</router-link>
-              for more information.
+              for more information. Questions? Contact
+              <a href="mailto: CJA.GrantTA@Illinois.gov"
+                >CJA.GrantTA@Illinois.gov</a
+              >
             </p>
             <v-card class="mt-8">
               <v-tabs
@@ -164,7 +167,10 @@
             </p>
             <p>
               <router-link to="/technical-assistance">Click here</router-link>
-              for more information.
+              for more information. Questions? Contact
+              <a href="mailto: CJA.GrantTA@Illinois.gov"
+                >CJA.GrantTA@Illinois.gov</a
+              >
             </p>
           </div>
           <div
@@ -259,7 +265,7 @@ export default {
 
       let calendarFeedEndpoint =
         process.env.NODE_ENV === "development"
-          ? `/.netlify/functions/events`
+          ? `http://localhost:9000/.netlify/functions/events`
           : `https://gatadev.netlify.com/.netlify/functions/events`;
 
       await axios
