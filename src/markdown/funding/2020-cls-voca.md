@@ -92,6 +92,8 @@ The following documents must be emailed to CJA.CIVILLEGALNOFOFFY18@Illinois.gov 
 
 Questions regarding this NOFO may be submitted to CJA.CIVILLEGALNOFOFFY18@Illinois.gov until 11:59 p.m. April 15, 2020. Questions and responses will be posted at https://grants.icjia.cloud.
 
+Download [Frequently Asked Questions here](civil.legal.assistance.faq.docx)
+
 ### Contact Information
 
 Malea Conro
