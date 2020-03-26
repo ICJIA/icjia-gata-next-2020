@@ -43,7 +43,7 @@ Funding is available for the period of July 1, 2020, through June 30, 2021. Base
 
 ## Technical Assistance Session
 
-Technical assistance recordings providing additional information regarding this funding opportunity will be available for viewing beginning at **1:30 p.m. on March 20, 2020**.
+Technical assistance providing additional information regarding this funding opportunity will be available in a [PowerPoint](CivilLegalServicesWebinar.zip).
 
 ## View The Required Technical Assistance Webinar Recording (Required)
 
@@ -82,7 +82,7 @@ Recipients must submit periodic financial reports, periodic performance reports,
 The following documents must be emailed to CJA.CIVILLEGALNOFOFFY18@Illinois.gov by the **11:59 p.m., April 17, 2020**, deadline for application review. Click the links below to download copies.
 
 - [Completed Uniform State Grant Application (Word)](NOFO.VOCA.CIVILLEGAL.APPLICATION.docx)
-- [Completed Program Narrative and Logic Model (Word)](NOFO.VOCA.CIVILLEGAL.NARRATIVE.docx)
+- [Completed Program Narrative and Logic Model (Word)](NOFO.VOCA.CivilLegal.NARRATIVE.docx)
 
 - [Completed Budget/Budget Narrative (Excel)](NOFO.VOCA.CIVILLEGAL.BUDGET.xlsx)
 

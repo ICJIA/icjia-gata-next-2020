@@ -10,7 +10,9 @@ export const handleClicks = {
       const { target } = $event;
       const href = $event.target.href;
       const mailto = /mailto/g;
-      const isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json)$/i.test(href);
+      const isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json|ppt|pptx)$/i.test(
+        href
+      );
 
       if (isAFile) {
         $event.preventDefault();
