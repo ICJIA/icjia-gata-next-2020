@@ -2,7 +2,7 @@
 title: "Violence Against Women Act Culturally Specific Victim Services (VAWACS)"
 created: "2020-02-10"
 posted: "2020-02-10"
-expires: "2020-03-31"
+expires: "2020-04-30"
 excerpt: "The Illinois Criminal Justice Information Authority is requesting proposals for grants to support culturally specific victim services."
 status: "live"
 section: "funding"
