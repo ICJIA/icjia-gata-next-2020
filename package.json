@@ -22,7 +22,8 @@
     "build:lambda": "netlify-lambda build ./src/lambda",
     "start:lambda": "netlify-lambda serve ./src/lambda",
     "postbuild": "node generateBuildInfo.js",
-    "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md"
+    "version": "auto-changelog -p --commit-limit false --sort-commits date && git add CHANGELOG.md",
+    "scripts": "NODE_ENV=development node generateApi.js && node generateSitemap.js"
   },
   "dependencies": {
     "aos": "^3.0.0-beta.6",
