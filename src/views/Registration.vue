@@ -267,7 +267,7 @@ export default {
               obj.details.venue.address = {};
               obj.details.venue.address.address_1 = "";
               obj.details.venue.address.address_2 = "";
-              obj.details.venue.address.city = "ONLINE ONLY";
+              obj.details.venue.address.city = "ONLINE";
               obj.details.venue.address.region = "";
               obj.details.venue.address.postal_code = "";
               obj.details.venue.address.country = "";
@@ -275,7 +275,7 @@ export default {
               obj.details.venue.address.longitude = null;
               obj.details.venue.address.latitude = null;
               obj.details.venue.address.localized_address_display =
-                "Register to receive WebEx link";
+                "Register to receive workshop link";
               obj.details.venue.address.localized_area_display = "ONLINE ONLY";
               obj.details.venue.address.localized_multi_line_address_display = [
                 "ONLINE",
