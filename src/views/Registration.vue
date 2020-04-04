@@ -298,6 +298,7 @@ export default {
         .catch((err) => {
           this.errorMsg = err.message;
           this.isError = true;
+          console.error(err);
         });
 
       //console.log(this.workshopsLastUpdated);
