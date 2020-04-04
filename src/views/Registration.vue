@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-container
+    <!-- <v-container
       v-if="
         $vuetify.breakpoint.md ||
-          $vuetify.breakpoint.lg ||
-          $vuetify.breakpoint.xl
+        $vuetify.breakpoint.lg ||
+        $vuetify.breakpoint.xl
       "
     >
       <v-row class="mb-12">
@@ -81,7 +81,7 @@
               <div
                 v-if="isError"
                 class="mt-8 text-center"
-                style="color: red; font-size: 16px"
+                style="color: red; font-size: 16px;"
               >
                 <div>
                   Cannot get workshop information. Please reload and try again.
@@ -93,7 +93,7 @@
                     >CJA.GrantTA@Illinois.gov</a
                   >.
                 </div>
-                <div style="font-weight: 900" class="mt-5">
+                <div style="font-weight: 900;" class="mt-5">
                   {{ errorMsg }}
                 </div>
               </div>
@@ -136,21 +136,11 @@
                 </v-tab-item>
               </v-tabs-items>
             </v-card>
-            <!-- <div
-              v-if="!loading && !isError && events.length > 0"
-              class="text-right mt-2"
-              style="font-size: 12px; font-weight: 900; color: #888"
-            >
-              Workshop list last updated:
-              <span style="color: #333">{{
-                moment(workshopsLastUpdated).fromNow()
-              }}</span>
-            </div> -->
           </div>
         </v-col>
       </v-row>
-    </v-container>
-    <v-container v-else>
+    </v-container> -->
+    <v-container>
       <v-row>
         <v-col>
           <div>
@@ -176,7 +166,7 @@
           <div
             v-if="isError"
             class="mt-8 text-center"
-            style="color: red; font-size: 16px"
+            style="color: red; font-size: 16px;"
           >
             <div>
               Cannot get workshop information. Please reload and try again.
@@ -188,21 +178,11 @@
                 >CJA.GrantTA@Illinois.gov</a
               >.
             </div>
-            <div style="font-weight: 900" class="mt-5">
+            <div style="font-weight: 900;" class="mt-5">
               {{ errorMsg }}
             </div>
           </div>
 
-          <!-- <div
-            v-if="!loading && !isError && events.length > 0"
-            class="text-center mt-2"
-            style="font-size: 12px; font-weight: 900; color: #888"
-          >
-            Workshop list last updated:
-            <span style="color: #333">{{
-              moment(workshopsLastUpdated).fromNow()
-            }}</span>
-          </div> -->
           <v-card flat>
             <v-card-text>
               <EventList
@@ -231,14 +211,14 @@ export default {
   components: {
     EventCalendar,
     EventMap,
-    EventList
+    EventList,
   },
   created() {
     this.getEventBriteEvents();
   },
   metaInfo() {
     return {
-      title: this.pageTitle
+      title: this.pageTitle,
     };
   },
   mounted() {},
@@ -246,7 +226,7 @@ export default {
     getColor(name) {
       let type = name.split(":");
 
-      let obj = this.colorMap.filter(c => {
+      let obj = this.colorMap.filter((c) => {
         return c.name === type[0].toLowerCase();
       });
       if (obj.length) {
@@ -270,10 +250,10 @@ export default {
 
       await axios
         .get(calendarFeedEndpoint, { timeout: 15000 })
-        .then(res => {
+        .then((res) => {
           events = res;
           this.isError = false;
-          this.events = events.data.events.map(event => {
+          this.events = events.data.events.map((event) => {
             let obj = {};
             obj.name = event.name.text;
             obj.start = event.start.local;
@@ -281,13 +261,33 @@ export default {
             obj.color = "blue darken-4";
             obj.details = event;
             obj.updatedAt = event.changed;
+            if (!event.venue) {
+              obj.details.venue = {};
+              obj.details.venue.name = "ONLINE ONLY";
+              obj.details.venue.address = {};
+              obj.details.venue.address.address_1 = "";
+              obj.details.venue.address.address_2 = "";
+              obj.details.venue.address.city = "ONLINE ONLY";
+              obj.details.venue.address.region = "";
+              obj.details.venue.address.postal_code = "";
+              obj.details.venue.address.country = "";
+              obj.details.venue.address.latitude = null;
+              obj.details.venue.address.longitude = null;
+              obj.details.venue.address.latitude = null;
+              obj.details.venue.address.localized_address_display =
+                "Register to receive WebEx link";
+              obj.details.venue.address.localized_area_display = "ONLINE ONLY";
+              obj.details.venue.address.localized_multi_line_address_display = [
+                "ONLINE",
+              ];
+            }
             return obj;
           });
 
           this.workshopsLastUpdated = new Date(
             Math.max.apply(
               null,
-              this.events.map(function(e) {
+              this.events.map(function (e) {
                 return new Date(e.updatedAt);
               })
             )
@@ -295,7 +295,7 @@ export default {
           // this.events = [];
           // this.workshopsLastUpdated = new Date();
         })
-        .catch(err => {
+        .catch((err) => {
           this.errorMsg = err.message;
           this.isError = true;
         });
@@ -304,11 +304,11 @@ export default {
       this.$ga.page({
         page: this.$route.path,
         title: this.pageTitle,
-        location: window.location.href
+        location: window.location.href,
       });
       NProgress.done();
       this.loading = false;
-    }
+    },
   },
   data: () => ({
     loading: true,
@@ -319,8 +319,8 @@ export default {
     clientGeolocation: null,
     workshopsLastUpdated: null,
     moment,
-    pageTitle: "Workshop Registration"
-  })
+    pageTitle: "Workshop Registration",
+  }),
 };
 </script>
 

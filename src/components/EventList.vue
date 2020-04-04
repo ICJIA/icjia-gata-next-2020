@@ -17,7 +17,7 @@
     <div
       v-if="!events.length && !isError && !loading"
       class="my-10 text-center"
-      style="font-size: 24px; font-weight: 900; line-height: 1.3em"
+      style="font-size: 24px; font-weight: 900; line-height: 1.3em;"
     >
       No workshops currently scheduled. Please check back shortly.
       <br />
@@ -48,7 +48,14 @@
             >
               <h2
                 class="mb-5 tocHeadingList"
-                style="font-size: 28px; line-height: 1.2em;background: #2657A9; color:  #fff; padding: 10px; margin-top: 50px; "
+                style="
+                  font-size: 28px;
+                  line-height: 1.2em;
+                  background: #2657a9;
+                  color: #fff;
+                  padding: 10px;
+                  margin-top: 50px;
+                "
                 :id="`city-${slugs(city)}`"
               >
                 {{ city }}
@@ -66,7 +73,15 @@
             >
               <h2
                 class="mb-5 tocHeading"
-                style="font-size: 28px; line-height: 1.2em; text-transform: uppercase; background: #2657A9; color:  #fff; padding: 10px; margin-top: 50px; "
+                style="
+                  font-size: 28px;
+                  line-height: 1.2em;
+                  text-transform: uppercase;
+                  background: #2657a9;
+                  color: #fff;
+                  padding: 10px;
+                  margin-top: 50px;
+                "
                 id="eventDate"
               >
                 {{ moment(eventDate).format("dddd, MMMM DD, YYYY") }}
@@ -115,7 +130,7 @@ export default {
       if (newValue === false) {
         this.groupAllEvents();
       }
-    }
+    },
   },
 
   computed: {
@@ -132,7 +147,7 @@ export default {
       } else {
         return true;
       }
-    }
+    },
   },
 
   data() {
@@ -147,18 +162,18 @@ export default {
       moment,
 
       sort: {
-        sort_id: 1
+        sort_id: 1,
       },
       sortBy: [
         {
           id: 1,
-          name: "City"
+          name: "City",
         },
         {
           id: 2,
-          name: "Date"
-        }
-      ]
+          name: "Date",
+        },
+      ],
     };
   },
 
@@ -170,10 +185,10 @@ export default {
 
     async groupAllEvents() {
       this.isGrouped = false;
-      this.groupedCities = _.groupBy(this.events, function(event) {
+      this.groupedCities = _.groupBy(this.events, function (event) {
         return event.details.venue.address.city;
       });
-      this.groupedDates = _.groupBy(this.events, function(event) {
+      this.groupedDates = _.groupBy(this.events, function (event) {
         return event.start;
       });
       for (const property in this.groupedCities) {
@@ -194,28 +209,29 @@ export default {
       } else {
         return "10";
       }
-    }
+    },
   },
   components: {
+    // eslint-disable-next-line vue/no-unused-components
     EventDetails,
     // eslint-disable-next-line vue/no-unused-components
     EventToc,
-    EventLoader
+    EventLoader,
   },
   props: {
     events: {
       type: Array,
-      default: () => []
+      default: () => [],
     },
     loading: {
       type: Boolean,
-      default: true
+      default: true,
     },
     isError: {
       type: Boolean,
-      default: true
-    }
-  }
+      default: true,
+    },
+  },
 };
 </script>
 
