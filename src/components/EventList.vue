@@ -167,7 +167,7 @@ export default {
       sortBy: [
         {
           id: 1,
-          name: "City",
+          name: "Location",
         },
         {
           id: 2,
