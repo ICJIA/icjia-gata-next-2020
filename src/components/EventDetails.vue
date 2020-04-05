@@ -168,9 +168,6 @@ export default {
   font-weight: 900;
 }
 
-.v-btn__content {
-  font-size: 10px;
-}
 .online {
   color: #304ffe;
 }
