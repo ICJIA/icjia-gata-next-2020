@@ -1,27 +1,28 @@
 <template>
   <div>
-    <v-card class="py-5 grey lighten-4 elevation-6">
+    <v-card class="my-4 py-5 grey lighten-4 elevation-6">
       <!-- <v-btn
         absolute
         dark
         fab
+        top
         right
-        color="blue darken-3"
+        color="teal darken-3"
         v-if="isItNew(event)"
       >
-        New!
+        <span font-size="9px !important;">ONLINE</span>
       </v-btn> -->
 
       <h2
         v-if="showTitle"
-        style="font-weight: 900"
+        style="font-weight: 900;"
         class="pl-3"
-        id="event.name"
+        :id="slugs(event.name)"
       >
         {{ event.name }}
       </h2>
-      <v-card-text style=" font-weight: 700;">
-        <div style="font-size: 18px">
+      <v-card-text style="font-weight: 700;">
+        <div style="font-size: 18px;">
           {{ moment(event.start).format("dddd, MMMM DD, YYYY") }}
         </div>
         <div class="mt-1">
@@ -35,10 +36,16 @@
       <v-card-text style="margin-top: -30px;">
         <div class="subtitle-1 black--text">
           <v-card-text class="mb-5">
-            <strong>{{ event.details.venue.name }}</strong>
+            <strong>
+              <span :class="{ online: event.online_event }">{{
+                event.details.venue.name
+              }}</span></strong
+            >
 
             <div>
-              {{ event.details.venue.address.localized_address_display }}
+              <span :class="{ online: event.online_event }">
+                {{ event.details.venue.address.localized_address_display }}
+              </span>
             </div>
           </v-card-text>
         </div>
@@ -51,18 +58,19 @@
       <v-card-actions class="mt-3">
         <v-chip
           class="seats-available hidden-sm-and-down"
-          style="font-size: 14px"
+          style="font-size: 14px;"
         >
           {{ seatsRemaing }}
           {{ seatWord }} remaining</v-chip
         >
         <v-chip
           class="seats-available hidden-md-and-up"
-          style="font-size: 12px"
+          style="font-size: 12px;"
         >
           {{ seatsRemaing }}
           {{ seatWord }} left</v-chip
         >
+
         <v-spacer></v-spacer>
         <v-btn
           small
@@ -103,6 +111,7 @@
 </template>
 
 <script>
+const slugs = require("slugs");
 import moment from "moment";
 export default {
   methods: {
@@ -118,7 +127,7 @@ export default {
       } else {
         return false;
       }
-    }
+    },
   },
   computed: {
     seatsRemaing() {
@@ -129,32 +138,40 @@ export default {
     },
     seatWord() {
       return this.seatsRemaing === 1 ? "seat" : "seats";
-    }
+    },
   },
   data() {
     return {
-      moment
+      moment,
+      slugs,
     };
   },
   props: {
     event: {
       type: Object,
-      default: () => {}
+      default: () => {},
     },
     showAddress: {
       type: Boolean,
-      default: false
+      default: false,
     },
     showTitle: {
       type: Boolean,
-      default: true
-    }
-  }
+      default: true,
+    },
+  },
 };
 </script>
 
 <style>
 .v-chip__content {
   font-weight: 900;
+}
+
+.v-btn__content {
+  font-size: 10px;
+}
+.online {
+  color: #304ffe;
 }
 </style>

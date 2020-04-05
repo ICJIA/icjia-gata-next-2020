@@ -256,12 +256,13 @@ export default {
           this.events = events.data.events.map((event) => {
             let obj = {};
             obj.name = event.name.text;
+            obj.online_event = event.online_event;
             obj.start = event.start.local;
             obj.end = event.end.local;
             obj.color = "blue darken-4";
             obj.details = event;
             obj.updatedAt = event.changed;
-            if (!event.venue) {
+            if (!event.venue && event.online_event) {
               obj.details.venue = {};
               obj.details.venue.name = "ONLINE ONLY";
               obj.details.venue.address = {};

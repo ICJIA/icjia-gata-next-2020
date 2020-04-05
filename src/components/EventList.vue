@@ -90,7 +90,7 @@
                 v-for="event in groupedDates[eventDate]"
                 :key="event.details.id"
               >
-                <EventDetails :event="event" class="mb-2"></EventDetails>
+                <EventDetails :event="event"></EventDetails>
               </div>
             </div>
           </div>
