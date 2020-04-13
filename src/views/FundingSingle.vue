@@ -5,7 +5,7 @@
       id="baseContentTop"
       class="mb-12"
       :loading="page.loading"
-      style="margin-top: 100px"
+      style="margin-top: 55px"
     >
       <template v-if="isExpired && !$browserDetect.isIE" slot="expired">
         <div
