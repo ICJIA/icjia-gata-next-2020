@@ -127,39 +127,43 @@ export default {
       } else {
         return false;
       }
-    },
+    }
   },
   computed: {
     seatsRemaing() {
-      return (
+      let seats =
         this.event.details.ticket_classes[0]["quantity_total"] -
-        this.event.details.ticket_classes[0]["quantity_sold"]
-      );
+        this.event.details.ticket_classes[0]["quantity_sold"];
+      if (seats <= 0) {
+        return 0;
+      } else {
+        return seats;
+      }
     },
     seatWord() {
       return this.seatsRemaing === 1 ? "seat" : "seats";
-    },
+    }
   },
   data() {
     return {
       moment,
-      slugs,
+      slugs
     };
   },
   props: {
     event: {
       type: Object,
-      default: () => {},
+      default: () => {}
     },
     showAddress: {
       type: Boolean,
-      default: false,
+      default: false
     },
     showTitle: {
       type: Boolean,
-      default: true,
-    },
-  },
+      default: true
+    }
+  }
 };
 </script>
 
