@@ -7,14 +7,14 @@
       :loading="page.loading"
       style="margin-top: 100px"
     >
-      <!-- <template v-if="isExpired && !$browserDetect.isIE" slot="expired">
+      <template v-if="isExpired && !$browserDetect.isIE" slot="expired">
         <div
           style="background: #EF5350; color: #fff; font-weight: bold; font-size: 18px; margin-left: -20px; margin-right: -20px; margin-top: -10px"
           class="px-2 py-2 text-center mb-10"
         >
           THIS FUNDING OPPORTUNITY HAS EXPIRED
         </div>
-      </template> -->
+      </template>
       <template v-slot:title>
         <v-container v-if="page.content && page.status === 200">
           <v-row class="text-left">
@@ -111,7 +111,10 @@ export default {
     isExpired() {
       const today = new Date();
       const target = new Date(today.getTime() + 24 * 60 * 60 * 250);
-      if (new Date(this.page.content.expires) < target) {
+      const expiration = new Date(this.page.content.expires);
+      expiration.setDate(expiration.getDate() + 1);
+      console.log(expiration);
+      if (expiration < target) {
         return true;
       } else {
         return false;
