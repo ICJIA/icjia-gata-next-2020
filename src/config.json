@@ -2,7 +2,6 @@
   "clientURL": "https://icjia.illinois.gov",
   "publicPath": "/gata",
   "base": "gata",
-
   "search": {
     "shouldSort": true,
     "threshold": 0.8,
@@ -12,9 +11,7 @@
     "minMatchCharLength": 3,
     "keys": ["searchMeta", "title", "summary", "name", "slug"]
   },
-
   "debug": true,
-
   "markdownItOptions": {
     "html": true,
     "xhtmlOut": false,
@@ -24,7 +21,6 @@
     "typographer": false,
     "quotes": "“”‘’"
   },
-
   "archiveBaseURL": "https://archive.icjia.cloud",
   "markdownSourcePath": "./src/markdown/",
   "staticAssetPath": "/public",
