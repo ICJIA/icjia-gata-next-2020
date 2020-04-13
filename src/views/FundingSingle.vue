@@ -112,7 +112,7 @@ export default {
       const today = new Date();
       const target = new Date(today.getTime() + 24 * 60 * 60 * 250);
       const expiration = new Date(this.page.content.expires);
-      expiration.setDate(expiration.getDate() + 1);
+      expiration.setDate(expiration.getDate() + 2);
       console.log(expiration);
       if (expiration < target) {
         return true;
