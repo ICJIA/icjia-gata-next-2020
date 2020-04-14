@@ -162,6 +162,11 @@
                 >CJA.GrantTA@Illinois.gov</a
               >
             </p>
+            <p>
+              Due to the COVID-19 outbreak, ICJIA has expanded the workshop
+              format to include both in-person and online sessions. In-person
+              session dates are subject to change.
+            </p>
           </div>
           <div
             v-if="isError"
