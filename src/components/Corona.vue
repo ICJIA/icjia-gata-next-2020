@@ -1,28 +1,36 @@
 <template>
   <div>
-    <v-alert dense v-model="alert" text dismissible color="info" class="mb-0">
-      <div style="color: #000 !important;" class="my-2">
-        <v-icon color="red">error</v-icon>
-
+    <v-alert
+      icon="mdi-alert"
+      border="left"
+      prominent
+      dense
+      text
+      dismissible
+      color="info"
+      class="px-6 py-4"
+    >
+      <div class="pl-3" style="color: #444">
         View up to date information on how Illinois is handling the Coronavirus
         Disease 2019 (COVID-19) from the
 
         <a
           href="https://coronavirus.illinois.gov"
           style="text-decoration: underline;"
+          target="_blank"
           >State of Illinois Coronavirus Response Site</a
-        >
+        >.
       </div>
-      <!-- <div style="color: #000 !important;">
-        <v-icon color="red">error</v-icon>
-
-        View up to date news & information from ICJIA at
+      <div class="pl-3 mt-1" style="color: #444">
+        View
         <a
-          href="https://coronavirus.illinois.gov"
+          href="https://icjia.illinois.gov/covid19"
+          target="_blank"
           style="text-decoration: underline;"
-          >ICJIA's Coronavirus Response Site</a
+          >ICJIA's COVID-19 Response page</a
         >
-      </div> -->
+        for the latest grant and fiscal notifications, resources, and more.
+      </div>
     </v-alert>
   </div>
 </template>
@@ -31,13 +39,13 @@
 export default {
   data() {
     return {
-      alert: true,
+      alert: true
     };
   },
   methods: {
     reset() {
       this.alert = true;
-    },
-  },
+    }
+  }
 };
 </script>
