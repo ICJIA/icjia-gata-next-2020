@@ -1,6 +1,7 @@
 {
   "clientURL": "https://icjia.illinois.gov",
   "publicPath": "/gata",
+  "coronaInfoURL": "https://coronavirus.icjia-api.cloud/v2",
   "base": "gata",
   "search": {
     "shouldSort": true,
