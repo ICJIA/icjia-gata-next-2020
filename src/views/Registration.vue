@@ -262,6 +262,11 @@ export default {
             obj.color = "blue darken-4";
             obj.details = event;
             obj.updatedAt = event.changed;
+            if (event.online_event) {
+              obj.rank = 0;
+            } else {
+              obj.rank = 100;
+            }
             if (!event.venue && event.online_event) {
               obj.details.venue = {};
               obj.details.venue.name = "ONLINE ONLY";
@@ -288,7 +293,7 @@ export default {
           this.workshopsLastUpdated = new Date(
             Math.max.apply(
               null,
-              this.events.map(function (e) {
+              this.events.map(function(e) {
                 return new Date(e.updatedAt);
               })
             )

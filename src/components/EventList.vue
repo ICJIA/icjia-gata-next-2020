@@ -185,10 +185,10 @@ export default {
 
     async groupAllEvents() {
       this.isGrouped = false;
-      this.groupedCities = _.groupBy(this.events, function (event) {
+      this.groupedCities = _.groupBy(this.events, function(event) {
         return event.details.venue.address.city;
       });
-      this.groupedDates = _.groupBy(this.events, function (event) {
+      this.groupedDates = _.groupBy(this.events, function(event) {
         return event.start;
       });
       for (const property in this.groupedCities) {
@@ -197,7 +197,7 @@ export default {
       for (const property in this.groupedDates) {
         this.dates.push(property);
       }
-      this.cities.sort();
+      // this.cities.sort();
       this.dates.sort();
       this.isGrouped = true;
     },
