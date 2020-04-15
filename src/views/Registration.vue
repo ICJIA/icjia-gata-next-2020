@@ -251,7 +251,7 @@ export default {
       let calendarFeedEndpoint =
         process.env.NODE_ENV === "development"
           ? `http://localhost:9000/.netlify/functions/events`
-          : `https://gatadev.netlify.com/.netlify/functions/events`;
+          : `https://gatadev.netlify.app/.netlify/functions/events`;
 
       await axios
         .get(calendarFeedEndpoint, { timeout: 15000 })
