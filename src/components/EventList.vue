@@ -130,7 +130,7 @@ export default {
       if (newValue === false) {
         this.groupAllEvents();
       }
-    },
+    }
   },
 
   computed: {
@@ -147,7 +147,7 @@ export default {
       } else {
         return true;
       }
-    },
+    }
   },
 
   data() {
@@ -162,18 +162,18 @@ export default {
       moment,
 
       sort: {
-        sort_id: 1,
+        sort_id: 1
       },
       sortBy: [
         {
           id: 1,
-          name: "Location",
+          name: "Location"
         },
         {
           id: 2,
-          name: "Date",
-        },
-      ],
+          name: "Date"
+        }
+      ]
     };
   },
 
@@ -197,7 +197,12 @@ export default {
       for (const property in this.groupedDates) {
         this.dates.push(property);
       }
-      // this.cities.sort();
+
+      // move 'ONLINE' to first position
+      this.cities = this.cities.filter(item => item !== "ONLINE");
+      this.cities.unshift("ONLINE");
+      console.log(this.cities);
+
       this.dates.sort();
       this.isGrouped = true;
     },
@@ -209,29 +214,29 @@ export default {
       } else {
         return "10";
       }
-    },
+    }
   },
   components: {
     // eslint-disable-next-line vue/no-unused-components
     EventDetails,
     // eslint-disable-next-line vue/no-unused-components
     EventToc,
-    EventLoader,
+    EventLoader
   },
   props: {
     events: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     loading: {
       type: Boolean,
-      default: true,
+      default: true
     },
     isError: {
       type: Boolean,
-      default: true,
-    },
-  },
+      default: true
+    }
+  }
 };
 </script>
 

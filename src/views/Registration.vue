@@ -216,14 +216,14 @@ export default {
   components: {
     EventCalendar,
     EventMap,
-    EventList,
+    EventList
   },
   created() {
     this.getEventBriteEvents();
   },
   metaInfo() {
     return {
-      title: this.pageTitle,
+      title: this.pageTitle
     };
   },
   mounted() {},
@@ -231,7 +231,7 @@ export default {
     getColor(name) {
       let type = name.split(":");
 
-      let obj = this.colorMap.filter((c) => {
+      let obj = this.colorMap.filter(c => {
         return c.name === type[0].toLowerCase();
       });
       if (obj.length) {
@@ -255,10 +255,10 @@ export default {
 
       await axios
         .get(calendarFeedEndpoint, { timeout: 15000 })
-        .then((res) => {
+        .then(res => {
           events = res;
           this.isError = false;
-          this.events = events.data.events.map((event) => {
+          this.events = events.data.events.map(event => {
             let obj = {};
             obj.name = event.name.text;
             obj.online_event = event.online_event;
@@ -289,7 +289,7 @@ export default {
                 "Register to receive workshop link";
               obj.details.venue.address.localized_area_display = "ONLINE ONLY";
               obj.details.venue.address.localized_multi_line_address_display = [
-                "ONLINE",
+                "ONLINE"
               ];
             }
             return obj;
@@ -306,7 +306,7 @@ export default {
           // this.events = [];
           // this.workshopsLastUpdated = new Date();
         })
-        .catch((err) => {
+        .catch(err => {
           this.errorMsg = err.message;
           this.isError = true;
           console.error(err);
@@ -316,11 +316,11 @@ export default {
       this.$ga.page({
         page: this.$route.path,
         title: this.pageTitle,
-        location: window.location.href,
+        location: window.location.href
       });
       NProgress.done();
       this.loading = false;
-    },
+    }
   },
   data: () => ({
     loading: true,
@@ -331,8 +331,8 @@ export default {
     clientGeolocation: null,
     workshopsLastUpdated: null,
     moment,
-    pageTitle: "Workshop Registration",
-  }),
+    pageTitle: "Workshop Registration"
+  })
 };
 </script>
 

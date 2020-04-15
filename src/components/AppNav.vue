@@ -65,7 +65,7 @@ export default {
       if (item.showInNav) return item;
     });
     this.links = filteredPages;
-    console.log(this.links);
+    //console.log(this.links);
     this.loading = false;
   },
   data() {
