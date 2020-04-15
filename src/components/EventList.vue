@@ -59,6 +59,7 @@
                 :id="`city-${slugs(city)}`"
               >
                 {{ city }}
+                <!-- <span v-if="city !== 'online'">(in-person)</span> -->
               </h2>
               <div v-for="event in groupedCities[city]" :key="event.details.id">
                 <EventDetails :event="event" class="mb-2"></EventDetails>
@@ -199,7 +200,7 @@ export default {
       }
 
       // move 'ONLINE' to first position
-      this.cities = this.cities.filter(item => item !== "ONLINE");
+      this.cities = this.cities.filter(item => item !== "ONLINE").sort();
       this.cities.unshift("ONLINE");
       console.log(this.cities);
 

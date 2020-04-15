@@ -27,9 +27,10 @@
           :key="index"
           @click="scrollTo(item.id)"
         >
-          <span :id="`scrollTo-${item.id}`" class="tocItem">{{
-            item.text
-          }}</span>
+          <span :id="`scrollTo-${item.id}`" class="tocItem"
+            >{{ item.text }}
+            <div v-if="item.id !== 'city-online'">(in-person)</div></span
+          >
         </li>
       </ul>
     </div>
@@ -124,6 +125,9 @@ export default {
         let obj = {};
         obj.text = section.innerText;
         obj.id = section.id;
+        // if (obj.text !== "ONLINE") {
+        //   this.toc.push(obj);
+        // }
         this.toc.push(obj);
       });
       //console.log(sections);
