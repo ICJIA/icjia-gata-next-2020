@@ -141,6 +141,6 @@ export default {
 
 <style>
 .online-spacer {
-  height: 10px !important;
+  height: 12px !important;
 }
 </style>
