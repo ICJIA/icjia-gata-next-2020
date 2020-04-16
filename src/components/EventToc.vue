@@ -29,8 +29,11 @@
         >
           <span :id="`scrollTo-${item.id}`" class="tocItem"
             >{{ item.text }}
-            <div v-if="item.id !== 'city-online'">(in-person)</div></span
+            <div v-if="item.id !== 'city-online'" style="color: #888">
+              (in-person)
+            </div></span
           >
+          <div v-if="item.id === 'city-online'" class="online-spacer"></div>
         </li>
       </ul>
     </div>
@@ -136,4 +139,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.online-spacer {
+  height: 10px !important;
+}
+</style>
