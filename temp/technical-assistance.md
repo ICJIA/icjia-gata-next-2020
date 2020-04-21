@@ -15,7 +15,7 @@ dividerAfter: false
 
 ## OVERVIEW
 
-Take the mystery out of securing state grant funding with an ICJIA Technical Assistance Workshop. ICJIA offers workshops throughout the state to ease the application process for organizations seeking grant funding. Participants will receive an overview of the ICJIA grant process and what it means to comply with the Grant Accountability and Transparency Act (GATA). GATA was created to ensure a coordinated, transparent process for efficient oversight of grant recipient selection and monitoring. The process also promotes quality programs and limits fraud, waste, and abuse.
+Take the mystery out of securing state grant funding with an ICJIA Technical Assistance Workshop. ICJIA offers online and in-person workshops to ease the application process for organizations seeking grant funding. Participants will receive an overview of the ICJIA grant process and what it means to comply with the Grant Accountability and Transparency Act (GATA). GATA was created to ensure a coordinated, transparent process for efficient oversight of grant recipient selection and monitoring. The process also promotes quality programs and limits fraud, waste, and abuse.
 
 Participants will learn:
 
@@ -28,7 +28,9 @@ Participants will leave with an understanding of the steps of the grant process 
 
 ## WORKSHOP DESIGN
 
-Trained instructors will provide an interactive, four-hour curriculum in a classroom setting. Topics will include finding the right grant opportunity, being ready to apply, and completing and submitting a grant application. Workbooks will be provided. Participants are highly encouraged to bring their laptops and cell phones.
+ONLINE: Trained instructors will provide a two-part, three-hour webinar on finding the right grant opportunity, being ready to apply, and completing and submitting a grant application. Workbooks will be provided. Please note: Online training participants must register for Parts 1 and 2 separately. They may take place on different days.  
+
+IN-PERSON: Trained instructors will provide an interactive, four-hour curriculum in a classroom setting. Topics will include finding the right grant opportunity, being ready to apply, and completing and submitting a grant application. Workbooks will be provided. Participants are highly encouraged to bring their laptops and cell phones.
 
 ## WHO CAN PARTICIPATE?
 
@@ -40,11 +42,11 @@ Register [here](/registration) for an online or in-person workshop.
 
 ## COST
 
-Participants in these workshops can register free of charge.
+Free.
 
 ## HOST A TRAINING
 
-Partner with ICJIA to host a training. Community outreach to promote registration and encourage local participation also will be needed.
+Partner with ICJIA to host an in-person training. Community outreach to promote registration and encourage local participation also will be needed.
 
 Requirements:
 
@@ -55,4 +57,4 @@ Requirements:
 - Participant access to public restroom
 - Accessible facility
 
-If you are interested in hosting a training, contact CJA.GrantTA@Illinois.gov with proposed dates and locations for a future training.
+If you are interested in hosting a training, please contact CJA.GrantTA@Illinois.gov with proposed dates and locations for a future training.
