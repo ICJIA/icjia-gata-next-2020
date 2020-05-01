@@ -1,9 +1,9 @@
 ---
-title: "FFY17 and FFY18 Edward Byrne Memorial Justice Assistance Grant Comprehensive Law Enforcement Response to Drugs"
+title: "NOTICE OF FUNDING OPPORTUNITY COMPREHENSIVE LAW ENFORCEMENT RESPONSES TO DRUGS"
 created: "2020-04-29"
 posted: "2020-04-30"
 expires: "2020-06-01"
-excerpt: "The Illinois Criminal Justice Information Authority is requesting proposals for grants to support comprehensive law enforcement responses to drugs."
+excerpt: "The Illinois Criminal Justice Information Authority is requesting proposals for grants to support comprehensive law enforcement responses to drugs. Grants will be made with FFY17 and FFY18 Edward Byrne Memorial Justice Assistance Grant (JAG) funds. A total of $3.5 million in funding will be made available to support the JAG goal of reducing substance misuse and availability in Illinois communities."
 status: "live"
 section: "funding"
 showToc: true
