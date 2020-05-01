@@ -19,7 +19,8 @@
         <v-container v-if="page.content && page.status === 200">
           <v-row class="text-left">
             <v-col cols="12">
-              <h1 class="page-title">
+              <h1 class="page-title uppercase">
+                NOTICE OF FUNDING OPPORTUNITY<br />
                 {{ page.content.title }}
               </h1>
             </v-col>
@@ -187,4 +188,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style>
+.uppercase {
+  text-transform: uppercase;
+}
+</style>

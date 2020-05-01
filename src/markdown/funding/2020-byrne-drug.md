@@ -1,5 +1,5 @@
 ---
-title: "NOTICE OF FUNDING OPPORTUNITY COMPREHENSIVE LAW ENFORCEMENT RESPONSE TO DRUGS"
+title: "Comprehensive Law Enforcement Response To Drugs"
 created: "2020-04-29"
 posted: "2020-04-30"
 expires: "2020-06-01"
