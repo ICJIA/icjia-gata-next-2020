@@ -43,7 +43,7 @@ Funding is available for the period beginning with grant execution (estimated fo
 
 ## Technical Assistance Sessions
 
-It is recommended that applicants participate in one of the three live webinars (links below; password is R3NOFO) or view the recordings of those webinars, which will be available on the ICJIA NOFO website and at the R3 website at [https://r3.illinois.gov/resources](https://r3.illinois.gov/resources) beginning on May 22, 2020, at 1:00 p.m.  
+It is recommended that applicants participate in one of the three live webinars (links below; password is **R3NOFO**) or view the recordings of those webinars, which will be available on the ICJIA NOFO website and at the R3 website at [https://r3.illinois.gov/resources](https://r3.illinois.gov/resources) beginning on May 22, 2020, at 1:00 p.m.  
 
 [Webinar #1 (5/19/2020 from 2:00 to 3:00 pm)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200519T190000Z)
 
