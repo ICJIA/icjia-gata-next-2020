@@ -1,27 +1,27 @@
 ---
-title: "R3 Assessment and Planning"
+title: "R3 Service Delivery"
 created: "2020-05-14"
 posted: "2020-05-14"
 expires: "2020-07-20"
-excerpt: "The Illinois Criminal Justice Information Authority is requesting proposals for grants for the Restore, Reinvest, and Renew (R3) program. Grants will be made with fiscal year 2021 funds made available to a trust fund established by The Cannabis Regulation and Tax Act. A total of $3,150,000 in funding is available through this solicitation for use over a period of approximately 9 months."
+excerpt: "The Illinois Criminal Justice Information Authority is requesting proposals for grants for the Restore, Reinvest, and Renew (R3) program. Grants will be made with fiscal year 2021 funds made available to a trust fund established by The Cannabis Regulation and Tax Act. A total of $28,350,000 in funding is available through this solicitation for use over a period of approximately 9 months."
 status: "live"
 section: "funding"
 showToc: true
 ---
 
-[LINK TO NOFO](R3PlanningNOFOINSTRUCTIONS.pdf) {.text-center .nofo-link}
+[LINK TO NOFO](R3ServiceNOFOINSTRUCTIONS.PDF) {.text-center .nofo-link}
 
-The Illinois Criminal Justice Information Authority is requesting proposals for grants for the Restore, Reinvest, and Renew (R3) program. Grants will be made with fiscal year 2021 funds made available to a trust fund established by The Cannabis Regulation and Tax Act. A total of $3,150,000 in funding is available through this solicitation for use over a period of approximately 9 months. 
+The Illinois Criminal Justice Information Authority is requesting proposals for grants for the Restore, Reinvest, and Renew (R3) program. Grants will be made with fiscal year 2021 funds made available to a trust fund established by The Cannabis Regulation and Tax Act. A total of $28,350,000 in funding is available through this solicitation for use over a period of approximately 9 months.  
 
 **July 20, 2020 at 11:59 pm.**
 
 ## Program Requirements
 
-The Assessment and Planning grant opportunity is available to communities who would like to develop a plan to build capacity within and between organizations to address the R3 Program Priorities most relevant to their communities. These Program Priorities, as established in The Cannabis Regulation and Trust Act, are 1.) Civil Legal Aid, 2.) Economic Development, 3.) Reentry, 4.) Violence Prevention, and 5.) Youth Development.
+The Service Delivery grant funding opportunity for the R3 program is intended for organizations who provide services in their communities that address at least one of the five R3 Program Priorities. These Program Priorities, as established in The Cannabis Regulation and Trust Act, are 1.) Civil Legal Aid, 2.) Economic Development, 3.) Reentry, 4.) Violence Prevention, and 5.) Youth Development. Services proposed may be specific to one priority or address multiple priorities in one program. 
 
-Organizations or collaboratives will develop a clear, well-defined process to assess and identify which of the R3 Program Priorities will be addressed in their communities. A final plan should include participation of community residents and stakeholders; require a unified vision and approach; utilize data and local experience and knowledge to define the community’s needs; and create concrete goals, objectives and performance measures to track progress of the program. The plan also may be used to apply for future funding, and, therefore, should not be directed toward a specific funding source. 
+One of the core principles of the R3 program is that the most useful knowledge and experience about the needs of each community reside in the community itself. As such, the R3 program does not specify what services should be provided to address the program priorities. Applicants are asked to clearly explain the proposed program, identify how the proposed program addresses at least one program priority, and identify the goals, objectives, outputs, outcomes, and measurements that will be used to maintain and evaluate the proposed program. 
 
-Refer to the NOFO for ALL Program Requirements.
+Please refer to the NOFO for ALL Program Requirements.
 
 ## Eligibility Information
 
@@ -31,11 +31,11 @@ Applicants must be pre-qualified through the Grant Accountability and Transparen
    
 ## Deadline
 
-Completed application materials must be emailed to CJA.R3Planning@Illinois.gov and must be received by **11:59 p.m., July 20, 2020**, to be considered for funding. Proposals will not be accepted by mail, fax, or in-person. Incomplete applications will not be reviewed. Late submissions will not be reviewed.
+Completed application materials must be emailed to CJA.R3Service@Illinois.gov and must be received by **11:59 p.m., July 20, 2020**, to be considered for funding. Proposals will not be accepted by mail, fax, or in-person. Incomplete applications will not be reviewed. Late submissions will not be reviewed.
 
 ## Available Funds
 
-A total of $3,150,000 will be made available through this funding opportunity. Grants available through this funding opportunity are a portion of state FY2021 funds. Funding ranges vary by region and are specified in the NOFO and in the Program Narrative. 
+A total of $28,350,000 will be made available through this funding opportunity. Grants available through this funding opportunity are a portion of state FY2021 funds. Funding ranges vary by region and are specified in the NOFO and in the Program Narrative. 
 
 ## Period of Performance
 
@@ -52,13 +52,13 @@ It is recommended that applicants participate in one of the three live webinars 
 [Webinar #3 (5/21/2020 from 10:00 to 11:00 am)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200521T190000Z)
 
 
-Information provided during these webinar recordings will be unofficial and not binding on the state.
+Information provided during these webinar recordings will be unofficial and not binding on the state. 
 
 ## Notice of Intent
 
 Agencies interested in applying are asked to submit an online Notice of Intent by **11:59 p.m., July 6, 2020.**
 
-[Complete Notice of Intent](https://icjia.az1.qualtrics.com/jfe/form/SV_5uKwNBK3Vh5eDnT) {.text-center .noi-link} 
+[Complete Notice of Intent](https://icjia.az1.qualtrics.com/jfe/form/SV_82iTmfysXzy6Nwh)
 
 ## Timeline
 
@@ -80,21 +80,22 @@ Recipients must submit monthly financial reports, quarterly performance data rep
 
 In addition, funded programs may be required to report performance measures through other means as established by the R3 Board in order to evaluate overall program performance as required by the R3 establishing legislation.
 
+
 ## Required Documents
 
-The following documents must be emailed to CJA.R3Planning@Illinois.gov by the **11:59 p.m., July 20, 2020,** deadline for application review. Click the links below to download copies.
+The following documents must be emailed to CJA.R3Service@Illinois.gov by the 11:59 p.m., July 20, 2020, deadline for application review. Click the links below to download copies.
 
 - Download NOFO Instructions (PDF)
 - Completed and signed Uniform State Grant Application (Word) 
 - Completed Program Narrative (Word)
-- Completed Budget/Budget Narrative (Excel)]
+- Completed Budget/Budget Narrative (Excel)
 - Completed Certification of Employee Local Residence Form (Word) – Required ONLY if organization is seeking local preference points based on employee local residence.
 
-[DOWNLOAD ZIP FILE OF ALL REQUIRED APPLICATION DOCUMENTS](R3Planning.zip)  {.text-center .noi-link} 
+[DOWNLOAD ZIP FILE OF ALL REQUIRED APPLICATION DOCUMENTS](R3Service.zip)
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to CJA.R3Planning@Illinois.gov until **11:59 p.m., July 16, 2020**.  Questions and responses will be posted at [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and at [https://grants.icjia.cloud](https://grants.icjia.cloud).
+Questions regarding this NOFO may be submitted to CJA.R3Service@Illinois.gov until 11:59 p.m. July 16, 2020.  Questions and responses will be posted at [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and at [https://grants.icjia.cloud](https://grants.icjia.cloud).
 
 ## Contact Information
 
@@ -106,6 +107,6 @@ Illinois Criminal Justice Information Authority
 
 Chicago, IL 60606
 
-CJA.R3Planning@illinois.gov
+CJA.R3Service@illinois.gov
 
 
