@@ -21,7 +21,7 @@ The Assessment and Planning grant opportunity is available to communities who wo
 
 Organizations or collaboratives will develop a clear, well-defined process to assess and identify which of the R3 Program Priorities will be addressed in their communities. A final plan should include participation of community residents and stakeholders; require a unified vision and approach; utilize data and local experience and knowledge to define the community’s needs; and create concrete goals, objectives and performance measures to track progress of the program. The plan also may be used to apply for future funding, and, therefore, should not be directed toward a specific funding source. 
 
-Refer to the NOFO for ALL Program Requirements.
+Please refer to the NOFO for all Program Requirements.
 
 ## Eligibility Information
 
@@ -50,7 +50,6 @@ It is recommended that applicants participate in one of the three live webinars 
 [Webinar #2 (5/20/2020 from 2:00 to 3:00 pm)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200520T190000Z)
 
 [Webinar #3 (5/21/2020 from 10:00 to 11:00 am)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200521T190000Z)
-
 
 Information provided during these webinar recordings will be unofficial and not binding on the state.
 
@@ -82,9 +81,9 @@ In addition, funded programs may be required to report performance measures thro
 
 ## Required Documents
 
-The following documents must be emailed to CJA.R3Planning@Illinois.gov by the **11:59 p.m., July 20, 2020,** deadline for application review. Click the links below to download copies.
+The following documents must be emailed to CJA.R3Planning@Illinois.gov by the **11:59 p.m., July 20, 2020,** deadline for application review. Download the ZIP file of all required documents below.
 
-- Download NOFO Instructions (PDF)
+- NOFO Instructions (PDF)
 - Completed and signed Uniform State Grant Application (Word) 
 - Completed Program Narrative (Word)
 - Completed Budget/Budget Narrative (Excel)]
