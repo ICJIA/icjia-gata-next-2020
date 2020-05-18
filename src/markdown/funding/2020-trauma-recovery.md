@@ -85,7 +85,9 @@ The following documents must be emailed to cja.SFY21TRCnofo@Illinois.gov by the 
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to cja.SFY21TRCnofo@Illinois.gov until **11:59 p.m. on May 28, 2020**.  Questions and responses are [available here](ResponsetoSFY21TRCnofoQuestions.doc).
+Questions regarding this NOFO may be submitted to cja.SFY21TRCnofo@Illinois.gov until **11:59 p.m. on May 28, 2020**.
+
+Questions and responses are [available here](ResponsetoSFY21TRCnofoQuestions.doc).
 
 ## Contact Information
 
