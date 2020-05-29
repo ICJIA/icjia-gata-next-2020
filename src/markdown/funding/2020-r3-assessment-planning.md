@@ -94,7 +94,9 @@ The following documents must be emailed to CJA.R3Planning@Illinois.gov by the **
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to CJA.R3Planning@Illinois.gov until **11:59 p.m., July 16, 2020**.  Questions and responses will be posted at [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and at [https://grants.icjia.cloud](https://grants.icjia.cloud).
+Questions regarding this NOFO may be submitted to CJA.R3Planning@Illinois.gov until **11:59 p.m., July 16, 2020**.  
+
+Questions and responses are posted on [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and [here](SFY21R3NOFOQuestions.pdf).
 
 ## Contact Information
 
