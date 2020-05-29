@@ -132,8 +132,6 @@ The following documents must be emailed to CJA.2020DrugNOFO@Illinois.gov by the 
 
 - Completed Budget/Budget Narrative (Excel)
 
-- 2020 Drug NOFO Attachment 1 (Word)
-
 [DOWNLOAD ZIP FILE OF ALL REQUIRED APPLICATION DOCUMENTS](2020DrugNOFOZip.zip) {.text-center .Zipfile-link}
 
 ## Questions
