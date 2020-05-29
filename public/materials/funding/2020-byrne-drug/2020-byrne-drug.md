@@ -9,7 +9,7 @@ section: "funding"
 showToc: true
 ---
 
-## Notice of Funding Opportunity FFY17 and FFY18 Edward Byrne Memorial Justice Assistance Grant: Comprehensive Law Enforcement Response to Drugs
+## Notice of Funding Opportunity FFY17 and FFY18 Edward Byrne Memorial Justice Assistance Grant: Comprehensive Law Enforcement Response to Drugs  
 
 [LINK TO NOFO](CompLEDrugNOFO.pdf) {.text-center .nofo-link}
 
@@ -68,7 +68,7 @@ In addition, ICJIA will require the submission of task force personnel rosters t
 
 ## Eligibility Information
 
-Agencies must be pre-qualified through the Grant Accountability and Transparency Act (GATA) Grantee Portal, https://grants.illinois.gov/portal/, to become eligible to apply for an award. Applicants must have completed the GATA pre-qualification process and received approval of the Internal Control Questionnaire (ICQ) SFY 21, or the most recent fiscal year, before the execution of the grant agreement.
+Agencies must be pre-qualified through the Grant Accountability and Transparency Act (GATA) Grantee Portal, https://grants.illinois.gov/portal/, to become eligible to apply for an award.  Applicants must have completed the GATA pre-qualification process and received approval of the Internal Control Questionnaire (ICQ) SFY 21, or the most recent fiscal year, before the execution of the grant agreement. 
 
 ## Eligible Applicants
 
