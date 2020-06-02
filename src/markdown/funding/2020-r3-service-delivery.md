@@ -40,7 +40,7 @@ A total of $28,350,000 will be made available through this funding opportunity. 
 
 Funding is available for the period beginning with grant execution (estimated for September 21, 2020) through June 30, 2021. Based on program performance and fund availability, the ICJIA may recommend allocation of funding to support an additional 24 months.  
 
-## Technical Assistance Sessions
+## Technical Assistance Sessions 
 
 It is recommended that applicants view the recordings of at least one of three webinars (links below). 
 
