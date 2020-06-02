@@ -8,8 +8,7 @@ status: "live"
 section: "funding"
 showToc: true
 ---
-
-[LINK TO NOFO](R3ServiceNOFOINSTRUCTIONS.PDF) {.text-center .nofo-link}
+[LINK TO NOFO](R3ServiceNOFOINSTRUCTIONS.pdf) {.text-center .nofo-link}
 
 The Illinois Criminal Justice Information Authority is requesting proposals for grants for the Restore, Reinvest, and Renew (R3) program. Grants will be made with fiscal year 2021 funds made available to a trust fund established by The Cannabis Regulation and Tax Act. A total of $28,350,000 in funding is available through this solicitation for use over a period of approximately 9 months.  
 
@@ -21,7 +20,7 @@ The Service Delivery grant funding opportunity for the R3 program is intended fo
 
 One of the core principles of the R3 program is that the most useful knowledge and experience about the needs of each community reside in the community itself. As such, the R3 program does not specify what services should be provided to address the program priorities. Applicants are asked to clearly explain the proposed program, identify how the proposed program addresses at least one program priority, and identify the goals, objectives, outputs, outcomes, and measurements that will be used to maintain and evaluate the proposed program. 
 
-Please refer to the NOFO for all Program Requirements.
+Please refer to the NOFO for ALL Program Requirements.
 
 ## Eligibility Information
 
@@ -43,13 +42,13 @@ Funding is available for the period beginning with grant execution (estimated fo
 
 ## Technical Assistance Sessions
 
-It is recommended that applicants participate in one of the three live webinars (links below; password is **R3NOFO**) or view the recordings of those webinars, which will be available on the ICJIA NOFO website and at the R3 website at [https://r3.illinois.gov/resources](https://r3.illinois.gov/resources) beginning on May 22, 2020, at 1:00 p.m.  
+It is recommended that applicants view the recordings of at least one of three webinars (links below). 
 
-[Webinar #1 (5/19/2020 from 2:00 to 3:00 pm)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200519T190000Z)
+- [Webinar #1 (held 5/19/2020 from 2:00 to 3:00 pm)](https://youtu.be/F98-dkr6p-k)
 
-[Webinar #2 (5/20/2020 from 2:00 to 3:00 pm)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200520T190000Z)
+- [Webinar #2 (held 5/20/2020 from 2:00 to 3:00 pm)](https://youtu.be/1K3CD8zWKOE)
 
-[Webinar #3 (5/21/2020 from 10:00 to 11:00 am)](https://illinois.webex.com/webappng/sites/illinois/meeting/info/b71623ba4d9d47f0bb28828338c62848_20200521T190000Z)
+- [Webinar #3 (held 5/21/2020 from 10:00 to 11:00 am)](https://youtu.be/FGYJe3T1xPM)
 
 Information provided during these webinar recordings will be unofficial and not binding on the state. 
 
@@ -82,9 +81,9 @@ In addition, funded programs may be required to report performance measures thro
 
 ## Required Documents
 
-The following documents must be emailed to CJA.R3Service@Illinois.gov by the 11:59 p.m., July 20, 2020, deadline for application review. Download the ZIP file of all required documents below.
+The following documents must be emailed to CJA.R3Service@Illinois.gov by the 11:59 p.m., July 20, 2020, deadline for application review. Click the links below to download copies.
 
-- NOFO Instructions (PDF)
+- Download NOFO Instructions (PDF)
 - Completed and signed Uniform State Grant Application (Word) 
 - Completed Program Narrative (Word)
 - Completed Budget/Budget Narrative (Excel)
@@ -94,9 +93,7 @@ The following documents must be emailed to CJA.R3Service@Illinois.gov by the 11:
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to CJA.R3Service@Illinois.gov until 11:59 p.m. July 16, 2020.  
-
-Questions and responses are posted on [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and [here](SFY21R3NOFOQuestions.pdf).
+Questions regarding this NOFO may be submitted to CJA.R3Service@Illinois.gov until 11:59 p.m. July 16, 2020.  Questions and responses will be posted at [https://r3.illinois.gov/faqs](https://r3.illinois.gov/faqs) and at [https://grants.icjia.cloud](https://grants.icjia.cloud).
 
 ## Contact Information
 
