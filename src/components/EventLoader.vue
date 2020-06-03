@@ -2,7 +2,7 @@
   <div>
     <v-container>
       <v-row>
-        <v-col cols="12" sm="12" md="10">
+        <v-col cols="12" sm="12" md="12">
           <v-sheet
             :color="`grey lighten-4`"
             v-for="i in 5"
@@ -15,7 +15,7 @@
             ></v-boilerplate>
           </v-sheet>
         </v-col>
-        <v-col cols="2" class="hide-sm-and-down">
+        <!-- <v-col cols="2" class="hide-sm-and-down">
           <v-sheet :color="`grey lighten-4`">
             <v-boilerplate
               type="article"
@@ -23,7 +23,7 @@
               :boilerplate="false"
             ></v-boilerplate>
           </v-sheet>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>
