@@ -136,7 +136,7 @@ The following documents must be emailed to CJA.2020DrugNOFO@Illinois.gov by the 
 
 Questions regarding this NOFO may be submitted to CJA.2020DrugNOFO@Illinois.gov until **11:59 p.m. June 11, 2020**. Questions and responses will be posted at https://icjia.illinois.gov/gata/.
 
-Click to [download questions and responses](CompLEDrugNOFO.pdf).
+Click to [download questions and responses](CompLEDrugNOFOFAQs.pdf).
 
 ## Contact Information
 
