@@ -1,146 +1,6 @@
 <template>
   <div>
-    <!-- <v-container
-      v-if="
-        $vuetify.breakpoint.md ||
-        $vuetify.breakpoint.lg ||
-        $vuetify.breakpoint.xl
-      "
-    >
-      <v-row class="mb-12">
-        <v-col>
-          <div>
-            <h1 class="page-title mb-10">
-              WORKSHOP REGISTRATION
-            </h1>
-            <p>
-              Take the mystery out of securing state grant funding with an ICJIA
-              Technical Assistance Workshop. ICJIA offers workshops throughout
-              the state to ease the application process for organizations
-              seeking grant funding. Participants will receive an overview of
-              the ICJIA grant process and what it means to comply with the Grant
-              Accountability and Transparency Act (GATA).
-            </p>
-            <p>
-              <router-link to="/technical-assistance">Click here</router-link>
-              for more information. Questions? Contact
-              <a href="mailto: CJA.GrantTA@Illinois.gov"
-                >CJA.GrantTA@Illinois.gov</a
-              >
-            </p>
-            <v-card class="mt-8">
-              <v-tabs
-                v-model="tab"
-                grow
-                centered
-                icons-and-text
-                background-color="grey lighten-2"
-              >
-                <v-tabs-slider></v-tabs-slider>
-
-                <v-tab href="#tab-by-date">
-                  All Workshops
-
-                  <v-icon
-                    v-if="loading"
-                    left
-                    :disabled="loading"
-                    class="custom-loader"
-                    color="blue darken-4"
-                    >cached</v-icon
-                  >
-                  <v-icon v-else left>format_align_justify</v-icon>
-                </v-tab>
-
-                <v-tab :disabled="loading || isError" href="#tab-map">
-                  Workshops by Location
-                  <v-icon
-                    v-if="loading"
-                    left
-                    :disabled="loading"
-                    class="custom-loader"
-                    color="blue darken-4"
-                    >cached</v-icon
-                  >
-                  <v-icon v-else left>add_location</v-icon>
-                </v-tab>
-
-                <v-tab :disabled="loading || isError" href="#tab-full-list">
-                  Workshops by Date
-                  <v-icon
-                    v-if="loading"
-                    left
-                    :disabled="loading"
-                    class="custom-loader"
-                    color="blue darken-4"
-                    >cached</v-icon
-                  >
-                  <v-icon v-else left>calendar_today</v-icon>
-                </v-tab>
-              </v-tabs>
-              <div
-                v-if="isError"
-                class="mt-8 text-center"
-                style="color: red; font-size: 16px;"
-              >
-                <div>
-                  Cannot get workshop information. Please reload and try again.
-                </div>
-
-                <div>
-                  If this error persists, please contact
-                  <a href="mailto: CJA.GrantTA@Illinois.gov"
-                    >CJA.GrantTA@Illinois.gov</a
-                  >.
-                </div>
-                <div style="font-weight: 900;" class="mt-5">
-                  {{ errorMsg }}
-                </div>
-              </div>
-              <v-tabs-items v-model="tab">
-                <v-tab-item value="tab-by-date" :eager="true">
-                  <v-card flat px-3>
-                    <v-card-text>
-                      <EventList
-                        :events="events"
-                        :loading="loading"
-                        :isError="isError"
-                      ></EventList>
-                    </v-card-text>
-                  </v-card>
-                </v-tab-item>
-
-                <v-tab-item value="tab-map" :eager="true">
-                  <v-card flat
-                    ><EventMap
-                      :events="events"
-                      :loading="loading"
-                      :showAddress="false"
-                      :showTitle="true"
-                      :isError="isError"
-                    ></EventMap>
-                  </v-card>
-                </v-tab-item>
-
-                <v-tab-item value="tab-full-list" :eager="true">
-                  <v-card flat>
-                    <v-card-text>
-                      <EventCalendar
-                        :events="events"
-                        :loading="loading"
-                        :showTitle="false"
-                        :isError="isError"
-                      ></EventCalendar
-                    ></v-card-text>
-                  </v-card>
-                </v-tab-item>
-              </v-tabs-items>
-            </v-card>
-          </div>
-        </v-col>
-      </v-row>
-    </v-container> -->
-    <v-container>
+    <!-- <v-container>
       <v-row>
         <v-col>
           <div>
@@ -200,6 +60,50 @@
           </v-card>
         </v-col>
       </v-row>
+    </v-container> -->
+
+    <v-container>
+      <v-row>
+        <v-col>
+          <div>
+            <h1 class="page-title mb-5 text-center">
+              WORKSHOP REGISTRATION
+            </h1>
+            <p>
+              Take the mystery out of securing state grant funding with an ICJIA
+              Technical Assistance Workshop. ICJIA offers workshops throughout
+              the state to ease the application process for organizations
+              seeking grant funding. Participants will receive an overview of
+              the ICJIA grant process and what it means to comply with the Grant
+              Accountability and Transparency Act (GATA).
+            </p>
+            <p>
+              <router-link to="/technical-assistance">Click here</router-link>
+              for more information. Questions? Contact
+              <a href="mailto: CJA.GrantTA@Illinois.gov"
+                >CJA.GrantTA@Illinois.gov</a
+              >
+            </p>
+            <p>
+              Due to the COVID-19 outbreak, ICJIA has expanded the workshop
+              format to include both in-person and online sessions. In-person
+              session dates are subject to change.
+            </p>
+          </div>
+          <div class="text-center my-12">
+            <v-btn
+              target="_blank"
+              href="https://www.eventbrite.com/o/illinois-criminal-justice-information-authority-29385145153"
+              dark
+              color="blue darken-4"
+            >
+              Register on EventBrite&nbsp;<v-icon right
+                >open_in_new</v-icon
+              ></v-btn
+            >
+          </div>
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -219,7 +123,7 @@ export default {
     EventList
   },
   created() {
-    this.getEventBriteEvents();
+    //this.getEventBriteEvents();
   },
   metaInfo() {
     return {
