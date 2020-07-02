@@ -8,7 +8,7 @@
       v-if="$store.state && !$store.state.warningSeen && $browserDetect.isIE"
     ></Outdated>
 
-    <v-content
+    <v-main
       id="content-top"
       aria-live="polite"
       style="background: #fafafa; min-height: 68vh"
@@ -18,7 +18,7 @@
       <transition name="fade" mode="out-in">
         <router-view></router-view>
       </transition>
-    </v-content>
+    </v-main>
     <app-footer />
   </v-app>
 </template>
