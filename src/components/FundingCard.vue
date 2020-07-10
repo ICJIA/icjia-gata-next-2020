@@ -17,7 +17,9 @@
       <h2 class="">
         {{ item.title }}
       </h2>
-      <!-- <div style="font-size: 16px" class="mb-1">{{ item.fundingType }}</div> -->
+      <div style="font-size: 14px; color: #777" class="mb-1">
+        {{ item.fundingType }}
+      </div>
       <div class="pt-5">
         {{ item.excerpt }}
       </div>
