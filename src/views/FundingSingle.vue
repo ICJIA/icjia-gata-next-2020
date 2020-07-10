@@ -20,7 +20,14 @@
           <v-row class="text-left">
             <v-col cols="12">
               <h1 class="page-title uppercase">
-                NOTICE OF FUNDING OPPORTUNITY<br />
+                <span v-if="page.content && page.content.fundingType">
+                  {{ page.content.fundingType }}
+                </span>
+                <span v-else>
+                  NOTICE OF FUNDING OPPORTUNITY
+                </span>
+
+                <br />
                 {{ page.content.title }}
               </h1>
             </v-col>

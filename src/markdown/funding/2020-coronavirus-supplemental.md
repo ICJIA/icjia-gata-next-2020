@@ -7,9 +7,10 @@ excerpt: "The Illinois Criminal Justice Information Authority (ICJIA) seeks info
 status: "live"
 section: "funding"
 showToc: true
+fundingType: 'Request for Information'
 ---
 
-[LINK TO NOFO](FFY20COVIDRFI.pdf) {.text-center .nofo-link}
+[LINK TO RFI](FFY20COVIDRFI.pdf) {.text-center .nofo-link}
 
 The Illinois Criminal Justice Information Authority (ICJIA) seeks information from community-based agencies, operating as lead entities, to utilize the U.S. Bureau of Justice Assistance Coronavirus Emergency Supplemental Funding Program in areas disproportionately impacted by the coronavirus pandemic to prevent, prepare for, or respond to the coronavirus. Lead entities distribute funds via sub-grants to their provider networks and are responsible for the fiscal oversight and quality assurance of those sub-grants.
 

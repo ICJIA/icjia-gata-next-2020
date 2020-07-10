@@ -164,6 +164,7 @@ siteArray.forEach(obj => {
         meta.showToc = item.showToc || false;
         meta.searchMeta = item.searchMeta || "";
         meta.menuTitle = item.menuTitle || item.title;
+        meta.fundingType = item.fundingType || "Notice of Funding Opportunity";
 
         meta.displayFooter = item.displayFooter;
         if (item.section === "news") {

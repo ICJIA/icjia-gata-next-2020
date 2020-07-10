@@ -10,11 +10,14 @@
       <div v-if="toggleState === 'expired'" class="expired">
         Expired: {{ item.expires | format }}
       </div>
-      <div v-else class="current">Expires: {{ item.expires | format }}</div>
+      <div v-else class="current mb-8">
+        Expires: {{ item.expires | format }}
+      </div>
 
-      <h2 class="pt-8">
+      <h2 class="">
         {{ item.title }}
       </h2>
+      <!-- <div style="font-size: 16px" class="mb-1">{{ item.fundingType }}</div> -->
       <div class="pt-5">
         {{ item.excerpt }}
       </div>
