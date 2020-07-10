@@ -13,7 +13,7 @@
       >
         {{ item.fundingType }}
       </div>
-      <div
+      <!-- <div
         v-if="toggleState === 'expired'"
         class="expired mt-5"
         style="font-size: 12px;"
@@ -22,17 +22,31 @@
       </div>
       <div v-else class="current mt-5" style="font-size: 12px; color: #777">
         Expires: {{ item.expires | format }}
-      </div>
+      </div> -->
 
-      <h2 class="mt-1">
+      <h2 class="mt-3">
         {{ item.title }}
       </h2>
 
       <div class="pt-5">
         {{ item.excerpt }}
       </div>
-      <div class="text-right pt-8 posted">
+      <!-- <div class="text-right pt-8 posted">
         Posted: {{ item.posted | format }}
+      </div> -->
+      <div
+        v-if="toggleState === 'expired'"
+        class="expired mt-5 text-right"
+        style="font-size: 12px;"
+      >
+        Expired: {{ item.expires | format }}
+      </div>
+      <div
+        v-else
+        class="current mt-5 text-right"
+        style="font-size: 12px; color: green"
+      >
+        Expires: {{ item.expires | format }}
       </div>
     </v-card>
   </div>
