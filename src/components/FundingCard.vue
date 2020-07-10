@@ -8,7 +8,7 @@
         new!
       </v-btn>
       <div
-        style="font-size: 14px; color: #fff; background: #2A72C4; display: inline; font-weight: 900;"
+        style="font-size: 12px; color: #fff; background: #2A72C4; display: inline; font-weight: 900;"
         class="mb-5 px-2 py-1"
       >
         {{ item.fundingType }}
