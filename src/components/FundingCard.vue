@@ -7,19 +7,27 @@
       <v-btn absolute dark fab top right color="blue darken-3" v-if="isItNew">
         new!
       </v-btn>
-      <div v-if="toggleState === 'expired'" class="expired">
+      <div
+        style="font-size: 16px; color: #fff; background: #2A72C4; display: inline; font-weight: 900;"
+        class="mb-5 px-2 py-1"
+      >
+        {{ item.fundingType }}
+      </div>
+      <div
+        v-if="toggleState === 'expired'"
+        class="expired mt-5"
+        style="font-size: 12px;"
+      >
         Expired: {{ item.expires | format }}
       </div>
-      <div v-else class="current mb-8">
+      <div v-else class="current mt-5" style="font-size: 12px; color: #777">
         Expires: {{ item.expires | format }}
       </div>
 
-      <h2 class="">
+      <h2 class="mt-1">
         {{ item.title }}
       </h2>
-      <div style="font-size: 14px; color: #777" class="mb-1">
-        {{ item.fundingType }}
-      </div>
+
       <div class="pt-5">
         {{ item.excerpt }}
       </div>
