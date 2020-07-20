@@ -86,7 +86,9 @@ The following documents must be emailed to CJA.COVID@illinois.gov by **11:59 p.m
 
 ## Questions
 
-Submit questions to CJA.COVID@illinois.gov until July 20th. Questions and answers will be posted at https://icjia.illinois.gov/gata. 
+Submit questions to CJA.COVID@illinois.gov until July 20th. 
+
+Download the latest [questions and answers here](COVIDRFIQandA.pdf).
 
 ## Contact Information
 
