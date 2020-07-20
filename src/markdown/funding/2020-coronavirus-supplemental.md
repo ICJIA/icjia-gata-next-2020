@@ -53,7 +53,7 @@ Completed respondent materials must be emailed to CJA.COVID@illinois.gov by **11
 
 ## Available Funds
 
-A total of $7.1 million is available.   
+A total of $7,978,038 is available.   
 
 ## Period of Performance
 
@@ -86,9 +86,7 @@ The following documents must be emailed to CJA.COVID@illinois.gov by **11:59 p.m
 
 ## Questions
 
-Submit questions to CJA.COVID@illinois.gov until July 20th. 
-
-Download the latest [questions and answers here](COVIDRFIQandA.pdf). 
+Submit questions to CJA.COVID@illinois.gov until July 20th. Questions and answers will be posted at https://icjia.illinois.gov/gata. 
 
 ## Contact Information
 
