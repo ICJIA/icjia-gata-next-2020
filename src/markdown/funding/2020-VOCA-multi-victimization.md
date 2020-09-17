@@ -42,7 +42,9 @@ Funding is available for the period of December 1, 2020, through November 30, 20
 
 Technical assistance recordings providing additional information regarding this funding opportunity will be available for viewing beginning at 1:30 p.m. on May 11, 2020.
 
-[View the Technical Assistance Webinar Recording](https://youtu.be/Q_xsx0JmWJ0) {.text-center .ta-link}
+<!-- [View the Technical Assistance Webinar Recording](https://youtu.be/Q_xsx0JmWJ0) {.text-center .ta-link} -->
+
+[View the Technical Assistance powerpoint](MultiVictimizationNOFOSeptember2020.pdf) {.text-center}
 
 Information provided during this webinar recording will be unofficial and not binding on the state.
 
@@ -82,7 +84,7 @@ The following documents must be emailed to CJA.Multi.NOFOffy19@illinois.gov by t
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to CJA.Multi.NOFOffy19@illinois.gov until 11:59 p.m. on September 23, 2020.  Questions and responses will be posted at https://icjia.illinois.gov/gata/.
+Questions regarding this NOFO may be submitted to CJA.Multi.NOFOffy19@illinois.gov until 11:59 p.m. on September 23, 2020.  Questions and responses are [posted here](VOCA.Multi.Victim.FAQs.docx).
 
 ## Contact Information
 
