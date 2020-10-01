@@ -48,7 +48,7 @@ View the [Technical Assistance Webinar Recording](https://www.youtube.com/watch?
 
 Information provided during this webinar recording will be unofficial and not binding on the state.
 
-- [NOFO Guidelines](https://youtube/trg8DIF3T2A)
+- [NOFO Guidelines](https://www.youtube.com/watch?v=PBwekeMT5dk)
 
 - [General Requirements](https://www.youtube.com/watch?v=PBwekeMT5dk)
 
