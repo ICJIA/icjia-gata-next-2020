@@ -44,7 +44,9 @@ Funding is available for the period of January 1, 2021, through December 31, 202
 
 Technical assistance recordings providing additional information regarding this funding opportunity will be available for viewing at **5:00 p.m. on October 2, 2020.**
 
-[View the Technical Assistance Webinar Recording](https://www.youtube.com/channel/UCtZMzk8D3P4OixYTwsfPeKA) {.text-center}
+<!-- [View the Technical Assistance Webinar Recording](https://www.youtube.com/channel/UCtZMzk8D3P4OixYTwsfPeKA) {.text-center} -->
+
+Oct 1, 2020: Technical assistance recording coming soon.
 
 Information provided during this webinar recording will be unofficial and not binding on the state.
 
