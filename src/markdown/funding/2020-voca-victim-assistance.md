@@ -46,8 +46,6 @@ Technical assistance recordings providing additional information regarding this 
 
 View the [Technical Assistance Webinar Recording](https://www.youtube.com/watch?v=byD9hRn1lB4&feature=youtu.be) {.text-center}
 
-Oct 1, 2020: Technical assistance recording coming soon.
-
 Information provided during this webinar recording will be unofficial and not binding on the state.
 
 - [NOFO Guidelines](https://youtube/trg8DIF3T2A)
