@@ -7,7 +7,7 @@ excerpt: "The Illinois Criminal Justice Information Authority is requesting prop
 status: "live"
 section: "funding"
 showToc: true
-fundingType: "Notice of Funding"
+fundingType: "Notice of Funding Opportunity"
 ---
 
 [LINK TO NOFO](LEProsecutionNOFO.pdf) {.text-center .nofo-link}
