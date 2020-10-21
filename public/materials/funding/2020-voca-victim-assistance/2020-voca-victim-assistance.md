@@ -7,10 +7,10 @@ excerpt: "The Illinois Criminal Justice Information Authority is requesting prop
 status: "live"
 section: "funding"
 showToc: true
-fundingType: "Notice of Funding"
+fundingType: "Notice of Funding Opportunity FFY18 Victims of Crime Act Civil Legal Assistance Program"
 ---
 
-[LINK TO NOFO](LEProsecutionNOFO.pdf) {.text-center .nofo-link}
+[LINK TO NOFO INSTRUCTIONS](LEProsecutionNOFORevised.pdf) {.text-center .nofo-link}
 
 The Illinois Criminal Justice Information Authority is requesting proposals for grants to support the Law Enforcement/Prosecution Victim Assistance Program. Grants will be made with FFY19 Victims of Crime Act (VOCA) funds. A total of \$2,745,000 in funding will support advocate position(s) to provide direct services (victim de-escalation, emotional support, and case management) to victims at law enforcement agencies or states attorney’s offices. Funded services must be located within the offices of the law enforcement agency or state’s attorney. Funding is available through this solicitation for use over a period of 12 months.
 
@@ -44,7 +44,7 @@ Funding is available for the period of January 1, 2021, through December 31, 202
 
 Technical assistance recordings providing additional information regarding this funding opportunity will be available for viewing at **5:00 p.m. on October 2, 2020.**
 
-[View the Technical Assistance Webinar Recording](https://www.youtube.com/watch?v=byD9hRn1lB4) {.text-center}
+[View the Technical Assistance Webinar Recording (Required)](https://www.youtube.com/watch?v=byD9hRn1lB4) {.text-center}
 
 Information provided during this webinar recording will be unofficial and not binding on the state.
 
@@ -55,8 +55,6 @@ Information provided during this webinar recording will be unofficial and not bi
 ## Notice of Intent
 
 Agencies interested in applying are asked to submit an online Notice of Intent by **11:59 p.m., October 25, 2020.**
-
-Information provided during this webinar recording will be unofficial and not binding on the state.
 
 [Complete Notice of Intent](https://icjia.az1.qualtrics.com/jfe/form/SV_bHq6wHBFFHJteqF) {.text-center .noi-link}
 
