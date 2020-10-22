@@ -94,7 +94,7 @@ The following documents must be emailed to CJA.LE.NOFOFFY19@Illinois.gov by the 
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to CJA.LE.NOFOFFY19@Illinois.gov until **11:59 p.m. October 21, 2020**. Questions and responses will be posted at https://icjia.illinois.gov/gata/.
+Questions regarding this NOFO may be submitted to CJA.LE.NOFOFFY19@Illinois.gov until **11:59 p.m. October 21, 2020**. Download questions and responses [here](LEProsecutionfaq.docx).
 
 ## Contact Information
 
