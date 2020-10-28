@@ -38,7 +38,7 @@ ICJIA offers Technical Assistance Workshops to the public in partnership with lo
 
 Check back regularly as new Live Session dates and times are [posted weekly](/registration).
 
-A recorded Technical Assistance workshop can be viewed [HERE.](http://https://icjia.az1.qualtrics.com/jfe/form/SV_6QfIxlHYkidZyQt)
+A recorded Technical Assistance workshop can be viewed [HERE.](https://icjia.az1.qualtrics.com/jfe/form/SV_6QfIxlHYkidZyQt)
 
 ## COST
 
