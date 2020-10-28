@@ -17,17 +17,18 @@ dividerAfter: false
 
 Take the mystery out of securing state grant funding with an ICJIA Technical Assistance Workshop. ICJIA offers workshops throughout the state to ease the application process for organizations seeking grant funding. Participants will receive an overview of the ICJIA grant process and what it means to comply with the Grant Accountability and Transparency Act (GATA). GATA was created to ensure a coordinated, transparent process for efficient oversight of grant recipient selection and monitoring. The process also promotes quality programs and limits fraud, waste, and abuse.
 
-Participants will learn: 
-* How to pre-qualify for state grants.
-* Where to look for available grants.
-* What goes into a winning grant application.
-* General application submission guidelines and requirements. 
+Participants will learn:
 
-Participants will leave with an understanding of the steps of the grant process and the importance of meeting GATA requirements. 
+- How to pre-qualify for state grants.
+- Where to look for available grants.
+- What goes into a winning grant application.
+- General application submission guidelines and requirements.
+
+Participants will leave with an understanding of the steps of the grant process and the importance of meeting GATA requirements.
 
 ## WORKSHOP DESIGN
 
-Trained instructors will provide an interactive, four-hour curriculum in a classroom setting. Topics will include finding the right grant opportunity, being ready to apply, and completing and submitting a grant application. Workbooks will be provided. Participants are highly encouraged to bring their laptops and cell phones. 
+Trained instructors will provide an interactive, four-hour curriculum in a classroom setting. Topics will include finding the right grant opportunity, being ready to apply, and completing and submitting a grant application. Workbooks will be provided. Participants are highly encouraged to bring their laptops and cell phones.
 
 ## WHO CAN PARTICIPATE?
 
@@ -35,13 +36,14 @@ ICJIA offers Technical Assistance Workshops to the public in partnership with lo
 
 ## REGISTER
 
-Check back regularly as new sites and dates are [posted weekly](/registration). 
+Check back regularly as new Live Session dates and times are [posted weekly](/registration).
+
+A recorded Technical Assistance workshop can be viewed [HERE.](http://https://icjia.az1.qualtrics.com/jfe/form/SV_6QfIxlHYkidZyQt)
 
 ## COST
 
-Participants in these workshops can register free of charge. 
+Participants in these workshops can register free of charge.
 
 ## HOST A TRAINING
 
-At this time ICJIA is not scheduling in-person workshops. We encourage you and your staff to register for the on-line 2-part workshop. Each workshop is 1.5hrs long, and participants must register for BOTH, Part 1 & Part 2.   
-
+At this time ICJIA is not scheduling in-person workshops. We encourage you and your staff to register for the on-line 2-part workshop. Each workshop is 1.5hrs long, and participants must register for BOTH, Part 1 & Part 2.
