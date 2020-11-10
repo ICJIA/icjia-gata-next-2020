@@ -12,13 +12,23 @@
     <div v-for="item in filteredFunding" v-else :key="item.title">
       <funding-card :item="item" :toggle-state="toggleState" />
     </div>
-    <div class="text-center pt-5 pb-5">
+    <div
+      class="text-center pt-5 pb-5"
+      style="border: 1px solid #ddd; background: #eee"
+    >
       <h3>
-        For archived funding opportunities prior to 2019, please see:
+        For archived funding opportunities prior to April, 2019, please see:<br />
         <a href="https://legacy-grants.icjia.cloud/grants"
           >https://legacy-grants.icjia.cloud/grants</a
         >
       </h3>
+      <h4 class="mt-3" style="font-size: 14px;">
+        Note: The
+        <a href="https://legacy-grants.icjia.cloud/grants"
+          >ICJIA GATA legacy site</a
+        >
+        is no longer updated.
+      </h4>
     </div>
   </div>
 </template>
