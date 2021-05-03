@@ -34,7 +34,7 @@
         <div v-html="event.details.description.html"></div>
       </v-card-text>
       <v-card-text style="margin-top: -30px;">
-        <div class="subtitle-1 black--text">
+        <div class="text-subtitle-1 black--text">
           <v-card-text class="mb-5">
             <strong>
               <span :class="{ online: event.online_event }">{{
