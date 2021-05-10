@@ -150,11 +150,14 @@ siteArray.forEach(obj => {
 
       metaArray = [];
       allContents.forEach(item => {
+        console.log(item);
         let meta = {};
         meta.slug = item.slug;
+        meta.body = item.body;
         meta.title = item.title;
         meta.section = item.section;
         meta.excerpt = item.excerpt;
+        meta.summary = item.excerpt;
         meta.posted = item.posted;
         meta.expires = item.expires;
         meta.path = item.path;
