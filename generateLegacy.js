@@ -178,8 +178,8 @@ siteArray.forEach(obj => {
         meta.legacy = true;
         meta.title = item.title;
         meta.summary = item.excerpt;
-        meta.posted = item.posted;
-        meta.expires = item.expires;
+        meta.posted = new Date(item.posted);
+        meta.expires = new Date(item.expires);
         meta.body = item.legacyMarkdown;
         if (item.fundingType === "Request for Information") {
           meta.fundingType = "rfi";
