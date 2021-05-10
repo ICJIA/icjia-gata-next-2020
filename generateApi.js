@@ -35,6 +35,15 @@ function dynamicSort(property) {
   };
 }
 
+function linkifyLegacy(markdown, section, slug) {
+  let updatedMd = markdown.replace(
+    /\]\((?!https?:\/\/)/gi,
+    "](" +
+      `https://archive.icjia-api.cloud/files/icjia/gata/materials/${section}/${slug}/`
+  );
+  return updatedMd;
+}
+
 function linkify(html, section, slug) {
   const re = new RegExp("^(http|https|mailto):/?/?", "i");
   const result = html.replace(/href="([^"]+)/g, function($1) {
@@ -114,6 +123,8 @@ const readFiles = dirname => {
             let html = linkify(md.render(obj.body), obj.section, obj.slug);
             obj.html = html.replace(/(\r\n|\n|\r)/gm, "");
 
+            obj.legacyMarkdown = linkifyLegacy(obj.body, obj.section, obj.slug);
+
             resolve(obj);
           });
         });
@@ -154,6 +165,7 @@ siteArray.forEach(obj => {
         let meta = {};
         meta.slug = item.slug;
         meta.body = item.body;
+        meta.legacyMarkdown = item.legacyMarkdown;
         meta.title = item.title;
         meta.section = item.section;
         meta.excerpt = item.excerpt;
