@@ -1,5 +1,5 @@
 ---
-title: "Restore, Reinvest and Renew Emergency Summer Violence Response Pilot"
+title: "Emergency Summer Violence Response Pilot Program"
 created: "2021-05-20"
 posted: "2021-05-20"
 expires: "2021-06-07"

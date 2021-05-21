@@ -24,7 +24,7 @@
                   {{ page.content.fundingType }}
                 </span>
                 <span v-else>
-                  NOTICE OF FUNDING OPPORTUNITY
+                  NOTICE OF FUNDING OPPORTUNITY:
                 </span>
 
                 <br />
