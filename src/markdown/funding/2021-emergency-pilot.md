@@ -19,21 +19,7 @@ The Illinois Criminal Justice Information Authority (ICJIA) is requesting propos
 
 - They must be currently operating a youth development, youth employment, or street intervention program that can expand quickly over the summer months.
 - Organizations that have at least two years of experience providing violence prevention, intervention, or reduction services and the capacity and ability to independently operate the program.
-- They must serve at least one R3 area within the following cities and regions:
-  o Aurora
-  o Bloomington
-  o Champaign
-  o Chicago-Northside
-  o Chicago-Southside
-  o Chicago-Westside
-  o Decatur
-  o East St. Louis
-  o Joliet
-  o Peoria
-  o Rockford
-  o Springfield
-  o Suburban Cook County
-  o Waukegan
+- Applicants must be serving at least one R3 area within the following cities and regions: Aurora, Bloomington, Champaign, Chicago-Northside, Chicago-Southside, Chicago-Westside, Decatur, East St. Louis, Joliet, Peoria, Rockford, Springfield, Suburban Cook County, Waukegan.
 
 Please refer to the [R3 zone map](https://r3.illinois.gov/eligibility) to determine if you are providing services to an R3 area. To find out if an address is within an R3 zone, or to get information on an R3 zone for application purposes, enter the address into the search bar (top left of R3 zone map) or zoom in (+) on the address on the map. Any address appearing in a color-coded, shaded area is within an R3 zone and eligible for funding.
 
@@ -47,21 +33,7 @@ This program is limited to:
 
 - Organizations currently operating a youth development, youth or emerging adult employment, or street intervention program that can be expanded quickly beginning July 1, 2021, and continuing over the summer months.
 - Organizations that have at least two years of experience providing violence prevention, intervention, or reduction services and the capacity and ability to independently operate the program. No collaboratives, sub-grantees, or fiscal agents will be accepted.
-- Applicants must be serving at least one R3 area within the following cities and regions:
-  o Aurora
-  o Bloomington
-  o Champaign
-  o Chicago-Northside
-  o Chicago-Southside
-  o Chicago-Westside
-  o Decatur
-  o East St. Louis
-  o Joliet
-  o Peoria
-  o Rockford
-  o Springfield
-  o Suburban Cook County
-  o Waukegan
+- Applicants must be serving at least one R3 area within the following cities and regions: Aurora, Bloomington, Champaign, Chicago-Northside, Chicago-Southside, Chicago-Westside, Decatur, East St. Louis, Joliet, Peoria, Rockford, Springfield, Suburban Cook County, Waukegan.
 
 Please refer to the [R3 zone map](https://r3.illinois.gov/eligibility) to determine if you are providing services to an R3 area. To find out if an address is within an R3 zone, or to get information on an R3 zone for application purposes, enter the address into the search bar (top left) or zoom in (+) on the address on the map. Any address appearing in a color-coded, shaded area is within an R3 zone and eligible for funding.
 
@@ -73,7 +45,7 @@ Completed application materials must be emailed to [cja.summervp@illinois.gov ](
 
 ## Available Funds
 
-Programs funded through this opportunity are funded with SFY21 & a portion of SFY22 R3 appropriations. $3 million will be made available through this funding opportunity. Applicants may request a minimum of $50,000 and a maximum of \$300,000 in grant funding.
+Grants available through this funding opportunity are a portion of a FY22 R3 funds. $3 million will be made available through this funding opportunity. Applicants may request a minimum of $50,000 and a maximum of \$300,000 in grant funding.
 
 ## Period of Performance
 
