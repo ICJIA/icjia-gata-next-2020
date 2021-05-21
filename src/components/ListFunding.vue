@@ -12,23 +12,12 @@
     <div v-for="item in filteredFunding" v-else :key="item.title">
       <funding-card :item="item" :toggle-state="toggleState" />
     </div>
-    <div
-      class="text-center pt-5 pb-5"
-      style="border: 1px solid #ddd; background: #eee"
-    >
-      <h3>
-        For archived funding opportunities prior to April, 2019, please see:<br />
-        <a href="https://legacy-grants.icjia.cloud/grants"
-          >https://legacy-grants.icjia.cloud/grants</a
-        >
-      </h3>
-      <!-- <h4 class="mt-3" style="font-size: 14px;">
-        Note: The
-        <a href="https://legacy-grants.icjia.cloud/grants"
-          >ICJIA GATA legacy site</a
-        >
-        is no longer updated.
-      </h4> -->
+
+    <div style="font-size: 16px;" class="text-center">
+      For archived funding opportunities prior to April, 2019, please see:
+      <a href="https://legacy-grants.icjia.cloud/grants"
+        >https://legacy-grants.icjia.cloud/grants</a
+      >
     </div>
   </div>
 </template>
@@ -40,22 +29,22 @@ export default {
   components: {
     // eslint-disable-next-line vue/no-unused-components
     FundingCard,
-    Loader,
+    Loader
   },
   props: {
     funding: {
       type: Array,
-      default: () => [],
+      default: () => []
     },
     toggleState: {
       type: String,
-      default: "current",
-    },
+      default: "current"
+    }
   },
   data() {
     return {
       filteredFunding: [],
-      loading: true,
+      loading: true
     };
   },
   watch: {
@@ -67,7 +56,7 @@ export default {
 
       let filteredFunding = [];
       if (newValue === "current") {
-        this.funding.forEach((x) => {
+        this.funding.forEach(x => {
           let expiration = new Date(x.expires);
           let expirationAdjusted = new Date(
             expiration.getTime() + 24 * 60 * 60 * 250
@@ -88,7 +77,7 @@ export default {
             filteredFunding.push(x);
         });
       } else {
-        this.funding.forEach((x) => {
+        this.funding.forEach(x => {
           let expiration = new Date(x.expires);
           //console.log(`Expiration: ${expiration} -- Target: ${target}`)
           if (expiration < target && x.status === "live")
@@ -98,8 +87,8 @@ export default {
       this.filteredFunding = filteredFunding;
       this.loading = false;
       NProgress.done();
-    },
-  },
+    }
+  }
 };
 </script>
 
