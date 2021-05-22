@@ -161,7 +161,7 @@ siteArray.forEach(obj => {
 
       metaArray = [];
       allContents.forEach(item => {
-        console.log(item);
+        //console.log(item);
         let meta = {};
         meta.slug = item.slug;
         // meta.body = item.body;
