@@ -9,7 +9,7 @@ section: "funding"
 showToc: true
 ---
 
-[LINK TO NOFO PACKET](FY22ESVRNOFO.pdf) {.text-center .nofo-link}
+[LINK TO NOFO PACKET](FY22ESVRNOFOPacket.zip) {.text-center .nofo-link}
 
 The Illinois Criminal Justice Information Authority (ICJIA) is requesting proposals for Emergency Summer Violence Response Pilot grants. Grants will be made with SFY 22 Restore, Reinvest, and Renew (R3) funds. A total of \$3 million in funding to increase existing youth development, youth and emerging adult employment and street outreach programming is available through this solicitation for use over a period of 3 months.
 
