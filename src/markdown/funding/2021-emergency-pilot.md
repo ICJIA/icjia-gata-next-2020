@@ -96,7 +96,7 @@ The Uniform State Grant Application is also available in Word to comply with acc
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to [cja.summervp@illinois.gov](mailto:cja.summervp@illinois.gov) until **11:59 p.m., June 1, 2021**. Questions and responses will be posted at [https://icjia.illinois.gov/gata/](https://icjia.illinois.gov/gata/).
+Questions regarding this NOFO may be submitted to [cja.summervp@illinois.gov](mailto:cja.summervp@illinois.gov) until **11:59 p.m., June 1, 2021**. Questions and responses can be [download here](FY22ESVRPQA.pdf).
 
 ## Contact Information
 
