@@ -55,6 +55,8 @@ Funding is available for the period of July 1 through September 30, 2021. This i
 
 A live virtual bidder’s conference will be held from 10:00 a.m. to 11:30 a.m. on May 27, 2021. [Register here](https://illinois.webex.com/webappng/sites/illinois/meeting/info/eec169a319e444dcb2a1bf15e3179c75?isPopupRegisterView=true).
 
+The PowerPoint and sample budget used in the Bidder’s Conference are available [here](FY22ESVRPPPT-SAMPLEBUDGET.zip).
+
 Information provided during this session will be unofficial and not binding on the state.
 
 ## Notice of Intent
