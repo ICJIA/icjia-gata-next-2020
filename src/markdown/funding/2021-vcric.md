@@ -82,7 +82,7 @@ The following documents must be emailed to [CJA.VCRIC2021@Illinois.gov](mailto:C
 - Passthrough - Budget/Budget Narrative (Excel)
 - Passthrough - Exhibit B and E (Word)
 - Subgrantee - Uniform State Grant Application (Word)
-- Subgrantee - Program Narrative for Subgrantee (Word)
+- Subgrantee - Program Narrative (Word)
 - Subgrantee - Budget/Budget Narrative (Excel)
 
 [DOWNLOAD ZIP FILE OF NOFO PACKET (INCLUDES ALL REQUIRED APPLICATION DOCUMENTS)](VCRIC2021NOFOPacket.zip) {.text-center .nofo-link}
