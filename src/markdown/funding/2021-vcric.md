@@ -9,8 +9,6 @@ section: "funding"
 showToc: true
 ---
 
-<!-- # Notice of Funding Opportunity: Edward Byrne Memorial Justice Assistance Grant Violent Crime Reduction in Illinois Communities Program -->
-
 [LINK TO NOFO PACKET](VCRIC2021NOFOPacket.zip) {.text-center .nofo-link}
 
 The Illinois Criminal Justice Information Authority is requesting grant proposals for Violent Crime Reduction in Illinois Communities (VCRIC) program grants. A total of \$1 million in FFY19 Edward Byrne Memorial Justice Assistance Grant (JAG) funding is available through this solicitation for use over a period of 36 months. Grants will support programs designed to reduce violence crime, specifically domestic violence and gun violence.
