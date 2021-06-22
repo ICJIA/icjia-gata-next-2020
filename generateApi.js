@@ -28,7 +28,7 @@ function dynamicSort(property) {
     sortOrder = -1;
     property = property.substr(1);
   }
-  return function(a, b) {
+  return function (a, b) {
     var result =
       a[property] < b[property] ? -1 : a[property] > b[property] ? 1 : 0;
     return result * sortOrder;
@@ -39,17 +39,19 @@ function linkifyLegacy(markdown, section, slug) {
   let updatedMd = markdown.replace(
     /\]\((?!https?:\/\/)/gi,
     "](" +
-      `https://archive.icjia-api.cloud/files/icjia/gata/materials/${section}/${slug}/`
+    `https://archive.icjia-api.cloud/files/icjia/gata/materials/${section}/${slug}/`
   );
   return updatedMd;
 }
 
 function linkify(html, section, slug) {
   const re = new RegExp("^(http|https|mailto):/?/?", "i");
-  const result = html.replace(/href="([^"]+)/g, function($1) {
+  const result = html.replace(/href="([^"]+)/g, function ($1) {
     const arr = $1.split('"');
     let match = re.test(arr[1]);
-    let isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|txt)$/i.test(arr[1]);
+    let isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json|ppt|pptx)$/i.test(
+      arr[1]
+    );
     // if (isAFile) {
     //   console.log(arr[1])
     // }
@@ -64,16 +66,16 @@ function linkify(html, section, slug) {
   return result;
 }
 
-const readFiles = dirname => {
+const readFiles = (dirname) => {
   const readDirPr = new Promise((resolve, reject) => {
     fs.readdir(dirname, (err, filenames) =>
       err ? reject(err) : resolve(filenames)
     );
   });
 
-  return readDirPr.then(filenames =>
+  return readDirPr.then((filenames) =>
     Promise.all(
-      filenames.map(filename => {
+      filenames.map((filename) => {
         return new Promise((resolve, reject) => {
           fs.readFile(dirname + filename, "utf-8", (err, content) => {
             let obj = {};
@@ -113,9 +115,8 @@ const readFiles = dirname => {
              */
             //console.log(config.siteConfig[obj.section])
             if (obj.slug != "home") {
-              obj.path = `${config.siteConfig[obj.section].parentPath}${
-                obj.slug
-              }`;
+              obj.path = `${config.siteConfig[obj.section].parentPath}${obj.slug
+                }`;
             } else {
               obj.path = `/`;
             }
@@ -129,7 +130,7 @@ const readFiles = dirname => {
           });
         });
       })
-    ).catch(error => Promise.reject(error))
+    ).catch((error) => Promise.reject(error))
   );
 };
 
@@ -139,9 +140,9 @@ const readFiles = dirname => {
 
 const routes = [];
 const funding = [];
-siteArray.forEach(obj => {
+siteArray.forEach((obj) => {
   readFiles(`${markdownSourcePath}${obj}/`).then(
-    allContents => {
+    (allContents) => {
       if (config.siteConfig[obj].type === "page") {
         /**
          * ... sort on 'position' if item is a page ...
@@ -160,7 +161,7 @@ siteArray.forEach(obj => {
       }
 
       metaArray = [];
-      allContents.forEach(item => {
+      allContents.forEach((item) => {
         //console.log(item);
         let meta = {};
         meta.slug = item.slug;
@@ -203,6 +204,6 @@ siteArray.forEach(obj => {
       );
       console.log(`${obj}.json generated`);
     },
-    error => console.log(error)
+    (error) => console.log(error)
   );
 });

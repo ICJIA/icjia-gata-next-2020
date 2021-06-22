@@ -2,7 +2,7 @@ export const handleClicks = {
   data() {
     return {};
   },
-  mounted() {},
+  mounted() { },
   methods: {
     handleClicks($event) {
       // intercepts <a></a> tag clicks and routes within app
@@ -10,9 +10,8 @@ export const handleClicks = {
       const { target } = $event;
       const href = $event.target.href;
       const mailto = /mailto/g;
-      const isAFile = /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json|ppt|pptx)$/i.test(
-        href
-      );
+      const isAFile =
+        /^.*\.(pdf|doc|docx|xls|xlsx|zip|csv|json|ppt|pptx)$/i.test(href);
 
       if (isAFile) {
         $event.preventDefault();
@@ -21,7 +20,7 @@ export const handleClicks = {
         this.$ga.event({
           eventCategory: "File",
           eventAction: "Download",
-          eventLabel: filename
+          eventLabel: filename,
         });
         location.href = href;
       } else if (
@@ -31,14 +30,8 @@ export const handleClicks = {
         !isAFile &&
         !href.match(mailto)
       ) {
-        const {
-          altKey,
-          ctrlKey,
-          metaKey,
-          shiftKey,
-          button,
-          defaultPrevented
-        } = $event;
+        const { altKey, ctrlKey, metaKey, shiftKey, button, defaultPrevented } =
+          $event;
         // don't handle with control keys
         if (metaKey || altKey || ctrlKey || shiftKey) return;
         // don't handle when preventDefault called
@@ -60,6 +53,6 @@ export const handleClicks = {
       } else {
         return null;
       }
-    }
-  }
+    },
+  },
 };
