@@ -39,7 +39,7 @@ export default {
       alert: true,
       loading: true,
       corona: null,
-      errorMsg: null,
+      errorMsg: null
     };
   },
   async created() {
@@ -56,8 +56,8 @@ export default {
   methods: {
     reset() {
       this.alert = true;
-    },
+    }
   },
-  props: {},
+  props: {}
 };
 </script>
