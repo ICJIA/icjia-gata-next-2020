@@ -19,7 +19,7 @@ The Illinois Criminal Justice Information Authority is requesting proposals for 
 
 Illinois’ large, unified court system makes it difficult to develop one protocol that works for all 102 counties. Protocol implementation requires a multi-level, multi-disciplinary, localized approach, including continued follow-up and monitoring after implementation, for which the local Family Violence Coordinating Council (FVCC) structure is well qualified. Professionals in every aspect of the criminal justice system have multiple training mandates, little time for training, and limited resources. Providing a curriculum of training modules with an option for online access offers professionals statewide a viable option for training.
 
-The goal of the CREST IL Project is to improve the criminal justice system response to domestic violence in communities across Illinois by promoting policy and procedural change, coordinated community response, and cross-training to encourage safety for people who experience family violence and accountability for people who perpetrate family violence
+The goal of the CREST IL Project is to improve the criminal justice system response to domestic violence in communities across Illinois by promoting policy and procedural change, coordinated community response, and cross-training to encourage safety for people who experience family violence and accountability for people who perpetrate family violence.
 
 ## Eligibility Information
 
@@ -41,7 +41,7 @@ Completed application materials must be emailed to cja.crestilpilot@illinois.gov
 
 ## Available Funds
 
-Grants available through this funding opportunity are supported by FFY19 Improving Criminal Justice Responses to Domestic Violence, Dating Violence, Sexual Assault, and Stalking Grant Program. A minimum of \$120,000 will be made available through this funding opportunity.
+Grants available through this funding opportunity are supported by FFY19 Improving Criminal Justice Responses to Domestic Violence, Dating Violence, Sexual Assault, and Stalking Grant Program. A total of \$120,000 will be made available through this funding opportunity.
 
 ## Period of Performance
 
