@@ -166,8 +166,8 @@ siteArray.forEach(obj => {
         //console.log(item);
         let meta = {};
         meta.slug = item.slug;
-        // meta.body = item.body;
-        // meta.legacyMarkdown = item.legacyMarkdown;
+        meta.body = item.body;
+        meta.legacyMarkdown = item.legacyMarkdown;
         meta.title = item.title;
         meta.section = item.section;
         meta.excerpt = item.excerpt;
