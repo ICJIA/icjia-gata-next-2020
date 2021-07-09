@@ -89,7 +89,7 @@ The following documents must be emailed to [CJA.VCRIC2021@Illinois.gov](mailto:C
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to [CJA.VCRIC2021@Illinois.gov](mailto:CJA.VCRIC2021@Illinois.gov) until **11:59 p.m., July 22, 2021**. Questions and responses will be posted at [https://icjia.illinois.gov/gata/](https://icjia.illinois.gov/gata/).
+Questions regarding this NOFO may be submitted to [CJA.VCRIC2021@Illinois.gov](mailto:CJA.VCRIC2021@Illinois.gov) until **11:59 p.m., July 22, 2021**. Questions and responses are [posted here as Word](VCRICNOFOFAQs.docx) and [here as PDF](VCRICNOFOFAQs.pdf).
 
 ## Contact Information
 
