@@ -51,9 +51,11 @@ Funding is available for the period of December 1, 2021 through September 30, 20
 
 Technical assistance recordings providing additional information regarding this funding opportunity will be available for viewing beginning at 10:00 a.m. on July 9, 2021.
 
-[VIEW THE REQUIRED TECHNICAL ASSISTANCE WEBINAR RECORDING](https://www.youtube.com/channel/UCtZMzk8D3P4OixYTwsfPeKA)
+[VIEW THE REQUIRED TECHNICAL ASSISTANCE WEBINAR RECORDING](https://illinois.webex.com/recordingservice/sites/illinois/recording/4cc484d0c25a1039bfff0050568fe89b/playback)
 
 Information provided during this webinar recording will be unofficial and not binding on the state.
+
+The Technical Assistance Recording Presentation can be [found here](CRESTIL2357-1812TechnicalAssistanceRecordingPresentation.pdf).
 
 ## Notice of Intent
 
