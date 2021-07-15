@@ -92,7 +92,7 @@ The following documents must be emailed to cja.crestilpilot@illinois.gov by the 
 
 ## Questions
 
-Questions regarding this NOFO may be submitted to cja.crestilpilot@illinois.gov until **5:00 p.m. July 29, 2021**. All substantive questions and responses will be posted. Updates to NOFO materials, and questions from applicants and their responses are revised weekly. [View them here](Q&ANOFO2357-1812CRESTIL.docx).
+Questions regarding this NOFO may be submitted to cja.crestilpilot@illinois.gov until **5:00 p.m. July 29, 2021**. All substantive questions and responses will be posted. Updates to NOFO materials, and questions from applicants and their responses are revised weekly. [View them here](Q_ANOFO2357-1812CRESTIL.pdf).
 
 ## Contact Information
 
